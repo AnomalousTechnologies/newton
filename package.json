@@ -1,0 +1,66 @@
+{
+  "name": "@anomalous/newton",
+  "version": "1.0.0",
+  "description": "Design system and component library from Anomalous",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "yarn storybook",
+    "build": "tsc --project tsconfig.json",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:count": "node bin/check-export-count.js",
+    "lint": "tslint --project tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnomalousTechnologies/newton.git"
+  },
+  "keywords": [
+    "design",
+    "system",
+    "react",
+    "component",
+    "library"
+  ],
+  "author": "Matt Davies <matt.davies@anomalous.ai>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AnomalousTechnologies/newton/issues"
+  },
+  "homepage": "https://github.com/AnomalousTechnologies/newton#readme",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@emotion/styled": "^10.0.9",
+    "@storybook/addon-actions": "^5.0.2",
+    "@storybook/addon-info": "^5.0.2",
+    "@storybook/addon-links": "^5.0.2",
+    "@storybook/addons": "^5.0.2",
+    "@storybook/react": "^5.0.2",
+    "@types/jest": "^24.0.11",
+    "@types/react": "^16.8.8",
+    "@types/storybook__addon-actions": "^3.4.2",
+    "@types/storybook__addon-links": "^3.3.4",
+    "@types/storybook__react": "^4.0.1",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.5",
+    "chalk": "^2.4.2",
+    "jest": "^24.5.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.4",
+    "react-docgen-typescript-loader": "^3.0.1",
+    "react-docgen-typescript-webpack-plugin": "^1.1.0",
+    "react-uid": "^2.2.0",
+    "ts-jest": "^24.0.0",
+    "tslint": "^5.14.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.3.3333"
+  },
+  "peerDependencies": {
+    "react": "^16.8.4"
+  }
+}
