@@ -30,7 +30,8 @@
   },
   "include": [
     "src",
-    "stories"
+    "stories",
+    "tests"
   ],
   "exclude": [
     "node_modules"
