@@ -13,11 +13,15 @@ If you're building applications to live within the Anomalous ecosystem feel free
 
 With NPM:
 
-`$ npm install @anomalous/newton`
+```
+$ npm install @anomalous/newton
+```
 
 With Yarn:
 
-`$ yarn add @anomalous/newton`
+```
+$ yarn add @anomalous/newton
+```
 
 # Usage
 
