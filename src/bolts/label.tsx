@@ -5,6 +5,7 @@ export default styled.label`
   display: block;
   width: 100%;
   margin-bottom: .5rem;
+  font-family: ${(props) => props.theme.font.family.sans};
   font-weight: 500;
   line-height: 1rem;
 `;

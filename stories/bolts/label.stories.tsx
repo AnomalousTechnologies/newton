@@ -4,6 +4,7 @@ import { text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 
 import Label from '../../src/bolts/label';
+import { Wrapper } from '../utilities';
 
 storiesOf('Bolts|Label', module)
   .addDecorator(withKnobs)
@@ -11,4 +12,8 @@ storiesOf('Bolts|Label', module)
     info: { disable: true },
     options: { showPanel: true },
   })
-  .add('Standard', () => <Label>{text('Placeholder', 'My Label')}</Label>);
+  .add('Standard', () => (
+    <Wrapper>
+      <Label>{text('Placeholder', 'My Label')}</Label>
+    </Wrapper>
+  ));
