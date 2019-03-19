@@ -35,13 +35,16 @@
   "homepage": "https://github.com/AnomalousTechnologies/newton#readme",
   "devDependencies": {
     "@babel/core": "^7.3.4",
+    "@emotion/core": "^10.0.9",
     "@emotion/styled": "^10.0.9",
-    "@storybook/addon-actions": "^5.0.2",
-    "@storybook/addon-info": "^5.0.2",
+    "@storybook/addon-actions": "^5.0.3",
+    "@storybook/addon-info": "^5.0.3",
     "@storybook/addon-knobs": "^5.0.3",
-    "@storybook/addon-links": "^5.0.2",
-    "@storybook/addons": "^5.0.2",
-    "@storybook/react": "^5.0.2",
+    "@storybook/addon-links": "^5.0.3",
+    "@storybook/addons": "^5.0.3",
+    "@storybook/react": "^5.0.3",
+    "@storybook/theming": "^5.0.3",
+    "@types/enzyme": "^3.9.0",
     "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/jest": "^24.0.11",
     "@types/react": "^16.8.8",
@@ -69,9 +72,10 @@
     "typescript": "^3.3.3333"
   },
   "peerDependencies": {
+    "@emotion/core": "^10.0.9",
+    "@emotion/styled": "^10.0.9",
     "react": "^16.8.4"
   },
   "dependencies": {
-    "@types/enzyme": "^3.9.0"
   }
 }
