@@ -7,6 +7,8 @@ Newton is a design system and component library created by Anomalous. Newton pro
 
 We follow a component structure that is similar in principle to the concepts laid out by Brad Frost in [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) although we use our own language and the concept has been slightly simplified.
 
+We also use a stripped down version of [Normalize](https://necolas.github.io/normalize.css/) to encourage consistency across browsers, you can include our version of normalise or the original (or none at all).
+
 If you're building applications to live within the Anomalous ecosystem feel free to use Newton.
 
 # Install
