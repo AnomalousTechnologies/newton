@@ -8,23 +8,39 @@ const red = '#c24342';
 const white = '#fff';
 const yellow = '#fdc507';
 
+const grey = [
+  '#eae8e8',
+  '#bdbdbd',
+  '#828282',
+  '#575757',
+  '#3a3a3a',
+  '#262626',
+];
+
 export default {
   name: 'newton',
 
-  breakpoints: {
+  breakpoint: {
     mobile: '530px',
     tablet: '700px',
     widescreen: '1200px',
   },
   button: {
-    default: {
-      backgroundColour: red,
-      borderColour: maroon,
-      hoverColour: maroon,
-      textColour: white,
+    background: {
+      color: red,
+    },
+    border: {
+      color: maroon,
+    },
+    color: white,
+    focus: {
+      color: yellow,
+    },
+    hover: {
+      color: maroon,
     },
   },
-  colours: {
+  colour: {
     brand: {
       brand01: navy,
       brand02: yellow,
@@ -33,6 +49,7 @@ export default {
     select: {
       blue,
       green,
+      grey,
       ink,
       navy,
       purple,
@@ -46,11 +63,40 @@ export default {
       warning: yellow,
     },
   },
-  inputs: {
-    backgroundColour: white,
-    outlineColour: yellow,
+  font: {
+    family: {
+      mono: '"Menlo", monospace',
+      sans: '"gill-sans-nova", "Gill Sans", sans-serif',
+      serif: '"Times Newer Roman", "Times New Roman", serif',
+    },
+  },
+  input: {
+    background: {
+      color: white,
+    },
+    outline: {
+      color: yellow,
+    },
+  },
+  link: {
+    focus: {
+      outline: {
+        color: yellow,
+      },
+    },
+    hover: {
+      color: grey[2],
+      decoration: 'none',
+    },
+    standard: {
+      color: grey[2],
+      decoration: 'underline',
+    },
   },
   padding: {
     large: '2.5rem',
+  },
+  text: {
+    color: grey[5],
   },
 };
