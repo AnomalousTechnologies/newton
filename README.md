@@ -3,7 +3,7 @@ Design system and component library from Anomalous
 
 # Introduction
 
-Newton is a design system and component library create by Anomalous. Newton provides the backbone of our Inspect ™ and Mission Control ™ applications. Newton is written for [React](https://reactjs.org/) and provides a range of components to speed up frontend development.
+Newton is a design system and component library created by Anomalous. Newton provides the backbone of our Inspect ™ and Mission Control ™ applications. Newton is written for [React](https://reactjs.org/) and provides a range of components to speed up frontend development.
 
 We follow a component structure that is similar in principle to the concepts laid out by Brad Frost in [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) although we use our own language and the concept has been slightly simplified.
 
