@@ -6,11 +6,7 @@
       "esnext"
     ],
     "outDir": "./dist",
-    "rootDirs": [
-      "./src",
-      "./stories",
-      "./tests"
-    ],
+    "rootDir": "./src",
     "sourceMap": true,
     "declaration": true,
     "allowJs": false,
@@ -29,9 +25,7 @@
     "jsx": "react"
   },
   "include": [
-    "src",
-    "stories",
-    "tests"
+    "src"
   ],
   "exclude": [
     "node_modules"
