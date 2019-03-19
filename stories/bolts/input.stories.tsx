@@ -27,7 +27,6 @@ const options = {
 storiesOf('Bolts|Input', module)
   .addDecorator(withKnobs)
   .addParameters({
-    info: { disable: true },
     options: { showPanel: true },
   })
   .add('Standard', () => (

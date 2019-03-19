@@ -10,7 +10,6 @@ import { Wrapper } from '../utilities';
 
 const stories = storiesOf('Bolts|List', module)
   .addParameters({
-    info: { disable: true },
     options: { showPanel: true },
   });
 

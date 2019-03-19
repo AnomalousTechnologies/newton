@@ -7,10 +7,9 @@ import Link from '../../src/bolts/link';
 import P from '../../src/bolts/p';
 import { Wrapper } from '../utilities';
 
-const stories = storiesOf('Bolts|Text', module)
+const stories = storiesOf('Bolts|Link', module)
   .addDecorator(withKnobs)
   .addParameters({
-    info: { disable: true },
     options: { showPanel: true },
   });
 

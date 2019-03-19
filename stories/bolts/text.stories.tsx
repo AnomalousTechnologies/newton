@@ -19,7 +19,6 @@ import { Wrapper } from '../utilities';
 const stories = storiesOf('Bolts|Text', module)
   .addDecorator(withKnobs)
   .addParameters({
-    info: { disable: true },
     options: { showPanel: true },
   });
 

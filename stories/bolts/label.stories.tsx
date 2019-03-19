@@ -9,7 +9,6 @@ import { Wrapper } from '../utilities';
 storiesOf('Bolts|Label', module)
   .addDecorator(withKnobs)
   .addParameters({
-    info: { disable: true },
     options: { showPanel: true },
   })
   .add('Standard', () => (
