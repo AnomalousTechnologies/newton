@@ -9,7 +9,6 @@ import H2 from '../../src/bolts/h2';
 import H3 from '../../src/bolts/h3';
 import H4 from '../../src/bolts/h4';
 import Hr from '../../src/bolts/hr';
-import Link from '../../src/bolts/link';
 import P from '../../src/bolts/p';
 import Small from '../../src/bolts/small';
 import Strong from '../../src/bolts/strong';
