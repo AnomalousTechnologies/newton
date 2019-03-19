@@ -5,6 +5,7 @@ import { text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 
 import Button from '../../src/bolts/button';
+import { Wrapper } from '../utilities';
 
 storiesOf('Bolts|Button', module)
   .addDecorator(withKnobs)
@@ -12,4 +13,8 @@ storiesOf('Bolts|Button', module)
     info: { disable: true },
     options: { showPanel: true },
   })
-  .add('Primary', () => <Button onClick={action('clicked')}>{text('Placeholder', 'My Button')}</Button>);
+  .add('Primary', () => (
+    <Wrapper>
+      <Button onClick={action('clicked')}>{text('Placeholder', 'My Button')}</Button>
+    </Wrapper>
+  ));
