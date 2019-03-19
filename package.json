@@ -8,7 +8,10 @@
   ],
   "scripts": {
     "start": "yarn storybook",
-    "build": "tsc --project tsconfig.json",
+    "build": "run-s clean compile copy",
+    "compile": "tsc --project tsconfig.build.json",
+    "copy": "cp ./src/normalize.css ./dist/normalize.css",
+    "clean": "rm -rf dist",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest",
@@ -38,7 +41,6 @@
     "@emotion/core": "^10.0.9",
     "@emotion/styled": "^10.0.9",
     "@storybook/addon-actions": "^5.0.3",
-    "@storybook/addon-info": "^5.0.3",
     "@storybook/addon-knobs": "^5.0.3",
     "@storybook/addon-links": "^5.0.3",
     "@storybook/addons": "^5.0.3",
@@ -76,6 +78,5 @@
     "@emotion/styled": "^10.0.9",
     "react": "^16.8.4"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

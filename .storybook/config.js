@@ -1,5 +1,4 @@
 import { addDecorator, addParameters, configure } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
 import { withThemesProvider } from 'storybook-addon-emotion-theme';
 
 import storybookTheme from './storybookTheme';
@@ -15,5 +14,3 @@ function loadStories() {
 }
 
 configure(loadStories, module);
-
-addDecorator(withInfo({ header: false }));
