@@ -5,6 +5,7 @@ import { select, text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 
 import Input from '../../src/bolts/input';
+import { Wrapper } from '../utilities';
 
 const options = {
   Date: 'date',
@@ -30,12 +31,14 @@ storiesOf('Bolts|Input', module)
     options: { showPanel: true },
   })
   .add('Standard', () => (
-    <Input
-      onChange={action('change')}
-      onFocus={action('focus')}
-      onBlur={action('blur')}
-      placeholder={text('Placeholder', '')}
-      // @ts-ignore
-      type={select('Type', options, 'text')}
-    />
+    <Wrapper>
+      <Input
+        onChange={action('change')}
+        onFocus={action('focus')}
+        onBlur={action('blur')}
+        placeholder={text('Placeholder', '')}
+        // @ts-ignore
+        type={select('Type', options, 'text')}
+      />
+    </Wrapper>
   ));

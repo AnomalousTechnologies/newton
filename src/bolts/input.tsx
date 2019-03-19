@@ -6,9 +6,12 @@ export default styled.input`
   padding: .5rem;
   margin-bottom: 1.2rem;
   border-radius: 6px;
-  background-color: ${(props) => props.theme.inputs.backgroundColour};
+  font-family: ${(props) => props.theme.font.family.sans};
+  font-size: .9rem;
+  background-color: ${(props) => props.theme.input.background.color};
   box-shadow: 0 0 0px 1px rgba(0,0,0,.4);
   border: 0;
-  outline-color: ${(props) => props.theme.inputs.outlineColour};
+  outline-color: ${(props) => props.theme.input.outline.color};
   line-height: 1rem;
+  overflow: visible;
 `;
