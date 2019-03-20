@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "outDir": "./dist",
+    "rootDirs": [
+      "./src",
+      "./stories",
+      "./tests"
+    ],
+    "sourceMap": true,
+    "declaration": true,
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react"
+  },
+  "include": [
+    "src",
+    "stories",
+    "tests"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
