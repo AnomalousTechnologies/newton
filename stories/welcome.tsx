@@ -57,9 +57,9 @@ const Welcome = () => (
       import '@anomalous/newton/dist/normalize.css';<br/>
       <br/>
       const App = () =&gt; (<br/>
-        &nbsp;&nbsp&lt;ThemeProvider theme=&#123;theme&#125;&gt;<br/>
-          &nbsp;&nbsp&nbsp;&nbsp...<br/>
-        &nbsp;&nbsp&lt;/ThemeProvider&gt;<br/>
+        &nbsp;&nbsp;&lt;ThemeProvider theme=&#123;theme&#125;&gt;<br/>
+          &nbsp;&nbsp&nbsp;&nbsp;...<br/>
+        &nbsp;&nbsp;&lt;/ThemeProvider&gt;<br/>
       );<br/>
       <br/>
       export default App;
