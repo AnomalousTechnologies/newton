@@ -57,6 +57,7 @@ const Welcome = () => (
       import '@anomalous/newton/normalize.css';<br/>
       <br/>
       const App = () =&gt; (...);<br/>
+      <br/>
       export default App;
     </Code>
     <P>Include the component you need and away you go!</P>
