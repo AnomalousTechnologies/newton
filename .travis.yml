@@ -2,9 +2,9 @@ language: node_js
 node_js: '10'
 cache: yarn
 script: yarn test:ci
-before_deploy:
-  - yarn build
+before_deploy: yarn build
 deploy:
+  matrix:
   - provider: pages
     skip-cleanup: true
     local-dir: storybook-static
@@ -17,7 +17,7 @@ deploy:
     skip-cleanup: true
     email: matt@teamdavies.co.uk
     api_key:
-      secure: jsC5k5txzRfYTRYZpPR3/mVzRHeZ/4dg+0EQsNXkoaFuX70rOAWa7izEl/i3SeZaNHWtJqrNSDwgHf+chSwZUj7N2bt+T/ZkAVox3NWOjQ8z1rxqu6Vht5L9EP66jLOcbq21WNncBtEizTKj8/8yhpeNtxbXb+kiPYkKAwnbkTTBwagycDLC8vCO41qPlZZVDmTdguUi2iRihGs4MxfKstY3V8nQDjYDncCdbNAGaOldMzMTMYT/vCh0Iqa2pkf8P2785zQZqFfqtB63OLUxdtg13Ay5Ii290+Pps/qLMUllAQm42UI8xtRsCuXw291lGmKP8Pq9tkFSk/OdReLy5jHhjtzpA+4zdytfKW0Rgaeqdk+QCAGBJuXhe2UL1awGcikCMZmw4D5oaofXArlLv3jk4L1X3xWlu4o5zimi16HZLl9HqHU69QO3x5f8e3uSu2wT4LqX8EPdzpZz3YthCMRrVyDn0YVADou4XNkuRHHMyI4885CmJZTydDGb31umQD1Ug7dzFMHfgExRo7fg1fR+fjmHinhVdp5Ee5gx9E9+SI4NuNiK2xxbxsbaog62eWBE/9ZwWgzyKfFEW0GmIb5Iy21cbF+/G06r5H/iHleUcsmo6Gxi1jzaaLVRFTAJ4xirJh6+W6vDBP5qcAZWV8GEjEdt3owo9RGmx9ZFCWM=
+      secure: NhVi/KSWRMUa210cXMAmP+8VcTIYbpDF0FfI6E6wYk5e5UCoZYGGUe73pzRArmLttb0M56IjGa7TxNvgYSpl6mveZV1EHlqxojLVz90fTAlcKPLIQ/U6TKhDoG6pCcQ+/9emTiMeVlY/9edzwNIEzffsZ35L6LYEk7ScSj0VQcwfsuX7PYoyF+2z5vOsqL+cphcpfdiWdQfrMuQRXbmrdmDeL1zMnawZl+L2HcG/aLT+DdqqYneOBT2MaIo0u8qRuQeN7XREnj8lWnFZSIQKXftfjrctCbry025GgN8AUEMLTmN/fVUoamc15b4Bc/tVsC4oNsP68uW3AhQGGmdAjJoWcoIsTxaA1doxBPd+68phyq+ttrW5Od2tIOrRx1iaoiV3kt8GzDLJLX/f472NTcxLFgZU0mADcAIWMQ0UZ7ChOgY+koag08eAEy2qcSfF/WmfqE6mngXDDg6BmO6MJe01BvTZw+jbdNyOZMWTvEyJgysLAgFDg7cIhRej9KkDgU9tLG9pjNOjyxADYu+WFbZxzPFr/+suOPLuDJ7akhAVDZjO0VkyvyqjpxgnQY7c7h3l20A1emW52KWGMoSV2aAi6vFUX6/qFJlw9+p4sO6Qm9+lVyd+JK/m7lZGkqNIfZ8AOwc8v79tstwUqcRus8BEBq4f3o+4btI2i8grL9o=
     on:
       branch: master
       tags: true
