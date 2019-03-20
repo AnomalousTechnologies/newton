@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "outDir": "./dist",
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "jsx": "react",
     "lib": [
       "dom",
       "esnext"
     ],
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "sourceMap": true,
-    "declaration": true,
     "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -20,9 +20,8 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "jsx": "react"
+    "sourceMap": true,
+    "declaration": true
   },
   "include": [
     "src"

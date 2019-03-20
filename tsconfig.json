@@ -1,13 +1,7 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
-    "rootDirs": [
-      "./src",
-      "./stories",
-      "./tests"
-    ],
     "target": "esnext",
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "node",
     "jsx": "react",
     "lib": [
@@ -25,8 +19,7 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "forceConsistentCasingInFileNames": true,
-    "sourceMap": true,
-    "declaration": true
+    "noEmit": true
   },
   "include": [
     "src",
