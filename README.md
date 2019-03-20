@@ -3,15 +3,23 @@ Design system and component library from Anomalous
 
 # Introduction
 
-Newton is a design system and component library created by Anomalous. Newton provides the backbone of our Inspect ™ and Mission Control ™ applications. Newton is written for [React](https://reactjs.org/) and provides a range of components to speed up frontend development.
+Newton is a design system and component library created by Anomalous. This library provides the UI backbone of our Inspect™ and Mission Control™ applications. Newton has been written for [React](https://reactjs.org/) and provides a range of components to speed up frontend development.
 
 We follow a component structure that is similar in principle to the concepts laid out by Brad Frost in [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) although we use our own language and the concept has been slightly simplified.
 
 We also use a stripped down version of [Normalize](https://necolas.github.io/normalize.css/) to encourage consistency across browsers, you can include our version of normalise or the original (or none at all).
 
+NB: For optimum aesthetics make sure you include [Gill Sans Nova](https://fonts.adobe.com/fonts/gill-sans-nova) from Typekit.
+
 If you're building applications to live within the Anomalous ecosystem feel free to use Newton.
 
 # Install
+
+With Yarn: _(our preference at Anomalous)_
+
+```
+$ yarn add @anomalous/newton
+```
 
 With NPM:
 
@@ -19,42 +27,47 @@ With NPM:
 $ npm install @anomalous/newton
 ```
 
-With Yarn:
-
-```
-$ yarn add @anomalous/newton
-```
-
 # Usage
 
-Importing the component(s) you need and using them in your own React components is very straightforward:
+Include Gill Sans Nova in your application by using Typekit (optional).
 
 ```
-import { Button } from '@anomalous/newton';
+<html>
+  <head>
+    <link rel="stylesheet" href="https://use.typekit.net/xxxxxxx.css" />
+  </head>
+  <body>
+    ...
+  </body>
+</html>
 
-const YourComponent = () => (
+```
+
+At the root of your application, include Normalize (optional).
+
+```
+import React from 'react';
+
+import '@anomalous/newton/normalize.css';
+
+const App = () => (...);
+
+export default App;
+```
+
+Include the component you need and away you go!
+
+```
+import React from 'react';
+import { Button } from '@newton/anomalous';
+
+const MyComponent = () => (
   <div>
-    <Button onClick={() => console.log('example')}>Click Me</Button>
+     <Button onClick={() => alert('it works')}>My Button</Button&gt
   </div>
 );
 
-export default YourComponent;
-
-```
-
-Each component provides it's own styling (we use [Emotion](https://emotion.sh/)), if you would like to make use of our underlying theme object you can also import that:
-
-```
-import { Button, theme } from '@anomalous/newton';
-
-const YourComponent = () => (
-  <div style={{ padding: theme.padding.large }}>
-    <Button onClick={() => console.log('example')}>Click Me</Button>
-  </div>
-);
-
-export default YourComponent;
-
+export default MyComponent;
 ```
 
 # Structure
@@ -81,22 +94,6 @@ We structure our frontend applications as follows:
 - layouts
 - pages
 ```
-
-# Components
-
-Newton provides the following components:
-
-*Bolts*
-- Button
-- Input
-- Label
-- Textarea
-
-*Parts*
-- InputWithLabel
-
-*Vehicles*
-- _coming soon_
 
 # Issues and Feedback
 
