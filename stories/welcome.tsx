@@ -25,6 +25,8 @@ const Welcome = () => (
       Mission Control<Sup>™</Sup> applications.
       Newton has been written for <Link href="https://reactjs.org/">React</Link> and provides a range of components
       to speed up frontend development.</P>
+    <P>We use <Link href="https://emotion.sh">Emotion</Link> to style our components and allow you to extend
+      those styles for your own use.</P>
     <P>We follow a component structure that is similar in principle to the concepts laid out by Brad Frost
       in <Link href="http://bradfrost.com/blog/post/atomic-web-design/">Atomic Design</Link> although
       we use our own language and the concept has been slightly simplified.</P>
@@ -37,6 +39,7 @@ const Welcome = () => (
 
     <H2>Install</H2>
     <Code>$ yarn add @anomalous/newton</Code>
+    <P><Strong>NB:</Strong> installing Newton will also install Emotion and Emotion Theming.</P>
 
     <H2>Usage</H2>
     <P>Include Gill Sans Nova in your application by using Typekit (optional).</P>
@@ -50,15 +53,17 @@ const Welcome = () => (
         &nbsp;&nbsp;&lt;/body&gt;<br/>
       &lt;/html&gt;
     </Code>
-    <P>At the root of your application, include Normalize (optional).</P>
+    <P>At the root of your application, include Normalize (optional) and setup the Emotion theme (required).</P>
     <Code>
       import React from 'react';<br/>
+      import &#123; theme &#125; from '@newton/anomalous';<br/>
+      import &#123; ThemeProvider &#125; from 'emotion-theming';<br/>
       <br/>
       import '@anomalous/newton/dist/normalize.css';<br/>
       <br/>
       const App = () =&gt; (<br/>
         &nbsp;&nbsp;&lt;ThemeProvider theme=&#123;theme&#125;&gt;<br/>
-          &nbsp;&nbsp&nbsp;&nbsp;...<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;...<br/>
         &nbsp;&nbsp;&lt;/ThemeProvider&gt;<br/>
       );<br/>
       <br/>
