@@ -1,10 +1,10 @@
-# newton
-Design system and component library from Anomalous
-
 [![Travis Build Status](https://img.shields.io/travis/AnomalousTechnologies/newton/master.svg)](https://travis-ci.org/AnomalousTechnologies/newton)
 ![Coveralls Coverage Check](https://img.shields.io/coveralls/github/AnomalousTechnologies/newton/master.svg)
 ![Depfu Dependency Check](https://img.shields.io/depfu/AnomalousTechnologies/newton.svg)
 ![NPM Package Size](https://img.shields.io/bundlephobia/min/@anomalous/newton.svg)
+
+# newton
+Design system and component library from Anomalous
 
 # Introduction
 
