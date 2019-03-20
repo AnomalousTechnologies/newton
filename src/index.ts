@@ -54,5 +54,7 @@ export {
 };
 
 import theme from './theme';
+import themeDark from './theme-dark';
+import themeLight from './theme-light';
 
-export { theme };
+export { theme, themeDark, themeLight };
