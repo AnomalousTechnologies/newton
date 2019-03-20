@@ -3,7 +3,6 @@ node_js: '10'
 cache: yarn
 script: yarn test:ci
 before_deploy:
-  - yarn
   - yarn build
 deploy:
   - provider: pages
