@@ -4,7 +4,6 @@ cache: yarn
 script: yarn test:ci
 before_deploy: yarn build
 deploy:
-  matrix:
   - provider: pages
     skip-cleanup: true
     local-dir: storybook-static
