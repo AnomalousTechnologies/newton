@@ -24,6 +24,9 @@
     "type": "git",
     "url": "git+https://github.com/AnomalousTechnologies/newton.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "design",
     "system",
