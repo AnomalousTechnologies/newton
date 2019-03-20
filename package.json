@@ -16,7 +16,7 @@
     "copy": "cp ./src/normalize.css ./dist/normalize.css",
     "ci": "run-p test:* lint",
     "test": "jest --watch",
-    "test:ci": "jest",
+    "test:ci": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test:count": "node bin/check-export-count.js",
     "lint": "tslint --project tsconfig.json"
   },
@@ -61,6 +61,7 @@
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.5",
     "chalk": "^2.4.2",
+    "coveralls": "^3.0.3",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.11.2",
     "jest": "^24.5.0",

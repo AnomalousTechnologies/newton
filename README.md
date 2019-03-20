@@ -1,6 +1,11 @@
 # newton
 Design system and component library from Anomalous
 
+[![Travis Build Status](https://img.shields.io/travis/AnomalousTechnologies/newton/master.svg](https://travis-ci.org/AnomalousTechnologies/newton)
+![Coveralls Coverage Check](https://img.shields.io/coveralls/github/AnomalousTechnologies/newton/master.svg)
+![Depfu Dependency Check](https://img.shields.io/depfu/AnomalousTechnologies/newton.svg)
+![NPM Package Size](https://img.shields.io/bundlephobia/min/@anomalous/newton.svg)
+
 # Introduction
 
 Newton is a design system and component library created by Anomalous. This library provides the UI backbone of our Inspect™ and Mission Control™ applications. Newton has been written for [React](https://reactjs.org/) and provides a range of components to speed up frontend development.
