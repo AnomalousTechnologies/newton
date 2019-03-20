@@ -26,18 +26,20 @@ export default {
     widescreen: '1200px',
   },
   button: {
-    background: {
-      color: red,
-    },
-    border: {
-      color: maroon,
-    },
-    color: white,
-    focus: {
-      color: yellow,
-    },
-    hover: {
-      color: maroon,
+    default: {
+      background: {
+        color: red,
+      },
+      border: {
+        color: maroon,
+      },
+      color: white,
+      focus: {
+        color: yellow,
+      },
+      hover: {
+        color: maroon,
+      },
     },
   },
   colour: {

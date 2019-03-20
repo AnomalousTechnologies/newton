@@ -4,11 +4,11 @@ export default styled.button`
   display: inline-block;
   padding: .5rem 1.5rem;
   margin: 0;
-  background-color: ${(props) => props.theme.button.background.color};
-  border-color: ${(props) => props.theme.button.border.color};
+  background-color: ${(props) => props.theme.button.default.background.color};
+  border-color: ${(props) => props.theme.button.default.border.color};
   border-width: 1px;
   border-style: solid;
-  color: ${(props) => props.theme.button.color};
+  color: ${(props) => props.theme.button.default.color};
   font-family: ${(props) => props.theme.font.family.sans};
   font-size: 1rem;
   font-weight: 600;
@@ -19,11 +19,11 @@ export default styled.button`
   overflow: visible;
 
   &:focus {
-    outline-color: ${(props) => props.theme.button.focus.color};
+    outline-color: ${(props) => props.theme.button.default.focus.color};
   }
 
   &:hover {
     cursor: pointer;
-    background-color: ${(props) => props.theme.button.hover.color};
+    background-color: ${(props) => props.theme.button.default.hover.color};
   }
 `;
