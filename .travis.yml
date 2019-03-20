@@ -1,0 +1,27 @@
+language: node_js
+node_js: '10'
+cache: yarn
+script: yarn test:ci
+before_deploy:
+  - yarn build
+deploy:
+  - provider: pages
+    local-dir: storybook-static
+    skip-cleanup: true
+    github-token:
+      secure: jCoyS5uSzMAcBklLXp6nc2Fix5GmuieWjzhG7tCwYoh1vrbDpssZ0l18yCXIVlVqPXj5L61ygYazfrnidFcoR/3V3/ugIpNpWiKD5CGBtE2as8DDw89DAXdVDDp2VVLK9CZHOcyY2CH/OgHXqgJtj/8iXHQzzQZAbsn/fplGd2/RaWPXoQLvUfom4bhlVYYSnDov1JahsmR0zXIkop0cxQZipqYTypviUHl8AtvgsgxU9Fnnwr0joylrt/N+cSGaeCZ4wc3xFYyHwDsQfOhXEXbndVMeYWzMtZscJa0/k1T+iYeeeHF5+h4HPQGm7C08dG/SwJsiFPDx1G/7WNeP1q0HvfsCf+5/wQ9UTgo4My15qVgUKRpaHO+n4QPaGJwm+JjCfcWpPyEzKxo6v0MzbagqyJKJNUrNP7dGB5QTahjNzdsMk6zLNJNueWE/Q4XFqZC7CxrrkGsx26uJ5goQbLb0lcRFkTcQGg51Nz8xz7ITxaLKsx1nDAN9SBvaZLxJyLeZMKP9yixR/J3XkadZsVOr4RyJpbSmues+3A9GpSwJUDdAhoV0lFqYwkVNSPB/+1CJsiNWlteqeMBzbBIEmPN2DTn9dcIjsUYoTGFrpf+DQjAlltV3peVBcVFTEN1puhSHvs+y5Fh6ZTYmcDUGI/DrgSOZgdfKfcsFML9auA8=
+    keep-history: true
+    on:
+      branch: master
+  - provider: npm
+    email: matt@teamdavies.co.uk
+    api_key:
+      secure: jsC5k5txzRfYTRYZpPR3/mVzRHeZ/4dg+0EQsNXkoaFuX70rOAWa7izEl/i3SeZaNHWtJqrNSDwgHf+chSwZUj7N2bt+T/ZkAVox3NWOjQ8z1rxqu6Vht5L9EP66jLOcbq21WNncBtEizTKj8/8yhpeNtxbXb+kiPYkKAwnbkTTBwagycDLC8vCO41qPlZZVDmTdguUi2iRihGs4MxfKstY3V8nQDjYDncCdbNAGaOldMzMTMYT/vCh0Iqa2pkf8P2785zQZqFfqtB63OLUxdtg13Ay5Ii290+Pps/qLMUllAQm42UI8xtRsCuXw291lGmKP8Pq9tkFSk/OdReLy5jHhjtzpA+4zdytfKW0Rgaeqdk+QCAGBJuXhe2UL1awGcikCMZmw4D5oaofXArlLv3jk4L1X3xWlu4o5zimi16HZLl9HqHU69QO3x5f8e3uSu2wT4LqX8EPdzpZz3YthCMRrVyDn0YVADou4XNkuRHHMyI4885CmJZTydDGb31umQD1Ug7dzFMHfgExRo7fg1fR+fjmHinhVdp5Ee5gx9E9+SI4NuNiK2xxbxsbaog62eWBE/9ZwWgzyKfFEW0GmIb5Iy21cbF+/G06r5H/iHleUcsmo6Gxi1jzaaLVRFTAJ4xirJh6+W6vDBP5qcAZWV8GEjEdt3owo9RGmx9ZFCWM=
+    on:
+      branch: master
+      tags: true
+      repo: AnomalousTechnologies/newton
+notifications:
+  slack:
+    rooms:
+      secure: m3GAr8Ds+maEJyfKMVqg8NlTX66flSuCr/X0I9YqY896/XRB1GNksQyLLNIRU5ZAPthpI16F95NmlzMOjq9N5M5rgCOfBSISFwR2QeXFQ20BwBjnFxkGmXS/ZYgHlw+jZgdbRwn+3NhdosuSWYY1fOWrNOiGJIWYvoUGQczeYeYnEDEZQFsTBzb6dOFJ9nwFcGkbAEyPMZV7Z8u3DJ92366o9O3biuevNX30LusGlISvPdREZuKfRweZl1lcbWUDUm87/FXblPugR0XG7YTMcHPWmuEHIFwHpZrcZTeJvJqpCdx+J8SUwLIHQk0075qCyLU/jSLQ7whCbCf52f9zET37ibtM1eluvoovnd43WEfFDQNBKE0VPX0JnVoVm0tAdd7t7NLcaz+CfS3gjLpx350XYlrF9j+y8ffTrAkKwpwcHHfpW4nUZR38VHqZxlD1QFlwoHovdvUPYWiXse/Hvf4Ik/8DJODYmKykkqwypm0NPjNgDM6hpBUC5U5zcEJB9n3t+2jDMKK3bvyMg4FieJairh0skZ9kVf2pJQkugzM0VMVPM/tJy4g892/ooX9/54yZ6u9g//GVxoNw5osEvQBbD1Hu93PKC+P1es4VE2IfcxGj3q5cC+gnV+UjByQlQ0VYZLrpGtME2XljEM2LEV66xk9eyWsnFWeVwUCrtvo=
