@@ -54,7 +54,7 @@ const Welcome = () => (
     <Code>
       import React from 'react';<br/>
       <br/>
-      import '@anomalous/newton/normalize.css';<br/>
+      import '@anomalous/newton/dist/normalize.css';<br/>
       <br/>
       const App = () =&gt; (...);<br/>
       <br/>

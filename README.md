@@ -48,7 +48,7 @@ At the root of your application, include Normalize (optional).
 ```
 import React from 'react';
 
-import '@anomalous/newton/normalize.css';
+import '@anomalous/newton/dist/normalize.css';
 
 const App = () => (...);
 
