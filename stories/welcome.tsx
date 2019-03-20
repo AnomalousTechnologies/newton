@@ -56,7 +56,11 @@ const Welcome = () => (
       <br/>
       import '@anomalous/newton/dist/normalize.css';<br/>
       <br/>
-      const App = () =&gt; (...);<br/>
+      const App = () =&gt; (<br/>
+        &nbsp;&nbsp&lt;ThemeProvider theme=&#123;theme&#125;&gt;<br/>
+          &nbsp;&nbsp&nbsp;&nbsp...<br/>
+        &nbsp;&nbsp&lt;/ThemeProvider&gt;<br/>
+      );<br/>
       <br/>
       export default App;
     </Code>
@@ -68,7 +72,7 @@ const Welcome = () => (
       const MyComponent = () =&gt; (<br/>
         &nbsp;&nbsp;&lt;div&gt;<br/>
           &nbsp;&nbsp;&nbsp;&nbsp;
-          &lt;Button onClick=&#123;() =&gt; alert('it works')&#125;&gt;My Button&lt;/Button&gt<br/>
+          &lt;Button onClick=&#123;() =&gt; alert('it works')&#125;&gt;My Button&lt;/Button&gt;<br/>
         &nbsp;&nbsp;&lt;/div&gt;<br/>
       );<br/>
       <br/>

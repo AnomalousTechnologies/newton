@@ -43,14 +43,20 @@ Include Gill Sans Nova in your application by using Typekit (optional).
 
 ```
 
-At the root of your application, include Normalize (optional).
+At the root of your application, include Normalize (optional) and setup the Emotion theme (theme is required).
 
 ```
 import React from 'react';
+import { theme } from '@newton/anomalous';
+import { ThemeProvider } from 'emotion-theming';
 
 import '@anomalous/newton/dist/normalize.css';
 
-const App = () => (...);
+const App = () => (
+  <ThemeProvider theme={theme}>
+    ...
+  </ThemeProvider>
+);
 
 export default App;
 ```
@@ -63,7 +69,7 @@ import { Button } from '@newton/anomalous';
 
 const MyComponent = () => (
   <div>
-     <Button onClick={() => alert('it works')}>My Button</Button&gt
+     <Button onClick={() => alert('it works')}>My Button</Button>
   </div>
 );
 
