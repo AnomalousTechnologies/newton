@@ -19,7 +19,6 @@ deploy:
     api_key:
       secure: NhVi/KSWRMUa210cXMAmP+8VcTIYbpDF0FfI6E6wYk5e5UCoZYGGUe73pzRArmLttb0M56IjGa7TxNvgYSpl6mveZV1EHlqxojLVz90fTAlcKPLIQ/U6TKhDoG6pCcQ+/9emTiMeVlY/9edzwNIEzffsZ35L6LYEk7ScSj0VQcwfsuX7PYoyF+2z5vOsqL+cphcpfdiWdQfrMuQRXbmrdmDeL1zMnawZl+L2HcG/aLT+DdqqYneOBT2MaIo0u8qRuQeN7XREnj8lWnFZSIQKXftfjrctCbry025GgN8AUEMLTmN/fVUoamc15b4Bc/tVsC4oNsP68uW3AhQGGmdAjJoWcoIsTxaA1doxBPd+68phyq+ttrW5Od2tIOrRx1iaoiV3kt8GzDLJLX/f472NTcxLFgZU0mADcAIWMQ0UZ7ChOgY+koag08eAEy2qcSfF/WmfqE6mngXDDg6BmO6MJe01BvTZw+jbdNyOZMWTvEyJgysLAgFDg7cIhRej9KkDgU9tLG9pjNOjyxADYu+WFbZxzPFr/+suOPLuDJ7akhAVDZjO0VkyvyqjpxgnQY7c7h3l20A1emW52KWGMoSV2aAi6vFUX6/qFJlw9+p4sO6Qm9+lVyd+JK/m7lZGkqNIfZ8AOwc8v79tstwUqcRus8BEBq4f3o+4btI2i8grL9o=
     on:
-      branch: master
       tags: true
       repo: AnomalousTechnologies/newton
 notifications:
