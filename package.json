@@ -41,7 +41,7 @@
   },
   "homepage": "https://github.com/AnomalousTechnologies/newton#readme",
   "devDependencies": {
-    "@babel/core": "^7.3.4",
+    "@babel/core": "^7.4.0",
     "@emotion/core": "^10.0.9",
     "@emotion/styled": "^10.0.9",
     "@storybook/addon-actions": "^5.0.3",
