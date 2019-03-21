@@ -9,6 +9,7 @@ import Img from './bolts/img';
 import Input from './bolts/input';
 import Label from './bolts/label';
 import Link from './bolts/link';
+import LinkRoute from './bolts/link-route';
 import ListItem from './bolts/list-item';
 import ListOrdered from './bolts/list-ordered';
 import ListUnordered from './bolts/list-unordered';
@@ -37,6 +38,7 @@ export {
   Input,
   Label,
   Link,
+  LinkRoute,
   ListItem,
   ListOrdered,
   ListUnordered,
