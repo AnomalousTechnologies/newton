@@ -56,7 +56,7 @@ At the root of your application, include Normalize (optional) and setup the Emot
 
 ```
 import React from 'react';
-import { theme } from '@newton/anomalous';
+import { theme } from '@anomalous/newton';
 import { ThemeProvider } from 'emotion-theming';
 
 import '@anomalous/newton/dist/normalize.css';
@@ -74,7 +74,7 @@ Include the component you need and away you go!
 
 ```
 import React from 'react';
-import { Button } from '@newton/anomalous';
+import { Button } from '@anomalous/newton';
 
 const MyComponent = () => (
   <div>

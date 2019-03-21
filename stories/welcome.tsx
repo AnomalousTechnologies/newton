@@ -56,7 +56,7 @@ const Welcome = () => (
     <P>At the root of your application, include Normalize (optional) and setup the Emotion theme (required).</P>
     <Code>
       import React from 'react';<br/>
-      import &#123; theme &#125; from '@newton/anomalous';<br/>
+      import &#123; theme &#125; from '@anomalous/newton';<br/>
       import &#123; ThemeProvider &#125; from 'emotion-theming';<br/>
       <br/>
       import '@anomalous/newton/dist/normalize.css';<br/>
@@ -72,7 +72,7 @@ const Welcome = () => (
     <P>Include the component you need and away you go!</P>
     <Code>
       import React from 'react';<br/>
-      import 	&#123; Button &#125; from '@newton/anomalous';<br/>
+      import 	&#123; Button &#125; from '@anomalous/newton';<br/>
       <br/>
       const MyComponent = () =&gt; (<br/>
         &nbsp;&nbsp;&lt;div&gt;<br/>
