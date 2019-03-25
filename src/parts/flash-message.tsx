@@ -37,7 +37,7 @@ export const FlashMessage = ({ children, className, closeComponent, onClose }: M
 };
 
 interface MountProps extends MessageProps {
-  parent: Element;
+  parent: HTMLElement;
 }
 
 class FlashMessageMount extends Component<MountProps> {
