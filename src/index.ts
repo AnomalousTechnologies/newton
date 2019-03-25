@@ -24,6 +24,7 @@ import Sub from './bolts/sub';
 import Sup from './bolts/sup';
 import Textarea from './bolts/textarea';
 
+import FlashMessage from './parts/flash-message';
 import InputWithLabel from './parts/input-with-label';
 
 export {
@@ -52,6 +53,7 @@ export {
   Sub,
   Sup,
   Textarea,
+  FlashMessage,
   InputWithLabel,
 };
 

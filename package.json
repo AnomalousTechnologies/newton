@@ -15,7 +15,7 @@
     "typescript": "tsc --project tsconfig.build.json",
     "copy": "cp ./src/normalize.css ./dist/normalize.css",
     "ci": "run-p test:* lint",
-    "test": "jest --watch",
+    "test": "jest --silent --watch",
     "test:ci": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test:count": "node bin/check-export-count.js",
     "lint": "tslint --project tsconfig.json"
@@ -54,6 +54,7 @@
     "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/jest": "^24.0.11",
     "@types/react": "^16.8.8",
+    "@types/react-dom": "^16.8.3",
     "@types/react-router-dom": "^4.3.1",
     "@types/storybook__addon-actions": "^3.4.2",
     "@types/storybook__addon-knobs": "^4.0.4",

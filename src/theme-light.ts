@@ -65,6 +65,12 @@ export default {
       warning: yellow,
     },
   },
+  flashMessage: {
+    background: {
+      color: navy,
+    },
+    color: white,
+  },
   font: {
     family: {
       mono: '"Menlo", monospace',
