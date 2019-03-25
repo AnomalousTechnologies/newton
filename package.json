@@ -16,7 +16,7 @@
     "copy": "cp ./src/normalize.css ./dist/normalize.css",
     "ci": "run-p test:* lint",
     "test": "jest --silent --watch",
-    "test:ci": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "test:ci": "jest --silent --coverage --coverageReporters=text-lcov | coveralls",
     "test:count": "node bin/check-export-count.js",
     "lint": "tslint --project tsconfig.json"
   },
@@ -80,6 +80,7 @@
     "ts-jest": "^24.0.0",
     "tslint": "^5.14.0",
     "tslint-eslint-rules": "^5.4.0",
+    "tslint-react-a11y": "^1.0.0",
     "typescript": "^3.3.4000"
   },
   "peerDependencies": {
