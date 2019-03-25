@@ -74,6 +74,7 @@
     "react": "^16.8.5",
     "react-docgen-typescript-loader": "^3.0.1",
     "react-docgen-typescript-webpack-plugin": "^1.1.0",
+    "react-dom": "^16.8.5",
     "react-router-dom": "^5.0.0",
     "storybook-addon-emotion-theme": "^2.1.0",
     "ts-jest": "^24.0.0",
@@ -83,6 +84,7 @@
   },
   "peerDependencies": {
     "react": "^16.8.4",
+    "react-dom": "^16.8.5",
     "react-router-dom": "^5.0.0"
   },
   "dependencies": {
