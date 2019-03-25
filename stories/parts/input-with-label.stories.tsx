@@ -26,6 +26,8 @@ stories.add('Input', () => (
       label={text('Label', 'My Input')}
       name="foo"
       onChange={action('changed')}
+      onEnterKeyPress={action('enterKeyPress')}
+      onKeyPress={action('keyPress')}
       placeholder={text('Placeholder', 'Enter a value')}
       value={text('Value', 'Hello, friend')}
     />
@@ -48,6 +50,8 @@ stories.add('Textarea', () => (
       label={text('Label', 'My Input')}
       name="foo"
       onChange={action('changed')}
+      onEnterKeyPress={action('enterKeyPress')}
+      onKeyPress={action('keyPress')}
       placeholder={text('Placeholder', 'Enter a value')}
       type="textarea"
       value={text('Value', 'Hello, friend')}

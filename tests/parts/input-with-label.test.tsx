@@ -63,6 +63,36 @@ describe('Part: Input With Label', () => {
     expect(changeStub).toHaveBeenCalled();
   });
 
+  it('Can handle input keypress', () => {
+    const changeStub = jest.fn();
+    const keyPressStub = jest.fn();
+    const wrapper = mount(withTheme(
+      <InputWithLabel
+        label="My Label"
+        name="Foo"
+        onChange={changeStub}
+        onKeyPress={keyPressStub}
+      />,
+    ));
+    wrapper.find(Input).simulate('keypress');
+    expect(keyPressStub).toHaveBeenCalled();
+  });
+
+  it('Can handle input enter keypress', () => {
+    const changeStub = jest.fn();
+    const keyPressStub = jest.fn();
+    const wrapper = mount(withTheme(
+      <InputWithLabel
+        label="My Label"
+        name="Foo"
+        onChange={changeStub}
+        onEnterKeyPress={keyPressStub}
+      />,
+    ));
+    wrapper.find(Input).simulate('keypress', { key: 'Enter' });
+    expect(keyPressStub).toHaveBeenCalled();
+  });
+
   it('Can render textarea', () => {
     const wrapper = mount(withTheme(
       <InputWithLabel
@@ -92,5 +122,37 @@ describe('Part: Input With Label', () => {
     ));
     wrapper.find(Textarea).simulate('change');
     expect(changeStub).toHaveBeenCalled();
+  });
+
+  it('Can handle textarea keypress', () => {
+    const changeStub = jest.fn();
+    const keyPressStub = jest.fn();
+    const wrapper = mount(withTheme(
+      <InputWithLabel
+        label="My Label"
+        name="Foo"
+        onChange={changeStub}
+        onKeyPress={keyPressStub}
+        type="textarea"
+      />,
+    ));
+    wrapper.find(Textarea).simulate('keypress');
+    expect(keyPressStub).toHaveBeenCalled();
+  });
+
+  it('Can handle textarea enter keypress', () => {
+    const changeStub = jest.fn();
+    const keyPressStub = jest.fn();
+    const wrapper = mount(withTheme(
+      <InputWithLabel
+        label="My Label"
+        name="Foo"
+        onChange={changeStub}
+        onEnterKeyPress={keyPressStub}
+        type="textarea"
+      />,
+    ));
+    wrapper.find(Textarea).simulate('keypress', { key: 'Enter' });
+    expect(keyPressStub).toHaveBeenCalled();
   });
 });

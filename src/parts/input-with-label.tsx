@@ -16,6 +16,8 @@ interface Props {
   label: string;
   name: string;
   onChange: (event: any) => void;
+  onEnterKeyPress?: (event: any) => void;
+  onKeyPress?: (event: any) => void;
   placeholder?: string;
   type?: InputType | 'textarea';
   value?: string;
@@ -26,6 +28,8 @@ const InputWithLabel = ({
   label,
   name,
   onChange,
+  onEnterKeyPress,
+  onKeyPress,
   placeholder,
   type,
   value,
@@ -39,6 +43,14 @@ const InputWithLabel = ({
             id={`a-input-${id}`}
             name={name}
             onChange={onChange}
+            onKeyPress={(event: any) => {
+              const handleEnterKeyPress = onEnterKeyPress || (() => undefined);
+              const handleKeyPress = onKeyPress || (() => undefined);
+              if (event.key === 'Enter') {
+                handleEnterKeyPress(event);
+              }
+              handleKeyPress(event);
+            }}
             placeholder={placeholder}
             rows={10}
             value={value}
@@ -47,6 +59,14 @@ const InputWithLabel = ({
             id={`a-input-${id}`}
             name={name}
             onChange={onChange}
+            onKeyPress={(event: any) => {
+              const handleEnterKeyPress = onEnterKeyPress || (() => undefined);
+              const handleKeyPress = onKeyPress || (() => undefined);
+              if (event.key === 'Enter') {
+                handleEnterKeyPress(event);
+              }
+              handleKeyPress(event);
+            }}
             placeholder={placeholder}
             type={type}
             value={value}
@@ -65,6 +85,8 @@ InputWithLabel.propTypes = {
   label: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
+  onEnterKeyPress: PropTypes.func,
+  onKeyPress: PropTypes.func,
   placeholder: PropTypes.string,
   type: PropTypes.string,
   value: PropTypes.string,
