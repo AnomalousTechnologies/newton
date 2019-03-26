@@ -89,9 +89,9 @@
     "react-router-dom": "^5.0.0"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.9",
-    "@emotion/styled": "^10.0.9",
-    "emotion-theming": "^10.0.7",
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.10",
+    "emotion-theming": "^10.0.10",
     "react-uid": "^2.2.0"
   }
 }
