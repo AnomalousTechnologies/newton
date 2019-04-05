@@ -55,7 +55,7 @@
     "@types/react-dom": "^16.8.3",
     "@types/react-router-dom": "^4.3.1",
     "@types/storybook__addon-actions": "^3.4.2",
-    "@types/storybook__addon-knobs": "^4.0.4",
+    "@types/storybook__addon-knobs": "^4.0.5",
     "@types/storybook__addon-links": "^3.3.4",
     "@types/storybook__react": "^4.0.1",
     "awesome-typescript-loader": "^5.2.1",
