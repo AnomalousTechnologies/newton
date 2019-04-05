@@ -1313,13 +1313,6 @@
     memoizerific "^1.11.3"
     qs "^6.5.2"
 
-"@storybook/client-logger@5.0.5":
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-5.0.5.tgz#35af9420325cc7dcd5952593351620670db0903d"
-  integrity sha512-7J0FfwgYcMw6WsEfE0174C8O0yalN73Aqqo6At3SyYHwy6/UiIPFs2X78MzahIqOqywXEWjCIPoGghmpukuCmw==
-  dependencies:
-    core-js "^2.6.5"
-
 "@storybook/client-logger@5.0.6":
   version "5.0.6"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-5.0.6.tgz#d183534ccc8c864039113dcc33407e7f1f5d7594"
@@ -1488,7 +1481,7 @@
     memoizerific "^1.11.3"
     qs "^6.5.2"
 
-"@storybook/theming@5.0.6":
+"@storybook/theming@5.0.6", "@storybook/theming@^5.0.6":
   version "5.0.6"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-5.0.6.tgz#5827d780eb45a031ad27cd19bd87cd70a818546f"
   integrity sha512-Kz0/ujHknhan7DHApLIdSzfLAMbpo7AEKmi+R060ZV0ImGmAP9O7Ytqws7u1O25fgA4AgCDyeDpT4N9i83la+w==
@@ -1496,26 +1489,6 @@
     "@emotion/core" "^10.0.7"
     "@emotion/styled" "^10.0.7"
     "@storybook/client-logger" "5.0.6"
-    common-tags "^1.8.0"
-    core-js "^2.6.5"
-    deep-object-diff "^1.1.0"
-    emotion-theming "^10.0.7"
-    global "^4.3.2"
-    lodash.isequal "^4.5.0"
-    lodash.mergewith "^4.6.1"
-    memoizerific "^1.11.3"
-    polished "^2.3.3"
-    prop-types "^15.6.2"
-    react-inspector "^2.3.1"
-
-"@storybook/theming@^5.0.5":
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-5.0.5.tgz#184939e66dcfaf96975f77f38a530f3cf92c0e78"
-  integrity sha512-d4by4PUjVAL531y4RIezg3GYEjrsfjYllrZ+shj25grE/l19qNAWB28WsLxXZplfNKsm6GINjj+EOhLEi/0rgg==
-  dependencies:
-    "@emotion/core" "^10.0.7"
-    "@emotion/styled" "^10.0.7"
-    "@storybook/client-logger" "5.0.5"
     common-tags "^1.8.0"
     core-js "^2.6.5"
     deep-object-diff "^1.1.0"
