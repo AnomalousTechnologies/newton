@@ -76,7 +76,7 @@
     "react-router-dom": "^5.0.0",
     "storybook-addon-emotion-theme": "^2.1.0",
     "ts-jest": "^24.0.2",
-    "tslint": "^5.15.0",
+    "tslint": "^5.16.0",
     "tslint-eslint-rules": "^5.4.0",
     "tslint-react-a11y": "^1.0.0",
     "typescript": "^3.4.5"
