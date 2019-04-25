@@ -51,19 +51,19 @@ class FlashMessageMount extends Component<MountProps> {
 
   portal = document.createElement('div');
 
-  componentDidMount = () => {
+  componentDidMount = (): void => {
     this.props.parent.appendChild(this.portal);
   }
 
-  componentWillUnmount = () => {
+  componentWillUnmount = (): void => {
     this.props.parent.removeChild(this.portal);
   }
 
-  handleClose = () => {
+  handleClose = (): void => {
     this.componentWillUnmount();
   }
 
-  render() {
+  render(): any {
     const { children, ...props } = this.props;
     return ReactDOM.createPortal(
       <FlashMessage onClose={this.handleClose} {...props}>{children}</FlashMessage>,
