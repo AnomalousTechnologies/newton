@@ -46,7 +46,7 @@ class FlashMessageMount extends Component<MountProps> {
     className: PropTypes.string,
     closeComponent: PropTypes.element,
     onClose: PropTypes.func,
-    parent: PropTypes.instanceOf(Element),
+    parent: PropTypes.element,
   };
 
   portal = document.createElement('div');
