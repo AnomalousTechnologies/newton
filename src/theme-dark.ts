@@ -1,20 +1,39 @@
-const blue = '#4b81d2';
-const green = '#69c44a';
-const ink = '#17212F';
-const maroon = '#942623';
-const navy = '#26374e';
-const purple = '#9951dd';
-const red = '#c24342';
-const white = '#fff';
-const yellow = '#fdc507';
 
-const grey = [
-  '#eae8e8',
-  '#bdbdbd',
-  '#828282',
-  '#575757',
-  '#3a3a3a',
-  '#262626',
+/*
+
+TODO:
+
+- handle button hover state
+
+*/
+
+const berry = '#9951DD';
+const black = '#000';
+const brick = '#C24342';
+const grass = '#4CAB2C';
+const lemon = '#FDC504';
+const navy = '#26374E';
+const sky = '#4B81D2';
+const tangerine = '#EF760B';
+const white = '#fff';
+
+const greyscale = [
+  '#E9E9E9',
+  '#C9C9C9',
+  '#959595',
+  '#666666',
+  '#383838',
+  '#151515',
+];
+
+const tonal = [
+  '#F3F5F6',
+  '#E8EBEE',
+  '#D6D9DE',
+  '#989EA6',
+  '#6B7480',
+  '#3F4A5A',
+  '#1F2834',
 ];
 
 const transparent = {
@@ -43,48 +62,45 @@ export default {
   button: {
     default: {
       background: {
-        color: red,
-      },
-      border: {
-        color: maroon,
+        color: brick,
       },
       color: white,
       focus: {
-        color: yellow,
+        color: lemon,
       },
       hover: {
-        color: maroon,
+        color: brick,
       },
     },
   },
   colour: {
     brand: {
       brand01: navy,
-      brand02: yellow,
-      brand03: red,
+      brand02: lemon,
+      brand03: brick,
     },
     select: {
-      blue,
-      green,
-      grey,
-      ink,
+      berry,
+      black,
+      brick,
+      grass,
+      lemon,
       navy,
-      purple,
-      red,
+      sky,
+      tangerine,
       white,
-      yellow,
     },
     state: {
-      danger: red,
-      success: green,
-      warning: yellow,
+      danger: brick,
+      success: grass,
+      warning: tangerine,
     },
   },
   flashMessage: {
     background: {
       color: white,
     },
-    color: navy,
+    color: greyscale[5],
   },
   font: {
     family: {
@@ -98,26 +114,28 @@ export default {
       color: white,
     },
     outline: {
-      color: yellow,
+      color: lemon,
     },
   },
   link: {
     focus: {
       outline: {
-        color: yellow,
+        color: lemon,
       },
     },
     hover: {
-      color: transparent.white[2],
+      color: white,
       decoration: 'none',
     },
     standard: {
-      color: transparent.white[2],
+      color: white,
       decoration: 'underline',
     },
   },
   padding: {
-    large: '2.5rem',
+    lg: '2rem',
+    md: '1rem',
+    sm: '.5rem',
   },
   text: {
     color: white,
