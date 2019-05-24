@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions';
 import { boolean, select, text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 
-import UserIcon from '../../src/bolts/icons/large/user';
+import UserIcon from '../../src/bolts/icons/user';
 import Button, { ButtonSize, ButtonType } from '../../src/bolts/inputs/button';
 import Code from '../../src/bolts/typography/code';
 import H1 from '../../src/bolts/typography/h1';
