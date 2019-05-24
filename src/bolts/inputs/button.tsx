@@ -68,7 +68,7 @@ const ButtonStyled = styled(Button)`
   text-decoration: none;
   line-height: 1.15rem;
   overflow: visible;
-  transition: width 1s, height 1s, padding 1s;
+  transition: width 500ms, height 500ms, padding 500ms;
 
   ${({ isLoading }) => isLoading ? loadingAnimation : null}
 

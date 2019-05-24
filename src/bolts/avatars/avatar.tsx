@@ -47,7 +47,7 @@ const MaskStyled = styled(Mask)`
   overflow: hidden;
   border-radius: 50%;
   background-color: ${(props) => props.theme.color.select.tonal[1]};
-  transition: width 1s, height 1s;
+  transition: width 500ms, height 500ms;
 
   img {
     width: 100%;
