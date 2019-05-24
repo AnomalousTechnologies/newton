@@ -2,7 +2,7 @@ import React from 'react';
 
 import { shallow } from 'enzyme';
 
-import HardRule from '../../src/bolts/hr';
+import HardRule from '../../src/bolts/content/hr';
 
 describe('Bolt: HardRule', () => {
   it('Can render hr', () => {

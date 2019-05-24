@@ -3,7 +3,7 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import withTheme from '../withTheme';
 
-import Sup from '../../src/bolts/sup';
+import Sup from '../../src/bolts/typography/sup';
 
 describe('Bolt: Sup', () => {
   it('Can render', () => {

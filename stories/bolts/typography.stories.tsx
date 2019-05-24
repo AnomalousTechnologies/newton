@@ -4,24 +4,24 @@ import styled from '@emotion/styled';
 import { text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 
-import Code from '../../src/bolts/code';
-import H1 from '../../src/bolts/h1';
-import H2 from '../../src/bolts/h2';
-import H3 from '../../src/bolts/h3';
-import H4 from '../../src/bolts/h4';
-import Hr from '../../src/bolts/hr';
-import P from '../../src/bolts/p';
-import Small from '../../src/bolts/small';
-import Strong from '../../src/bolts/strong';
-import Sub from '../../src/bolts/sub';
-import Sup from '../../src/bolts/sup';
+import Hr from '../../src/bolts/content/hr';
+import Code from '../../src/bolts/typography/code';
+import H1 from '../../src/bolts/typography/h1';
+import H2 from '../../src/bolts/typography/h2';
+import H3 from '../../src/bolts/typography/h3';
+import H4 from '../../src/bolts/typography/h4';
+import P from '../../src/bolts/typography/p';
+import Small from '../../src/bolts/typography/small';
+import Strong from '../../src/bolts/typography/strong';
+import Sub from '../../src/bolts/typography/sub';
+import Sup from '../../src/bolts/typography/sup';
 import { Wrapper } from '../utilities';
 
 const Title = styled(H1)`
   margin-top: 0;
 `;
 
-const stories = storiesOf('Bolts|Text', module)
+const stories = storiesOf('Bolts|Typography', module)
   .addDecorator(withKnobs)
   .addParameters({
     options: { showPanel: true },

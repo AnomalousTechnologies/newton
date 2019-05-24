@@ -2,7 +2,7 @@ import React from 'react';
 
 import { shallow } from 'enzyme';
 
-import Input from '../../src/bolts/input';
+import Input from '../../src/bolts/inputs/input';
 
 describe('Bolt: Input', () => {
   it('Can render input', () => {

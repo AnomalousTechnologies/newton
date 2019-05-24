@@ -4,7 +4,7 @@ import { StaticRouter } from 'react-router-dom';
 import { mount, shallow } from 'enzyme';
 import withTheme from '../withTheme';
 
-import LinkRoute from '../../src/bolts/link-route';
+import LinkRoute from '../../src/bolts/content/link-route';
 
 describe('Bolt: LinkRoute', () => {
   it('Can render link', () => {

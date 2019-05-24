@@ -3,7 +3,7 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import withTheme from '../withTheme';
 
-import ListItem from '../../src/bolts/list-item';
+import ListItem from '../../src/bolts/content/list-item';
 
 describe('Bolt: ListItem', () => {
   it('Can render list item', () => {

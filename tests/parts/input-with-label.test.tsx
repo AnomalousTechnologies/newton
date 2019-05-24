@@ -3,9 +3,9 @@ import React from 'react';
 import { mount } from 'enzyme';
 import withTheme from '../withTheme';
 
-import Input from '../../src/bolts/input';
-import Label from '../../src/bolts/label';
-import Textarea from '../../src/bolts/textarea';
+import Input from '../../src/bolts/inputs/input';
+import Label from '../../src/bolts/inputs/label';
+import Textarea from '../../src/bolts/inputs/textarea';
 import InputWithLabel from '../../src/parts/input-with-label';
 
 describe('Part: Input With Label', () => {

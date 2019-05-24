@@ -3,8 +3,8 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import withTheme from '../withTheme';
 
-import ListItem from '../../src/bolts/list-item';
-import ListUnordered from '../../src/bolts/list-unordered';
+import ListItem from '../../src/bolts/content/list-item';
+import ListUnordered from '../../src/bolts/content/list-unordered';
 
 describe('Bolt: ListUnordered', () => {
   it('Can render list', () => {

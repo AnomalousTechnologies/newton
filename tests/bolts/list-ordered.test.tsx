@@ -3,8 +3,8 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import withTheme from '../withTheme';
 
-import ListItem from '../../src/bolts/list-item';
-import ListOrdered from '../../src/bolts/list-ordered';
+import ListItem from '../../src/bolts/content/list-item';
+import ListOrdered from '../../src/bolts/content/list-ordered';
 
 describe('Bolt: ListOrdered', () => {
   it('Can render list', () => {

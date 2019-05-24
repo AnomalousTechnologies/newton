@@ -3,7 +3,7 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import withTheme from '../withTheme';
 
-import Small from '../../src/bolts/small';
+import Small from '../../src/bolts/typography/small';
 
 describe('Bolt: Small', () => {
   it('Can render', () => {

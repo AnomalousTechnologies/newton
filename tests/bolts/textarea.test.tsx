@@ -2,7 +2,7 @@ import React from 'react';
 
 import { shallow } from 'enzyme';
 
-import Textarea from '../../src/bolts/textarea';
+import Textarea from '../../src/bolts/inputs/textarea';
 
 describe('Bolt: Textarea', () => {
   it('Can render textarea', () => {

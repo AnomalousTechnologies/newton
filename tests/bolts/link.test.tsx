@@ -3,7 +3,7 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import withTheme from '../withTheme';
 
-import Link from '../../src/bolts/link';
+import Link from '../../src/bolts/content/link';
 
 describe('Bolt: Link', () => {
   it('Can render link', () => {

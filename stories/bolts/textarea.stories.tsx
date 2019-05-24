@@ -5,10 +5,10 @@ import { action } from '@storybook/addon-actions';
 import { text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 
-import Code from '../../src/bolts/code';
-import H1 from '../../src/bolts/h1';
-import H2 from '../../src/bolts/h2';
-import Textarea from '../../src/bolts/textarea';
+import Textarea from '../../src/bolts/inputs/textarea';
+import Code from '../../src/bolts/typography/code';
+import H1 from '../../src/bolts/typography/h1';
+import H2 from '../../src/bolts/typography/h2';
 import { Wrapper } from '../utilities';
 
 const Title = styled(H1)`

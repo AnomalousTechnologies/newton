@@ -3,7 +3,7 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import withTheme from '../withTheme';
 
-import H2 from '../../src/bolts/h2';
+import H2 from '../../src/bolts/typography/h2';
 
 describe('Bolt: H2', () => {
   it('Can render h2', () => {

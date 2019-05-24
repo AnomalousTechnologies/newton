@@ -2,7 +2,7 @@ import React from 'react';
 
 import { shallow } from 'enzyme';
 
-import Option from '../../src/bolts/option';
+import Option from '../../src/bolts/inputs/option';
 
 describe('Bolt: Option', () => {
   it('Can render option', () => {

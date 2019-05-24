@@ -5,12 +5,12 @@ import { text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import { StaticRouter } from 'react-router-dom';
 
-import Code from '../../src/bolts/code';
-import H1 from '../../src/bolts/h1';
-import H2 from '../../src/bolts/h2';
-import Link from '../../src/bolts/link';
-import LinkRoute from '../../src/bolts/link-route';
-import P from '../../src/bolts/p';
+import Link from '../../src/bolts/content/link';
+import LinkRoute from '../../src/bolts/content/link-route';
+import Code from '../../src/bolts/typography/code';
+import H1 from '../../src/bolts/typography/h1';
+import H2 from '../../src/bolts/typography/h2';
+import P from '../../src/bolts/typography/p';
 import { Wrapper } from '../utilities';
 
 const Title = styled(H1)`

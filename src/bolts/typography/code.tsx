@@ -7,5 +7,5 @@ export default styled.code`
   font-family: ${(props) => props.theme.font.family.mono};
   font-size: .8rem;
   line-height: 1.5;
-  background-color: ${(props) => props.theme.colour.select.grey[0]};
+  background-color: ${(props) => props.theme.color.select.tonal[0]};
 `;

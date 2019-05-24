@@ -2,15 +2,15 @@ import React from 'react';
 
 import styled from '@emotion/styled';
 
-import Code from '../src/bolts/code';
-import H1 from '../src/bolts/h1';
-import H2 from '../src/bolts/h2';
-import Link from '../src/bolts/link';
-import ListItem from '../src/bolts/list-item';
-import List from '../src/bolts/list-unordered';
-import P from '../src/bolts/p';
-import Strong from '../src/bolts/strong';
-import Sup from '../src/bolts/sup';
+import Link from '../src/bolts/content/link';
+import ListItem from '../src/bolts/content/list-item';
+import List from '../src/bolts/content/list-unordered';
+import Code from '../src/bolts/typography/code';
+import H1 from '../src/bolts/typography/h1';
+import H2 from '../src/bolts/typography/h2';
+import P from '../src/bolts/typography/p';
+import Strong from '../src/bolts/typography/strong';
+import Sup from '../src/bolts/typography/sup';
 import { Wrapper } from './utilities';
 
 const Title = styled(H1)`

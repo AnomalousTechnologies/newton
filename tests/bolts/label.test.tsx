@@ -2,7 +2,7 @@ import React from 'react';
 
 import { shallow } from 'enzyme';
 
-import Label from '../../src/bolts/label';
+import Label from '../../src/bolts/inputs/label';
 
 describe('Bolt: Label', () => {
   it('Can render label', () => {

@@ -3,9 +3,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { UID } from 'react-uid';
 
-import Input from '../bolts/input';
-import Label from '../bolts/label';
-import Textarea from '../bolts/textarea';
+import Input from '../bolts/inputs/input';
+import Label from '../bolts/inputs/label';
+import Textarea from '../bolts/inputs/textarea';
 
 type InputType = 'date' | 'datetime-local' | 'email' | 'file' |
 'hidden' | 'month' | 'number' | 'password' | 'search' | 'tel' |

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { shallow } from 'enzyme';
 
-import Img from '../../src/bolts/img';
+import Img from '../../src/bolts/content/img';
 
 describe('Bolt: Img', () => {
   it('Can render img', () => {

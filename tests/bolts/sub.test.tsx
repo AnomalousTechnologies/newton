@@ -3,7 +3,7 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import withTheme from '../withTheme';
 
-import Sub from '../../src/bolts/sub';
+import Sub from '../../src/bolts/typography/sub';
 
 describe('Bolt: Sub', () => {
   it('Can render', () => {

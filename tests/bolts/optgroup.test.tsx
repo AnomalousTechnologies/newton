@@ -2,7 +2,7 @@ import React from 'react';
 
 import { shallow } from 'enzyme';
 
-import Optgroup from '../../src/bolts/optgroup';
+import Optgroup from '../../src/bolts/inputs/optgroup';
 
 describe('Bolt: Optgroup', () => {
   it('Can render optgroup', () => {

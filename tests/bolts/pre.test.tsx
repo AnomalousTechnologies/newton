@@ -3,7 +3,7 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import withTheme from '../withTheme';
 
-import Pre from '../../src/bolts/pre';
+import Pre from '../../src/bolts/typography/pre';
 
 describe('Bolt: Pre', () => {
   it('Can render', () => {
