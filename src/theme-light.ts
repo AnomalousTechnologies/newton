@@ -1,12 +1,15 @@
-const berry = '#9951DD';
 const black = '#000';
-const brick = '#C24342';
-const grass = '#4CAB2C';
-const lemon = '#FDC504';
+const white = '#fff';
 const navy = '#26374E';
+const berry = '#9951DD';
+const brick = '#C24342';
+const brickDark = '#AD3837';
+const grass = '#4CAB2C';
+const grassDark = '#3E9122';
+const lemon = '#FDC504';
+const lemonDark = '#EBB702';
 const sky = '#4B81D2';
 const tangerine = '#EF760B';
-const white = '#fff';
 
 const greyscale = [
   '#E9E9E9',
@@ -27,6 +30,23 @@ const tonal = [
   '#1F2834',
 ];
 
+const transparent = {
+  black: [
+    'rgba(0, 0, 0, .15)',
+    'rgba(0, 0, 0, .2)',
+    'rgba(0, 0, 0, .4)',
+    'rgba(0, 0, 0, .6)',
+    'rgba(0, 0, 0, .8)',
+  ],
+  white: [
+    'rgba(255, 255, 255, .15)',
+    'rgba(255, 255, 255, .2)',
+    'rgba(255, 255, 255, .4)',
+    'rgba(255, 255, 255, .6)',
+    'rgba(255, 255, 255, .8)',
+  ],
+};
+
 export default {
   name: 'newton',
 
@@ -36,20 +56,38 @@ export default {
     widescreen: '1200px',
   },
   button: {
-    default: {
-      background: {
-        color: brick,
-      },
+    danger: {
+      background: { color: brick },
       color: white,
-      focus: {
-        color: lemon,
-      },
-      hover: {
-        color: brick,
-      },
+      focus: { color: brick },
+      hover: { color: brickDark },
+    },
+    primary: {
+      background: { color: greyscale[4] },
+      color: white,
+      focus: { color: lemon },
+      hover: { color: black },
+    },
+    secondary: {
+      background: { color: white },
+      color: greyscale[4],
+      focus: { color: lemon },
+      hover: { color: greyscale[0] },
+    },
+    success: {
+      background: { color: grass },
+      color: white,
+      focus: { color: lemon },
+      hover: { color: grassDark },
+    },
+    warning: {
+      background: { color: lemon },
+      color: greyscale[4],
+      focus: { color: lemon },
+      hover: { color: lemonDark },
     },
   },
-  colour: {
+  color: {
     brand: {
       brand01: navy,
       brand02: lemon,
@@ -60,10 +98,13 @@ export default {
       black,
       brick,
       grass,
+      greyscale,
       lemon,
       navy,
       sky,
       tangerine,
+      tonal,
+      transparent,
       white,
     },
     state: {
@@ -114,6 +155,6 @@ export default {
     sm: '.5rem',
   },
   text: {
-    color: greyscale[5],
+    color: greyscale[4],
   },
 };

@@ -4,15 +4,15 @@ export default create({
   base: 'light',
 
   colorPrimary: '#C24342',
-  colorSecondary: '#26374E',
+  colorSecondary: '#6B7480',
 
-  appBg: '#EAE8E8',
+  appBg: '#F3F5F6',
   appContentBg: '#FFF',
 
   fontBase: '"Open Sans", sans-serif',
   fontCode: '"Menlo", monospace',
 
-  textColor: '#262626',
+  textColor: '#383838',
   textInverseColor: '#FFF',
 
   brandTitle: 'Newton by Anomalous',
