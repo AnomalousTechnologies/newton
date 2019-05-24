@@ -15,6 +15,7 @@ import Small from '../../src/bolts/typography/small';
 import Strong from '../../src/bolts/typography/strong';
 import Sub from '../../src/bolts/typography/sub';
 import Sup from '../../src/bolts/typography/sup';
+import Xsmall from '../../src/bolts/typography/xsmall';
 import { Wrapper } from '../utilities';
 
 const Title = styled(H1)`
@@ -195,6 +196,17 @@ stories.add('Sup', () => (
     <H2>Source Code</H2>
     <Code>
       &lt;Sup&gt;...&lt;/Sup&gt;
+    </Code>
+  </Wrapper>
+));
+
+stories.add('XSmall', () => (
+  <Wrapper>
+    <Title>Extra Small</Title>
+    <P>Here is an example of some <Xsmall>text that has been made small</Xsmall>.</P>
+    <H2>Source Code</H2>
+    <Code>
+      &lt;Xsmall&gt;...&lt;/Xsmall&gt;
     </Code>
   </Wrapper>
 ));
