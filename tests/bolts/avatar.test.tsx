@@ -3,7 +3,7 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import withTheme from '../withTheme';
 
-import Avatar from '../../src/bolts/avatars/avatar';
+import Avatar from '../../src/bolts/content/avatar';
 
 describe('Bolt: Avatar', () => {
   it('Can render', () => {

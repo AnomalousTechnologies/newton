@@ -3,7 +3,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import UserIcon from '../icons/large/user';
+import UserIcon from '../icons/user';
 
 export enum AvatarSize {
   SMALL = '32px',
@@ -67,7 +67,11 @@ const MaskStyled = styled(Mask)`
 const Avatar = ({ name, onClick, size, src }: AvatarProps) => {
   const userImage = <img src={src} alt={name} title={name} />;
   const placeholderImage = <UserIcon title={name} />;
-  return <MaskStyled onClick={onClick} size={size}>{src ? userImage : placeholderImage}</MaskStyled>;
+  return (
+    <MaskStyled onClick={onClick} size={size}>
+      {src ? userImage : placeholderImage}
+    </MaskStyled>
+  );
 };
 
 Avatar.propTypes = {
