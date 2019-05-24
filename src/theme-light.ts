@@ -87,6 +87,17 @@ export default {
       hover: { color: lemonDark },
     },
   },
+  card: {
+    background: {
+      color: white,
+    },
+    hover: {
+      color: tonal[1],
+    },
+    shadow: {
+      color: greyscale[1],
+    },
+  },
   color: {
     brand: {
       brand01: navy,
