@@ -23,8 +23,8 @@ import Search from '../../src/bolts/icons/search';
 import SignOut from '../../src/bolts/icons/sign-out';
 import Spinner from '../../src/bolts/icons/spinner';
 import Sun from '../../src/bolts/icons/sun';
-import UserCircle from '../../src/bolts/icons/user-circle';
 import User from '../../src/bolts/icons/user';
+import UserCircle from '../../src/bolts/icons/user-circle';
 
 [
   ['ArrowCircleDown', ArrowCircleDown ],
