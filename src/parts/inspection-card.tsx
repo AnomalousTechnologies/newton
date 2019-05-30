@@ -4,8 +4,11 @@ import styled from '@emotion/styled';
 import { format } from 'date-fns';
 
 import Avatar, { AvatarSize } from '../bolts/content/avatar';
+import Badge, { BadgeType } from '../bolts/content/badge';
 import Card from '../bolts/content/card';
+import CheckBadgeIcon from '../bolts/icons/check-badge';
 import CheckCircleIcon from '../bolts/icons/check-circle';
+import CrossBadgeIcon from '../bolts/icons/cross-badge';
 import CrossCircleIcon from '../bolts/icons/cross-circle';
 import SpinnerIcon from '../bolts/icons/spinner';
 import H4 from '../bolts/typography/h4';
@@ -22,7 +25,7 @@ const Title = styled(H4)`
 `;
 
 const AvatarWrapper = styled.div`
-  margin: 0 1rem 0 2rem;
+  margin: 0 1rem;
 `;
 
 const Status = styled.div`
@@ -56,6 +59,12 @@ const FailLabel = () => (<StatusFail><CrossCircleIcon title="Failed" /></StatusF
 const PassLabel = () => (<StatusPass><CheckCircleIcon title="Passed" /></StatusPass>);
 const WaitingLabel = () => (<StatusWaiting><SpinnerIcon title="In Progress" /></StatusWaiting>);
 
+export enum InspectionVerification {
+  REJECTED = -1,
+  UNVERIFIED = 0,
+  VERIFIED = 1,
+}
+
 export enum InspectionStatus {
   FAIL = 'fail',
   PASS = 'pass',
@@ -84,6 +93,18 @@ interface Props {
   partNumber: string;
   status?: InspectionStatus;
   style?: object;
+  verification?: InspectionVerification;
+}
+
+function verificationBadge(verification?: InspectionVerification) {
+  if (!verification) { return; }
+  switch (verification) {
+    case InspectionVerification.VERIFIED:
+      return <Badge icon={<CheckBadgeIcon title="Verified" />} type={BadgeType.SUCCESS} />;
+    case InspectionVerification.REJECTED:
+      return <Badge icon={<CrossBadgeIcon title="Rejected" />} type={BadgeType.DANGER} />;
+
+  }
 }
 
 const InspectionCard = ({
@@ -96,6 +117,7 @@ const InspectionCard = ({
   partNumber,
   status,
   style,
+  verification,
 }: Props) =>
 (
   <Card className={className} onClick={onClick} role="button" style={style}>
@@ -103,6 +125,7 @@ const InspectionCard = ({
       <Title>#{partNumber} - {partName}</Title>
       <ExtraSmall>{format(date, 'D MMM YYYY [at] h[:]mm a')} | <Strong>{inspectorName}</Strong></ExtraSmall>
     </Details>
+    {verificationBadge(verification)}
     <AvatarWrapper>
       <Avatar
         name={inspectorName}
@@ -113,5 +136,9 @@ const InspectionCard = ({
     {renderStatus(status)}
   </Card>
 );
+
+InspectionCard.defaultProps = {
+  status: InspectionStatus.WAITING,
+};
 
 export default InspectionCard;

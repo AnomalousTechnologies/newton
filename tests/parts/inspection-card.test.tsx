@@ -3,7 +3,9 @@ import React from 'react';
 import { mount } from 'enzyme';
 import withTheme from '../withTheme';
 
-import InspectionCard, { InspectionStatus } from '../../src/parts/inspection-card';
+import CheckBadgeIcon from '../../src/bolts/icons/check-badge';
+import CrossBadgeIcon from '../../src/bolts/icons/cross-badge';
+import InspectionCard, { InspectionStatus, InspectionVerification } from '../../src/parts/inspection-card';
 
 describe('Part: Flash Message', () => {
   it('Can accept className', () => {
@@ -86,5 +88,39 @@ describe('Part: Flash Message', () => {
       />,
     ));
     expect(wrapper.find('WaitingLabel').length).toEqual(1);
+  });
+
+  it('Can render verified badge', () => {
+    const wrapper = mount(withTheme(
+      <InspectionCard
+        className="bar"
+        date={new Date(2019, 1, 20, 0, 0, 0)}
+        inspectorAvatarSrc="https://randomuser.me/api/portraits/women/64.jpg"
+        inspectorName="Stephanie Lawrence"
+        onClick={() => undefined}
+        partName="Rotor Blade"
+        partNumber="95678230"
+        status={InspectionStatus.PASS}
+        verification={InspectionVerification.VERIFIED}
+      />,
+    ));
+    expect(wrapper.find(CheckBadgeIcon).length).toEqual(1);
+  });
+
+  it('Can render rejected badge', () => {
+    const wrapper = mount(withTheme(
+      <InspectionCard
+        className="bar"
+        date={new Date(2019, 1, 20, 0, 0, 0)}
+        inspectorAvatarSrc="https://randomuser.me/api/portraits/women/64.jpg"
+        inspectorName="Stephanie Lawrence"
+        onClick={() => undefined}
+        partName="Rotor Blade"
+        partNumber="95678230"
+        status={InspectionStatus.PASS}
+        verification={InspectionVerification.REJECTED}
+      />,
+    ));
+    expect(wrapper.find(CrossBadgeIcon).length).toEqual(1);
   });
 });
