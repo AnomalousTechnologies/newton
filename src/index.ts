@@ -36,7 +36,6 @@ import Sub from './bolts/typography/sub';
 import Sup from './bolts/typography/sup';
 import Xsmall from './bolts/typography/xsmall';
 
-import FlashMessage from './parts/flash-message';
 import InputWithLabel from './parts/input-with-label';
 import InspectionCard from './parts/inspection-card';
 
@@ -75,7 +74,6 @@ export {
   Sub,
   Sup,
   Xsmall,
-  FlashMessage,
   InputWithLabel,
   InspectionCard,
 };
