@@ -2,6 +2,7 @@ import React from 'react';
 
 import styled from '@emotion/styled';
 import { format } from 'date-fns';
+import PropTypes from 'prop-types';
 
 import Avatar, { AvatarSize } from '../bolts/content/avatar';
 import Card from '../bolts/content/card';
@@ -83,6 +84,7 @@ interface Props {
   partName: string;
   partNumber: string;
   status?: InspectionStatus;
+  style?: object;
 }
 
 const InspectionCard = ({
@@ -94,9 +96,10 @@ const InspectionCard = ({
   partName,
   partNumber,
   status,
+  style,
 }: Props) =>
 (
-  <Card className={className} onClick={onClick} role="button">
+  <Card className={className} onClick={onClick} role="button" style={style}>
     <Details>
       <Title>#{partNumber} - {partName}</Title>
       <ExtraSmall>{format(date, 'D MMM YYYY [at] h[:]mm a')} | <Strong>{inspectorName}</Strong></ExtraSmall>
@@ -111,5 +114,21 @@ const InspectionCard = ({
     {renderStatus(status)}
   </Card>
 );
+
+InspectionCard.propTypes = {
+  className: PropTypes.string,
+  date: PropTypes.instanceOf(Date).isRequired,
+  inspectorAvatarSrc: PropTypes.string,
+  inspectorName: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
+  partName: PropTypes.string.isRequired,
+  partNumber: PropTypes.string.isRequired,
+  status: PropTypes.oneOf([
+    InspectionStatus.FAIL,
+    InspectionStatus.PASS,
+    InspectionStatus.WAITING,
+  ]),
+  style: PropTypes.object,
+}
 
 export default InspectionCard;

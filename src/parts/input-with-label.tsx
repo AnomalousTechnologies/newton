@@ -19,6 +19,7 @@ interface Props {
   onEnterKeyPress?: (event: any) => void;
   onKeyPress?: (event: any) => void;
   placeholder?: string;
+  style?: object;
   type?: InputType | 'textarea';
   value?: string;
 }
@@ -31,12 +32,13 @@ const InputWithLabel = ({
   onEnterKeyPress,
   onKeyPress,
   placeholder,
+  style,
   type,
   value,
 }: Props) => (
   <UID>
     {(id) => (
-      <div className={className}>
+      <div className={className} style={style}>
         <Label htmlFor={`a-text-input-${id}`}>{label}</Label>
         {type === 'textarea' ?
           <Textarea
@@ -88,6 +90,7 @@ InputWithLabel.propTypes = {
   onEnterKeyPress: PropTypes.func,
   onKeyPress: PropTypes.func,
   placeholder: PropTypes.string,
+  style: PropTypes.object,
   type: PropTypes.string,
   value: PropTypes.string,
 };

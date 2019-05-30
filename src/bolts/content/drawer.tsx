@@ -8,24 +8,22 @@ export enum DrawerPosition {
   RIGHT = 'right',
 }
 
-interface DrawerProps {
+interface Props {
+  className?: string;
   isOpen: boolean;
   position: DrawerPosition;
   size: string;
-}
-
-interface PanelProps extends DrawerProps {
-  className?: string;
   theme?: any;
+  style?: object;
 }
 
-const Panel = ({ className }: PanelProps) => (
+const Panel = ({ className }: Props) => (
   <div className={className} />
 );
 
 const DRAWER_SPEED = '400ms';
 
-function getPositionStyling({ isOpen, position, size, theme }: PanelProps) {
+function getPositionStyling({ isOpen, position, size, theme }: Props) {
   switch (position) {
     case DrawerPosition.BOTTOM:
       return `
@@ -59,21 +57,31 @@ const PanelStyled = styled(Panel)`
   ${getPositionStyling}
 `;
 
-const Drawer = ({ isOpen, position, size }: DrawerProps) => (
+const Drawer = ({
+  className,
+  isOpen,
+  position,
+  size,
+  style,
+}: Props) => (
   <PanelStyled
+    className={className}
     isOpen={isOpen}
     position={position}
     size={size}
+    style={style}
   />
 );
 
 Drawer.propTypes = {
+  className: PropTypes.string,
   isOpen: PropTypes.bool.isRequired,
   position: PropTypes.oneOf([
     DrawerPosition.RIGHT,
     DrawerPosition.BOTTOM,
   ]).isRequired,
   size: PropTypes.string.isRequired,
+  style: PropTypes.object,
 };
 
 export default Drawer;

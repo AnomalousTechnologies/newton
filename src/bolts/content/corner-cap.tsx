@@ -9,8 +9,10 @@ export enum CornerCapVerification {
 }
 
 interface Props {
+  className?: string;
   onClick?: () => void;
   verification?: CornerCapVerification;
+  style?: object;
 }
 
 const UnverifiedCornerCap = () => (
@@ -229,26 +231,35 @@ function renderCornerCap(verification?: CornerCapVerification) {
   }
 }
 
-const CornerCap = ({ onClick, verification }: Props) => (
+const CornerCap = ({
+  className,
+  onClick,
+  style,
+  verification,
+}: Props) => (
   <svg
+    className={className}
     onClick={onClick}
+    height="130"
     role="button"
-    xmlns="http://www.w3.org/2000/svg"
+    style={style}
     viewBox="0 0 138 138"
     width="130"
-    height="130"
+    xmlns="http://www.w3.org/2000/svg"
   >
     {renderCornerCap(verification)}
   </svg>
 );
 
 CornerCap.propTypes = {
+  className: PropTypes.string,
   onClick: PropTypes.func,
+  style: PropTypes.object,
   verification: PropTypes.number,
 };
 
 CornerCap.defaultProps = {
   verification: CornerCapVerification.UNVERIFIED,
-}
+};
 
 export default CornerCap;

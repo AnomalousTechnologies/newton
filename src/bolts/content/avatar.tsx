@@ -11,10 +11,12 @@ export enum AvatarSize {
 }
 
 interface AvatarProps {
+  className?: string;
   name: string;
   onClick?: () => void;
   size?: AvatarSize;
   src?: string;
+  style?: object;
 }
 
 interface MaskProps {
@@ -22,6 +24,7 @@ interface MaskProps {
   children: any;
   onClick?: () => void;
   size?: AvatarSize;
+  style?: object;
 }
 
 const Mask = ({
@@ -64,20 +67,29 @@ const MaskStyled = styled(Mask)`
   }
 `;
 
-const Avatar = ({ name, onClick, size, src }: AvatarProps) => {
+const Avatar = ({
+  className,
+  name,
+  onClick,
+  size,
+  src,
+  style,
+}: AvatarProps) => {
   const userImage = <img src={src} alt={name} title={name} />;
   const placeholderImage = <UserIcon title={name} />;
   return (
-    <MaskStyled onClick={onClick} size={size}>
+    <MaskStyled className={className} onClick={onClick} size={size} style={style}>
       {src ? userImage : placeholderImage}
     </MaskStyled>
   );
 };
 
 Avatar.propTypes = {
+  className: PropTypes.string,
   name: PropTypes.string.isRequired,
   size: PropTypes.string,
   src: PropTypes.string,
+  style: PropTypes.object,
 };
 
 export default Avatar;
