@@ -5,7 +5,10 @@ const fs = require('fs');
 const path = require('path');
 
 const FOLDERS = [
-  '../src/bolts',
+  '../src/bolts/content',
+  '../src/bolts/icons',
+  '../src/bolts/inputs',
+  '../src/bolts/typography',
   '../src/parts',
   '../src/vehicles',
 ];
@@ -36,8 +39,13 @@ function checkExportCount() {
     .map(part => part.trim())
     .filter(part => part);
 
-  if (requiredExportCount !== exportParts.length) {
+  if (requiredExportCount > exportParts.length) {
     console.log(chalk.red('Components missing from export declaration in index.ts!'));
+    process.exit(1);
+  }
+
+  if (requiredExportCount < exportParts.length) {
+    console.log(chalk.red('Too many components in export declaration in index.ts!'));
     process.exit(1);
   }
 
