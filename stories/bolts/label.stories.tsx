@@ -27,7 +27,7 @@ storiesOf('Bolts|Label', module)
       </Label>
       <H2>Source Code</H2>
       <Code>
-        &lt;Label onClick=&#123;...&#125; size=&#123;...&#125;&gt;...&lt;/Label&gt;
+        &lt;Label size=&#123;...&#125;&gt;...&lt;/Label&gt;
       </Code>
     </Wrapper>
   ))
@@ -39,7 +39,7 @@ storiesOf('Bolts|Label', module)
       </Label>
       <H2>Source Code</H2>
       <Code>
-        &lt;Label onClick=&#123;...&#125; size=&#123;...&#125;&gt;...&lt;/Label&gt;
+        &lt;Label size=&#123;...&#125;&gt;...&lt;/Label&gt;
       </Code>
     </Wrapper>
   ))
@@ -63,7 +63,7 @@ storiesOf('Bolts|Label', module)
       </Label>
       <H2>Source Code</H2>
       <Code>
-        &lt;Label onClick=&#123;...&#125; type=&#123;...&#125;&gt;...&lt;/Label&gt;
+        &lt;Label type=&#123;...&#125;&gt;...&lt;/Label&gt;
       </Code>
     </Wrapper>
   ))
@@ -75,7 +75,7 @@ storiesOf('Bolts|Label', module)
       </Label>
       <H2>Source Code</H2>
       <Code>
-        &lt;Label onClick=&#123;...&#125; type=&#123;...&#125;&gt;...&lt;/Label&gt;
+        &lt;Label type=&#123;...&#125;&gt;...&lt;/Label&gt;
       </Code>
     </Wrapper>
   ))
@@ -87,7 +87,7 @@ storiesOf('Bolts|Label', module)
       </Label>
       <H2>Source Code</H2>
       <Code>
-        &lt;Label onClick=&#123;...&#125; type=&#123;...&#125;&gt;...&lt;/Label&gt;
+        &lt;Label type=&#123;...&#125;&gt;...&lt;/Label&gt;
       </Code>
     </Wrapper>
   ))
@@ -99,7 +99,7 @@ storiesOf('Bolts|Label', module)
       </Label>
       <H2>Source Code</H2>
       <Code>
-        &lt;Label onClick=&#123;...&#125; type=&#123;...&#125;&gt;...&lt;/Label&gt;
+        &lt;Label type=&#123;...&#125;&gt;...&lt;/Label&gt;
       </Code>
     </Wrapper>
   ));

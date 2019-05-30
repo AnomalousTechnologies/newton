@@ -28,7 +28,7 @@ const Label = ({
   children,
   style,
 }: LabelProps) => (
-  <button className={className} style={style}>{children}</button>
+  <div className={className} style={style}>{children}</div>
 );
 
 Label.defaultProps = {
