@@ -1,6 +1,5 @@
 import React from 'react';
 
-import PropTypes from 'prop-types';
 import { UID } from 'react-uid';
 
 import Input from '../bolts/inputs/input';
@@ -80,19 +79,6 @@ const InputWithLabel = ({
 
 InputWithLabel.defaultProps = {
   type: 'text',
-};
-
-InputWithLabel.propTypes = {
-  className: PropTypes.string,
-  label: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
-  onEnterKeyPress: PropTypes.func,
-  onKeyPress: PropTypes.func,
-  placeholder: PropTypes.string,
-  style: PropTypes.object,
-  type: PropTypes.string,
-  value: PropTypes.string,
 };
 
 export default InputWithLabel;

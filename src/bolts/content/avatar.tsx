@@ -1,7 +1,6 @@
 import React from 'react';
 
 import styled from '@emotion/styled';
-import PropTypes from 'prop-types';
 
 import UserIcon from '../icons/user';
 
@@ -82,14 +81,6 @@ const Avatar = ({
       {src ? userImage : placeholderImage}
     </MaskStyled>
   );
-};
-
-Avatar.propTypes = {
-  className: PropTypes.string,
-  name: PropTypes.string.isRequired,
-  size: PropTypes.string,
-  src: PropTypes.string,
-  style: PropTypes.object,
 };
 
 export default Avatar;

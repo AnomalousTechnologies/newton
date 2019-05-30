@@ -1,7 +1,5 @@
 import React from 'react';
 
-import PropTypes from 'prop-types';
-
 export enum CornerCapVerification {
   REJECTED = -1,
   UNVERIFIED = 0,
@@ -250,13 +248,6 @@ const CornerCap = ({
     {renderCornerCap(verification)}
   </svg>
 );
-
-CornerCap.propTypes = {
-  className: PropTypes.string,
-  onClick: PropTypes.func,
-  style: PropTypes.object,
-  verification: PropTypes.number,
-};
 
 CornerCap.defaultProps = {
   verification: CornerCapVerification.UNVERIFIED,

@@ -1,7 +1,6 @@
 import React from 'react';
 
 import styled from '@emotion/styled';
-import PropTypes from 'prop-types';
 
 export enum DrawerPosition {
   BOTTOM = 'bottom',
@@ -72,16 +71,5 @@ const Drawer = ({
     style={style}
   />
 );
-
-Drawer.propTypes = {
-  className: PropTypes.string,
-  isOpen: PropTypes.bool.isRequired,
-  position: PropTypes.oneOf([
-    DrawerPosition.RIGHT,
-    DrawerPosition.BOTTOM,
-  ]).isRequired,
-  size: PropTypes.string.isRequired,
-  style: PropTypes.object,
-};
 
 export default Drawer;

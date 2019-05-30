@@ -1,7 +1,5 @@
 import React from 'react';
 
-import PropTypes from 'prop-types';
-
 interface Props {
   className?: string;
   title?: string;
@@ -39,11 +37,5 @@ const Icon = ({ className, title, style }: Props) => (
     </g>
   </svg>
 );
-
-Icon.propTypes = {
-  className: PropTypes.string,
-  style: PropTypes.object,
-  title: PropTypes.string,
-};
 
 export default Icon;
