@@ -57,7 +57,7 @@ storiesOf('Bolts|Button', module)
       </Button>
       <H2>Source Code</H2>
       <Code>
-        &lt;Button icon=&#123;...&#125; onClick=&#123;...&#125; size=&#123;...&#125;&gt;...&lt;/Button&gt;
+        &lt;Button icon=&#123;...&#125; onClick=&#123;...&#125;&gt;...&lt;/Button&gt;
       </Code>
     </Wrapper>
   ))
@@ -129,7 +129,7 @@ storiesOf('Bolts|Button', module)
       </Button>
       <H2>Source Code</H2>
       <Code>
-        &lt;Button onClick=&#123;...&#125;&gt;...&lt;/Button&gt;
+        &lt;Button isLoading onClick=&#123;...&#125;&gt;...&lt;/Button&gt;
       </Code>
     </Wrapper>
   ));
