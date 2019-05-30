@@ -16,7 +16,7 @@ const Title = styled(H1)`
 
 storiesOf('Bolts|CornerCap', module)
   .addParameters({
-    options: { showPanel: true },
+    options: { showPanel: false },
   })
   .add('Unverified', () => (
     <Wrapper>

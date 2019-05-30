@@ -18,7 +18,7 @@ const Title = styled(H1)`
 
 const stories = storiesOf('Bolts|List', module)
   .addParameters({
-    options: { showPanel: true },
+    options: { showPanel: false },
   });
 
 stories.add('Unordered', () => (
