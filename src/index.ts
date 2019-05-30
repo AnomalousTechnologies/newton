@@ -1,23 +1,43 @@
 import Avatar from './bolts/content/avatar';
+import Badge from './bolts/content/badge';
 import Card from './bolts/content/card';
 import CornerCap from './bolts/content/corner-cap';
 import Drawer from './bolts/content/drawer';
 import Hr from './bolts/content/hr';
 import Img from './bolts/content/img';
+import Label from './bolts/content/label';
 import Link from './bolts/content/link';
 import LinkRoute from './bolts/content/link-route';
 import ListItem from './bolts/content/list-item';
 import ListOrdered from './bolts/content/list-ordered';
 import ListUnordered from './bolts/content/list-unordered';
 
+import ArrowCircleDownIcon from './bolts/icons/arrow-circle-down';
+import ArrowCircleLeftIcon from './bolts/icons/arrow-circle-left';
+import ArrowCircleRightIcon from './bolts/icons/arrow-circle-right';
+import ArrowCircleUpIcon from './bolts/icons/arrow-circle-up';
+import CheckBadgeIcon from './bolts/icons/check-badge';
 import CheckCircleIcon from './bolts/icons/check-circle';
+import CheckShieldIcon from './bolts/icons/check-shield';
+import CrossBadgeIcon from './bolts/icons/cross-badge';
 import CrossCircleIcon from './bolts/icons/cross-circle';
+import CubesIcon from './bolts/icons/cubes';
+import ExclamationCircleIcon from './bolts/icons/exclamation-circle';
+import ExpandIcon from './bolts/icons/expand';
+import MoonStarsIcon from './bolts/icons/moon-stars';
+import PasswordResetIcon from './bolts/icons/password-reset';
+import PlusCircleIcon from './bolts/icons/plus-circle';
+import QuestionBadgeIcon from './bolts/icons/question-badge';
+import SearchIcon from './bolts/icons/search';
+import SignOutIcon from './bolts/icons/sign-out';
 import SpinnerIcon from './bolts/icons/spinner';
+import SunIcon from './bolts/icons/sun';
 import UserIcon from './bolts/icons/user';
+import UserCircleIcon from './bolts/icons/user-circle';
 
 import Button from './bolts/inputs/button';
 import Input from './bolts/inputs/input';
-import Label from './bolts/inputs/label';
+import InputLabel from './bolts/inputs/label';
 import Optgroup from './bolts/inputs/optgroup';
 import Option from './bolts/inputs/option';
 import Select from './bolts/inputs/select';
@@ -41,6 +61,7 @@ import InspectionCard from './parts/inspection-card';
 
 export {
   Avatar,
+  Badge,
   Card,
   CornerCap,
   Drawer,
@@ -51,12 +72,31 @@ export {
   ListItem,
   ListOrdered,
   ListUnordered,
+  ArrowCircleDownIcon,
+  ArrowCircleLeftIcon,
+  ArrowCircleRightIcon,
+  ArrowCircleUpIcon,
+  CheckBadgeIcon,
   CheckCircleIcon,
+  CheckShieldIcon,
+  CrossBadgeIcon,
   CrossCircleIcon,
+  CubesIcon,
+  ExclamationCircleIcon,
+  ExpandIcon,
+  MoonStarsIcon,
+  PasswordResetIcon,
+  PlusCircleIcon,
+  QuestionBadgeIcon,
+  SearchIcon,
+  SignOutIcon,
   SpinnerIcon,
+  SunIcon,
   UserIcon,
+  UserCircleIcon,
   Button,
   Input,
+  InputLabel,
   Label,
   Optgroup,
   Option,

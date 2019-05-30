@@ -5,8 +5,8 @@ import { action } from '@storybook/addon-actions';
 import { select, text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 
-import Label from '../../src/bolts/inputs/label';
 import Input from '../../src/bolts/inputs/input';
+import Label from '../../src/bolts/inputs/label';
 import Textarea from '../../src/bolts/inputs/textarea';
 
 import Code from '../../src/bolts/typography/code';
