@@ -1,6 +1,7 @@
 import Avatar from './bolts/content/avatar';
 import Card from './bolts/content/card';
 import CornerCap from './bolts/content/corner-cap';
+import Drawer from './bolts/content/drawer';
 import Hr from './bolts/content/hr';
 import Img from './bolts/content/img';
 import Link from './bolts/content/link';
@@ -43,6 +44,7 @@ export {
   Avatar,
   Card,
   CornerCap,
+  Drawer,
   Hr,
   Img,
   Link,
