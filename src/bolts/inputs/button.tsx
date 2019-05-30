@@ -23,6 +23,7 @@ interface ButtonProps {
   isLoading?: boolean;
   onClick?: () => void;
   size?: ButtonSize;
+  style?: object;
   type?: ButtonType;
 }
 
@@ -30,8 +31,9 @@ const Button = ({
   className,
   children,
   icon,
+  style,
 }: ButtonProps) => (
-  <button className={className}>{children}{icon}</button>
+  <button className={className} style={style}>{children}{icon}</button>
 );
 
 Button.defaultProps = {
