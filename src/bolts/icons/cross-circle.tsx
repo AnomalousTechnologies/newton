@@ -17,7 +17,7 @@ const Icon = ({ className, title, style }: Props) => (
     xmlns="http://www.w3.org/2000/svg"
   >
     <title>{title}</title>
-    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <path
         d="M11.2851961,10.5552795 L10.5552795,11.2851961 C10.4047341,11.4357414 10.1583873,11.4357414
           10.0078419,11.2851961 L8.00057108,9.27792527 L5.99330022,11.2851961 C5.8427549,11.4357414
@@ -36,7 +36,7 @@ const Icon = ({ className, title, style }: Props) => (
           3.43859185,3.43859185 C0.918098321,5.95908537 0.918098321,10.0420568 3.43859185,12.5625503
           C5.95908537,15.0830438 10.0420568,15.0830438 12.5625503,12.5625503 Z"
         fill="currentColor"
-        fill-rule="nonzero"
+        fillRule="nonzero"
       />
     </g>
   </svg>

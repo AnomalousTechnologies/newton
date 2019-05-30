@@ -13,7 +13,7 @@ const Icon = ({ className, title, style }: Props) => (
     focusable="false"
     role="img"
     style={style}
-    viewBox="0 0 16 16"
+    viewBox="0 0 14 16"
     xmlns="http://www.w3.org/2000/svg"
   >
     <title>{title}</title>
@@ -33,7 +33,7 @@ const Icon = ({ className, title, style }: Props) => (
         3.54193548,10.7258065 2.7516129,11.7387097 C1.99677419,10.683871 1.5483871,9.39354839 1.5483871,8 C1.5483871,
         4.44193548 4.44193548,1.5483871 8,1.5483871 C11.5580645,1.5483871 14.4516129,4.44193548 14.4516129,8
         C14.4516129,9.39354839 14.0032258,10.683871 13.2483871,11.7387097 Z"
-      fill="#383838"
+      fill="currentColor"
       fillRule="nonzero"
     />
   </svg>

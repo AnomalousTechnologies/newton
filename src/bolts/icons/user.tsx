@@ -19,9 +19,9 @@ const Icon = ({ className, title, style }: Props) => (
     <title>{title}</title>
     <g
       stroke="none"
-      stroke-width="1"
+      strokeWidth="1"
       fill="none"
-      fill-rule="evenodd"
+      fillRule="evenodd"
     >
       <path
         d="M9.8,9.5 C8.903125,9.5 8.471875,10 7,10 C5.528125,10 5.1,9.5 4.2,9.5 C1.88125,9.5 0,11.38125 0,13.7
@@ -32,7 +32,7 @@ const Icon = ({ className, title, style }: Props) => (
           7,9 Z M7,1.5 C8.653125,1.5 10,2.846875 10,4.5 C10,6.153125 8.653125,7.5 7,7.5 C5.346875,7.5 4,6.153125 4,4.5
           C4,2.846875 5.346875,1.5 7,1.5 Z"
         fill="currentColor"
-        fill-rule="nonzero"
+        fillRule="nonzero"
       />
     </g>
   </svg>
