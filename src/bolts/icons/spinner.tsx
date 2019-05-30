@@ -3,16 +3,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 interface Props {
+  className?: string;
   title?: string;
+  style?: object;
 }
 
-const Icon = ({ title }: Props) => (
+const Icon = ({ className, title, style }: Props) => (
   <svg
     aria-hidden="true"
+    className={className}
     focusable="false"
     role="img"
-    xmlns="http://www.w3.org/2000/svg"
+    style={style}
     viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
   >
     <title>{title}</title>
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -46,6 +50,8 @@ const Icon = ({ title }: Props) => (
 );
 
 Icon.propTypes = {
+  className: PropTypes.string,
+  style: PropTypes.object,
   title: PropTypes.string,
 };
 
