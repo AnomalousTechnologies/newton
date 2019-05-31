@@ -7,7 +7,7 @@ import { storiesOf } from '@storybook/react';
 
 import CheckCircleIcon from '../../src/bolts/icons/check-circle';
 import CrossCircleIcon from '../../src/bolts/icons/cross-circle';
-import { ButtonSize, ButtonType } from '../../src/bolts/inputs/button';
+import Button, { ButtonSize, ButtonType } from '../../src/bolts/inputs/button';
 import Code from '../../src/bolts/typography/code';
 import H1 from '../../src/bolts/typography/h1';
 import H2 from '../../src/bolts/typography/h2';
