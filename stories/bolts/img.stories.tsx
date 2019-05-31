@@ -24,6 +24,8 @@ storiesOf('Bolts|Image', module)
       <Img src={text('Source', 'https://randomuser.me/api/portraits/women/63.jpg')} />
       <H2>Source Code</H2>
       <Code>
+        import &#123; Img &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Img src=&#123;...&#125; /&gt;
       </Code>
     </Wrapper>

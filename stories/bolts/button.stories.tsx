@@ -29,6 +29,8 @@ storiesOf('Bolts|Button', module)
       </Button>
       <H2>Source Code</H2>
       <Code>
+        import &#123; Button, ButtonSize &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Button onClick=&#123;...&#125; size=&#123;...&#125;&gt;...&lt;/Button&gt;
       </Code>
     </Wrapper>
@@ -41,6 +43,8 @@ storiesOf('Bolts|Button', module)
       </Button>
       <H2>Source Code</H2>
       <Code>
+        import &#123; Button, ButtonSize &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Button onClick=&#123;...&#125; size=&#123;...&#125;&gt;...&lt;/Button&gt;
       </Code>
     </Wrapper>
@@ -57,7 +61,9 @@ storiesOf('Bolts|Button', module)
       </Button>
       <H2>Source Code</H2>
       <Code>
-        &lt;Button icon=&#123;...&#125; onClick=&#123;...&#125;&gt;...&lt;/Button&gt;
+        import &#123; Button, ButtonSize &#125; from '@anomalous/newton';<br/>
+        <br/>
+        &lt;Button icon=&#123;...&#125; size=&#123;...&#125; onClick=&#123;...&#125;&gt;...&lt;/Button&gt;
       </Code>
     </Wrapper>
   ))
@@ -69,6 +75,8 @@ storiesOf('Bolts|Button', module)
       </Button>
       <H2>Source Code</H2>
       <Code>
+        import &#123; Button &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Button onClick=&#123;...&#125;&gt;...&lt;/Button&gt;
       </Code>
     </Wrapper>
@@ -81,6 +89,8 @@ storiesOf('Bolts|Button', module)
       </Button>
       <H2>Source Code</H2>
       <Code>
+        import &#123; Button, ButtonType &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Button onClick=&#123;...&#125; type=&#123;...&#125;&gt;...&lt;/Button&gt;
       </Code>
     </Wrapper>
@@ -93,6 +103,8 @@ storiesOf('Bolts|Button', module)
       </Button>
       <H2>Source Code</H2>
       <Code>
+        import &#123; Button, ButtonType &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Button onClick=&#123;...&#125; type=&#123;...&#125;&gt;...&lt;/Button&gt;
       </Code>
     </Wrapper>
@@ -105,6 +117,8 @@ storiesOf('Bolts|Button', module)
       </Button>
       <H2>Source Code</H2>
       <Code>
+        import &#123; Button, ButtonType &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Button onClick=&#123;...&#125; type=&#123;...&#125;&gt;...&lt;/Button&gt;
       </Code>
     </Wrapper>
@@ -117,6 +131,8 @@ storiesOf('Bolts|Button', module)
       </Button>
       <H2>Source Code</H2>
       <Code>
+        import &#123; Button, ButtonType &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Button onClick=&#123;...&#125; type=&#123;...&#125;&gt;...&lt;/Button&gt;
       </Code>
     </Wrapper>
@@ -129,6 +145,8 @@ storiesOf('Bolts|Button', module)
       </Button>
       <H2>Source Code</H2>
       <Code>
+        import &#123; Button &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Button isLoading onClick=&#123;...&#125;&gt;...&lt;/Button&gt;
       </Code>
     </Wrapper>

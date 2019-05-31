@@ -26,6 +26,8 @@ storiesOf('Bolts|Badge', module)
       <Badge icon={<QuestionBadge />} />
       <H2>Source Code</H2>
       <Code>
+        import &#123; Badge, BadgeType &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Badge icon=&#123;...&#125; type=&#123;...&#125;&gt;...&lt;/Badge&gt;
       </Code>
     </Wrapper>
@@ -36,6 +38,8 @@ storiesOf('Bolts|Badge', module)
       <Badge icon={<CheckBadge />} type={BadgeType.SUCCESS} />
       <H2>Source Code</H2>
       <Code>
+        import &#123; Badge, BadgeType &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Badge icon=&#123;...&#125; type=&#123;...&#125;&gt;...&lt;/Badge&gt;
       </Code>
     </Wrapper>
@@ -46,6 +50,8 @@ storiesOf('Bolts|Badge', module)
       <Badge icon={<CrossBadge />} type={BadgeType.DANGER} />
       <H2>Source Code</H2>
       <Code>
+        import &#123; Badge, BadgeType &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Badge icon=&#123;...&#125; type=&#123;...&#125;&gt;...&lt;/Badge&gt;
       </Code>
     </Wrapper>

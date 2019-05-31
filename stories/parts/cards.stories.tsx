@@ -41,6 +41,8 @@ stories.add('Waiting', () => (
     />
     <H2>Source Code</H2>
     <Code>
+      import &#123; InspectionCard, InspectionStatus &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;InspectionCard<br/>
       &nbsp;&nbsp;date=&#123;...&#125;<br/>
       &nbsp;&nbsp;inspectorAvatarSrc=&#123;...&#125;<br/>
@@ -48,6 +50,7 @@ stories.add('Waiting', () => (
       &nbsp;&nbsp;onClick=&#123;...&#125;<br/>
       &nbsp;&nbsp;partName=&#123;...&#125;<br/>
       &nbsp;&nbsp;partNumber=&#123;...&#125;<br/>
+      &nbsp;&nbsp;status=&#123;...&#125;<br/>
       /&gt;
     </Code>
   </Wrapper>
@@ -70,6 +73,8 @@ stories.add('Waiting', () => (
     />
     <H2>Source Code</H2>
     <Code>
+      import &#123; InspectionCard, InspectionStatus &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;InspectionCard<br/>
       &nbsp;&nbsp;date=&#123;...&#125;<br/>
       &nbsp;&nbsp;inspectorAvatarSrc=&#123;...&#125;<br/>
@@ -77,6 +82,7 @@ stories.add('Waiting', () => (
       &nbsp;&nbsp;onClick=&#123;...&#125;<br/>
       &nbsp;&nbsp;partName=&#123;...&#125;<br/>
       &nbsp;&nbsp;partNumber=&#123;...&#125;<br/>
+      &nbsp;&nbsp;status=&#123;...&#125;<br/>
       /&gt;
     </Code>
   </Wrapper>
@@ -99,6 +105,8 @@ stories.add('Waiting', () => (
     />
     <H2>Source Code</H2>
     <Code>
+      import &#123; InspectionCard, InspectionStatus &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;InspectionCard<br/>
       &nbsp;&nbsp;date=&#123;...&#125;<br/>
       &nbsp;&nbsp;inspectorAvatarSrc=&#123;...&#125;<br/>
@@ -106,6 +114,7 @@ stories.add('Waiting', () => (
       &nbsp;&nbsp;onClick=&#123;...&#125;<br/>
       &nbsp;&nbsp;partName=&#123;...&#125;<br/>
       &nbsp;&nbsp;partNumber=&#123;...&#125;<br/>
+      &nbsp;&nbsp;status=&#123;...&#125;<br/>
       /&gt;
     </Code>
   </Wrapper>
@@ -129,6 +138,8 @@ stories.add('Waiting', () => (
     />
     <H2>Source Code</H2>
     <Code>
+      import &#123; InspectionCard, InspectionStatus, InspectionVerification &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;InspectionCard<br/>
       &nbsp;&nbsp;date=&#123;...&#125;<br/>
       &nbsp;&nbsp;inspectorAvatarSrc=&#123;...&#125;<br/>
@@ -136,6 +147,8 @@ stories.add('Waiting', () => (
       &nbsp;&nbsp;onClick=&#123;...&#125;<br/>
       &nbsp;&nbsp;partName=&#123;...&#125;<br/>
       &nbsp;&nbsp;partNumber=&#123;...&#125;<br/>
+      &nbsp;&nbsp;status=&#123;...&#125;<br/>
+      &nbsp;&nbsp;verification=&#123;...&#125;<br/>
       /&gt;
     </Code>
   </Wrapper>
@@ -159,6 +172,8 @@ stories.add('Waiting', () => (
     />
     <H2>Source Code</H2>
     <Code>
+      import &#123; InspectionCard, InspectionStatus, InspectionVerification &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;InspectionCard<br/>
       &nbsp;&nbsp;date=&#123;...&#125;<br/>
       &nbsp;&nbsp;inspectorAvatarSrc=&#123;...&#125;<br/>
@@ -166,6 +181,8 @@ stories.add('Waiting', () => (
       &nbsp;&nbsp;onClick=&#123;...&#125;<br/>
       &nbsp;&nbsp;partName=&#123;...&#125;<br/>
       &nbsp;&nbsp;partNumber=&#123;...&#125;<br/>
+      &nbsp;&nbsp;status=&#123;...&#125;<br/>
+      &nbsp;&nbsp;verification=&#123;...&#125;<br/>
       /&gt;
     </Code>
   </Wrapper>

@@ -53,6 +53,8 @@ storiesOf('Bolts|Inputs', module)
       />
       <H2>Source Code</H2>
       <Code>
+        import &#123; Input &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Input onChange=&#123;...&#125; /&gt;
       </Code>
     </Wrapper>
@@ -68,6 +70,8 @@ storiesOf('Bolts|Inputs', module)
       />
       <H2>Source Code</H2>
       <Code>
+        import &#123; Textarea &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Textarea onChange=&#123;...&#125; /&gt;
       </Code>
     </Wrapper>
@@ -78,6 +82,8 @@ storiesOf('Bolts|Inputs', module)
       <Label>{text('Placeholder', 'My Label')}</Label>
       <H2>Source Code</H2>
       <Code>
+        import &#123; Label &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Label&gt;...&lt;/Label&gt;
       </Code>
     </Wrapper>

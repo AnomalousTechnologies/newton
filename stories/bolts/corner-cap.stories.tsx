@@ -24,6 +24,8 @@ storiesOf('Bolts|CornerCap', module)
       <CornerCap onClick={action('clicked')} />
       <H2>Source Code</H2>
       <Code>
+        import &#123; CornerCap &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;CornerCap /&gt;
       </Code>
     </Wrapper>
@@ -34,6 +36,8 @@ storiesOf('Bolts|CornerCap', module)
       <CornerCap onClick={action('clicked')} verification={CornerCapVerification.VERIFIED} />
       <H2>Source Code</H2>
       <Code>
+        import &#123; CornerCap, CornerCapVerification &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;CornerCap verification=&#123;...&#125; /&gt;
       </Code>
     </Wrapper>
@@ -44,6 +48,8 @@ storiesOf('Bolts|CornerCap', module)
       <CornerCap onClick={action('clicked')} verification={CornerCapVerification.REJECTED} />
       <H2>Source Code</H2>
       <Code>
+        import &#123; CornerCap, CornerCapVerification &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;CornerCap verification=&#123;...&#125; /&gt;
       </Code>
     </Wrapper>

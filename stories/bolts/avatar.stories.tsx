@@ -29,6 +29,8 @@ storiesOf('Bolts|Avatar', module)
       />
       <H2>Source Code</H2>
       <Code>
+        import &#123; Avatar &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Avatar name=&#123;...&#125; src=&#123;...&#125; /&gt;
       </Code>
     </Wrapper>
@@ -42,6 +44,8 @@ storiesOf('Bolts|Avatar', module)
       />
       <H2>Source Code</H2>
       <Code>
+        import &#123; Avatar, AvatarSize &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Avatar name=&#123;...&#125; size=&#123;...&#125; src=&#123;...&#125; /&gt;
       </Code>
     </Wrapper>
@@ -56,6 +60,8 @@ storiesOf('Bolts|Avatar', module)
       />
       <H2>Source Code</H2>
       <Code>
+        import &#123; Avatar, AvatarSize &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Avatar name=&#123;...&#125; size=&#123;...&#125; src=&#123;...&#125; /&gt;
       </Code>
     </Wrapper>

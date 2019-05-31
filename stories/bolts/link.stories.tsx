@@ -29,6 +29,8 @@ stories.add('Link', () => (
     <P>This sentence has <Link>{text('Content', 'an example of a link')}</Link> placed within it.</P>
     <H2>Source Code</H2>
     <Code>
+      import &#123; Link &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;Link href=&#123;...&#125;&gt;...&lt;/Link&gt;
     </Code>
     <P>NB: if you are using React Router you can use &lt;LinkRoute /&gt; to use the React Route DOM link component.</P>
@@ -45,6 +47,8 @@ stories.add('React Router', () => (
     </StaticRouter>
     <H2>Source Code</H2>
     <Code>
+      import &#123; LinkRoute &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;LinkRoute href=&#123;...&#125;&gt;...&lt;/LinkRoute&gt;
     </Code>
   </Wrapper>

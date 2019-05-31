@@ -37,6 +37,8 @@ stories.add('Code', () => (
     </Code>
     <H2>Source Code</H2>
     <Code>
+      import &#123; Code &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;Code&gt;...&lt;/Code&gt;
     </Code>
   </Wrapper>
@@ -55,6 +57,8 @@ stories.add('H1', () => (
       deserunt mollit anim id est laborum.`)}</P>
     <H2>Source Code</H2>
     <Code>
+      import &#123; H1 &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;H1&gt;...&lt;/H1&gt;
     </Code>
   </Wrapper>
@@ -73,6 +77,8 @@ stories.add('H2', () => (
       deserunt mollit anim id est laborum.`)}</P>
     <H2>Source Code</H2>
     <Code>
+      import &#123; H2 &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;H2&gt;...&lt;/H2&gt;
     </Code>
   </Wrapper>
@@ -91,6 +97,8 @@ stories.add('H3', () => (
       deserunt mollit anim id est laborum.`)}</P>
     <H2>Source Code</H2>
     <Code>
+      import &#123; H3 &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;H3&gt;...&lt;/H3&gt;
     </Code>
   </Wrapper>
@@ -109,6 +117,8 @@ stories.add('H4', () => (
       deserunt mollit anim id est laborum.`)}</P>
     <H2>Source Code</H2>
     <Code>
+      import &#123; H4 &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;H4&gt;...&lt;/H4&gt;
     </Code>
   </Wrapper>
@@ -134,6 +144,8 @@ stories.add('Hard Rule', () => (
       deserunt mollit anim id est laborum.</P>
     <H2>Source Code</H2>
     <Code>
+      import &#123; Hr &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;Hr /&gt;
     </Code>
   </Wrapper>
@@ -151,6 +163,8 @@ stories.add('P', () => (
       deserunt mollit anim id est laborum.`)}</P>
     <H2>Source Code</H2>
     <Code>
+      import &#123; P &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;P&gt;...&lt;/P&gt;
     </Code>
   </Wrapper>
@@ -162,6 +176,8 @@ stories.add('Small', () => (
     <P>Here is an example of some <Small>text that has been made small</Small>.</P>
     <H2>Source Code</H2>
     <Code>
+      import &#123; Small &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;Small&gt;...&lt;/Small&gt;
     </Code>
   </Wrapper>
@@ -173,6 +189,8 @@ stories.add('Strong', () => (
     <P>Here is an example of some <Strong>text that has been made marked as strong</Strong>.</P>
     <H2>Source Code</H2>
     <Code>
+      import &#123; Strong &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;Strong&gt;...&lt;/Strong&gt;
     </Code>
   </Wrapper>
@@ -184,6 +202,8 @@ stories.add('Sub', () => (
     <P>This sentence has <Sub>{text('Content', 'an example of subscript')}</Sub> placed within it.</P>
     <H2>Source Code</H2>
     <Code>
+      import &#123; Sub &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;Sub&gt;...&lt;/Sub&gt;
     </Code>
   </Wrapper>
@@ -195,6 +215,8 @@ stories.add('Sup', () => (
     <P>This sentence has <Sup>{text('Content', 'an example of superscript')}</Sup> placed within it.</P>
     <H2>Source Code</H2>
     <Code>
+      import &#123; Sup &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;Sup&gt;...&lt;/Sup&gt;
     </Code>
   </Wrapper>
@@ -206,6 +228,8 @@ stories.add('XSmall', () => (
     <P>Here is an example of some <Xsmall>text that has been made small</Xsmall>.</P>
     <H2>Source Code</H2>
     <Code>
+      import &#123; Xsmall &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;Xsmall&gt;...&lt;/Xsmall&gt;
     </Code>
   </Wrapper>

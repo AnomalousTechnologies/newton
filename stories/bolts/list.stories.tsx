@@ -32,6 +32,8 @@ stories.add('Unordered', () => (
     </ListUnordered>
     <H2>Source Code</H2>
     <Code>
+      import &#123; ListUnordered &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;ListUnordered&gt;<br/>
         &nbsp;&nbsp;&lt;ListItem&gt;...&lt;/ListItem&gt;<br/>
         &nbsp;&nbsp;...<br/>
@@ -51,6 +53,8 @@ stories.add('Ordered', () => (
     </ListOrdered>
     <H2>Source Code</H2>
     <Code>
+      import &#123; ListOrdered &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;ListOrdered&gt;<br/>
         &nbsp;&nbsp;&lt;ListItem&gt;...&lt;/ListItem&gt;<br/>
         &nbsp;&nbsp;...<br/>

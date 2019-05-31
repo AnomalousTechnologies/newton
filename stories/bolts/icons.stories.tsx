@@ -70,6 +70,8 @@ const iconStories = storiesOf('Bolts|Icons', module)
       <Element style={{ width: '120px' }} />
       <H2>Source Code</H2>
       <Code>
+        import &#123; {component} &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;{component} /&gt;
       </Code>
     </Wrapper>

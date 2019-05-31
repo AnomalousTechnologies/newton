@@ -33,6 +33,8 @@ storiesOf('Bolts|Drawer', module)
       />
       <H2>Source Code</H2>
       <Code>
+        import &#123; Drawer, DrawerPosition &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Drawer isOpen position=&#123;...&#125; size=&#123;...&#125; /&gt;
       </Code>
     </WrapperFullHeight>
@@ -47,6 +49,8 @@ storiesOf('Bolts|Drawer', module)
       />
       <H2>Source Code</H2>
       <Code>
+        import &#123; Drawer, DrawerPosition &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Drawer isOpen position=&#123;...&#125; size=&#123;...&#125; /&gt;
       </Code>
     </WrapperFullHeight>

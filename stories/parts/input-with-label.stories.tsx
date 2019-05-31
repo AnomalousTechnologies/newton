@@ -33,6 +33,8 @@ stories.add('Input', () => (
     />
     <H2>Source Code</H2>
     <Code>
+      import &#123; InputWithLabel &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;InputWithLabel<br/>
         &nbsp;&nbsp;label=&#123;...&#125;<br/>
         &nbsp;&nbsp;name=&#123;...&#125;<br/>
@@ -58,6 +60,8 @@ stories.add('Textarea', () => (
     />
     <H2>Source Code</H2>
     <Code>
+      import &#123; InputWithLabel &#125; from '@anomalous/newton';<br/>
+      <br/>
       &lt;InputWithLabel<br/>
         &nbsp;&nbsp;label=&#123;...&#125;<br/>
         &nbsp;&nbsp;name=&#123;...&#125;<br/>

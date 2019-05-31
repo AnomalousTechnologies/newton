@@ -27,6 +27,8 @@ storiesOf('Bolts|Label', module)
       </Label>
       <H2>Source Code</H2>
       <Code>
+        import &#123; Label, LabelSize &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Label size=&#123;...&#125;&gt;...&lt;/Label&gt;
       </Code>
     </Wrapper>
@@ -39,6 +41,8 @@ storiesOf('Bolts|Label', module)
       </Label>
       <H2>Source Code</H2>
       <Code>
+        import &#123; Label, LabelSize &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Label size=&#123;...&#125;&gt;...&lt;/Label&gt;
       </Code>
     </Wrapper>
@@ -51,6 +55,8 @@ storiesOf('Bolts|Label', module)
       </Label>
       <H2>Source Code</H2>
       <Code>
+        import &#123; Label &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Label onClick=&#123;...&#125;&gt;...&lt;/Label&gt;
       </Code>
     </Wrapper>
@@ -63,6 +69,8 @@ storiesOf('Bolts|Label', module)
       </Label>
       <H2>Source Code</H2>
       <Code>
+        import &#123; Label, LabelType &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Label type=&#123;...&#125;&gt;...&lt;/Label&gt;
       </Code>
     </Wrapper>
@@ -75,6 +83,8 @@ storiesOf('Bolts|Label', module)
       </Label>
       <H2>Source Code</H2>
       <Code>
+        import &#123; Label, LabelType &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Label type=&#123;...&#125;&gt;...&lt;/Label&gt;
       </Code>
     </Wrapper>
@@ -87,6 +97,8 @@ storiesOf('Bolts|Label', module)
       </Label>
       <H2>Source Code</H2>
       <Code>
+        import &#123; Label, LabelType &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Label type=&#123;...&#125;&gt;...&lt;/Label&gt;
       </Code>
     </Wrapper>
@@ -99,6 +111,8 @@ storiesOf('Bolts|Label', module)
       </Label>
       <H2>Source Code</H2>
       <Code>
+        import &#123; Label, LabelType &#125; from '@anomalous/newton';<br/>
+        <br/>
         &lt;Label type=&#123;...&#125;&gt;...&lt;/Label&gt;
       </Code>
     </Wrapper>
