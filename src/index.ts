@@ -36,8 +36,8 @@ import UserIcon from './bolts/icons/user';
 import UserCircleIcon from './bolts/icons/user-circle';
 
 import Button from './bolts/inputs/button';
-import InputSmall from './bolts/inputs/input-small';
 import InputLarge from './bolts/inputs/input-large';
+import InputSmall from './bolts/inputs/input-small';
 import InputLabel from './bolts/inputs/label';
 import Optgroup from './bolts/inputs/optgroup';
 import Option from './bolts/inputs/option';
@@ -59,6 +59,9 @@ import Xsmall from './bolts/typography/xsmall';
 
 import InputWithLabel from './parts/input-with-label';
 import InspectionCard from './parts/inspection-card';
+import ModalAction from './parts/modal-action';
+import ModalConfirm from './parts/modal-confirm';
+import ModalOption from './parts/modal-option';
 
 export {
   Avatar,
@@ -118,6 +121,9 @@ export {
   Xsmall,
   InputWithLabel,
   InspectionCard,
+  ModalAction,
+  ModalConfirm,
+  ModalOption,
 };
 
 import { AvatarSize } from './bolts/content/avatar';
