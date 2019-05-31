@@ -80,3 +80,19 @@ button:-moz-focusring,
   color: #262626;
   background-color: #fdc507;
 }
+
+::-webkit-input-placeholder {
+  color: #959595;
+}
+
+::-moz-placeholder {
+  color: #959595;
+}
+
+:-ms-input-placeholder {
+  color: #959595;
+}
+
+:-moz-placeholder {
+  color: #959595;
+}

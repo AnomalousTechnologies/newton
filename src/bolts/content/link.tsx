@@ -11,7 +11,7 @@ export default styled.a`
   }
 
   &:focus {
-    outline-color: ${(props) => props.theme.link.focus.outline.color};
+    outline: ${(props) => props.theme.link.focus.color} auto 4px;
   }
 
   &:hover {

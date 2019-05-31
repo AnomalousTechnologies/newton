@@ -36,7 +36,8 @@ import UserIcon from './bolts/icons/user';
 import UserCircleIcon from './bolts/icons/user-circle';
 
 import Button from './bolts/inputs/button';
-import Input from './bolts/inputs/input';
+import InputSmall from './bolts/inputs/input-small';
+import InputLarge from './bolts/inputs/input-large';
 import InputLabel from './bolts/inputs/label';
 import Optgroup from './bolts/inputs/optgroup';
 import Option from './bolts/inputs/option';
@@ -95,7 +96,8 @@ export {
   UserIcon,
   UserCircleIcon,
   Button,
-  Input,
+  InputSmall,
+  InputLarge,
   InputLabel,
   Label,
   Optgroup,

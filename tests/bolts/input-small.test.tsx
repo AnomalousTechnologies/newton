@@ -2,9 +2,9 @@ import React from 'react';
 
 import { shallow } from 'enzyme';
 
-import Input from '../../src/bolts/inputs/input';
+import Input from '../../src/bolts/inputs/input-small';
 
-describe('Bolt: Input', () => {
+describe('Bolt: Input Small', () => {
   it('Can render input', () => {
     const wrapper = shallow(
       <div><Input /></div>,

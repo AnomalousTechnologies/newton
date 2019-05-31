@@ -110,7 +110,7 @@ const ButtonStyled = styled(Button)`
   }}
 
   &:focus {
-    outline-color: ${({ theme, type }) => theme.button[type || ButtonType.PRIMARY].focus.color};
+    outline: ${({ theme, type }) => theme.button[type || ButtonType.PRIMARY].focus.color} auto 4px;
   }
 
   &:hover {

@@ -3,7 +3,7 @@ import React from 'react';
 import { mount } from 'enzyme';
 import withTheme from '../withTheme';
 
-import Input from '../../src/bolts/inputs/input';
+import Input from '../../src/bolts/inputs/input-small';
 import Label from '../../src/bolts/inputs/label';
 import Textarea from '../../src/bolts/inputs/textarea';
 import InputWithLabel from '../../src/parts/input-with-label';

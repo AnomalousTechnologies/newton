@@ -59,31 +59,31 @@ export default {
     danger: {
       background: { color: brick },
       color: white,
-      focus: { color: brick },
+      focus: { color: sky },
       hover: { color: brickDark },
     },
     primary: {
       background: { color: greyscale[4] },
       color: white,
-      focus: { color: lemon },
+      focus: { color: sky },
       hover: { color: black },
     },
     secondary: {
       background: { color: white },
       color: greyscale[4],
-      focus: { color: lemon },
+      focus: { color: sky },
       hover: { color: greyscale[0] },
     },
     success: {
       background: { color: grass },
       color: white,
-      focus: { color: lemon },
+      focus: { color: sky },
       hover: { color: grassDark },
     },
     warning: {
       background: { color: lemon },
       color: greyscale[4],
-      focus: { color: lemon },
+      focus: { color: sky },
       hover: { color: lemonDark },
     },
   },
@@ -141,15 +141,16 @@ export default {
     background: {
       color: white,
     },
+    border: {
+      color: greyscale[0],
+    },
     outline: {
-      color: lemon,
+      color: sky,
     },
   },
   link: {
     focus: {
-      outline: {
-        color: lemon,
-      },
+      color: sky,
     },
     hover: {
       color: greyscale[2],

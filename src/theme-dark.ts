@@ -32,12 +32,14 @@ const tonal = [
 
 const transparent = {
   black: [
+    'rgba(0, 0, 0, .15)',
     'rgba(0, 0, 0, .2)',
     'rgba(0, 0, 0, .4)',
     'rgba(0, 0, 0, .6)',
     'rgba(0, 0, 0, .8)',
   ],
   white: [
+    'rgba(255, 255, 255, .15)',
     'rgba(255, 255, 255, .2)',
     'rgba(255, 255, 255, .4)',
     'rgba(255, 255, 255, .6)',
@@ -57,31 +59,31 @@ export default {
     danger: {
       background: { color: brick },
       color: white,
-      focus: { color: brick },
+      focus: { color: sky },
       hover: { color: brickDark },
     },
     primary: {
       background: { color: greyscale[4] },
       color: white,
-      focus: { color: lemon },
+      focus: { color: sky },
       hover: { color: black },
     },
     secondary: {
       background: { color: white },
       color: greyscale[4],
-      focus: { color: lemon },
+      focus: { color: sky },
       hover: { color: greyscale[0] },
     },
     success: {
       background: { color: grass },
       color: white,
-      focus: { color: lemon },
+      focus: { color: sky },
       hover: { color: grassDark },
     },
     warning: {
       background: { color: lemon },
       color: greyscale[4],
-      focus: { color: lemon },
+      focus: { color: sky },
       hover: { color: lemonDark },
     },
   },
@@ -119,14 +121,14 @@ export default {
     state: {
       danger: brick,
       success: grass,
-      warning: tangerine,
+      warning: lemon,
     },
   },
   flashMessage: {
     background: {
-      color: white,
+      color: navy,
     },
-    color: greyscale[4],
+    color: white,
   },
   font: {
     family: {
@@ -139,22 +141,23 @@ export default {
     background: {
       color: white,
     },
+    border: {
+      color: greyscale[0],
+    },
     outline: {
-      color: lemon,
+      color: sky,
     },
   },
   link: {
     focus: {
-      outline: {
-        color: lemon,
-      },
+      color: sky,
     },
     hover: {
-      color: white,
+      color: greyscale[2],
       decoration: 'none',
     },
     standard: {
-      color: white,
+      color: greyscale[2],
       decoration: 'underline',
     },
   },
@@ -164,6 +167,6 @@ export default {
     sm: '.5rem',
   },
   text: {
-    color: white,
+    color: greyscale[4],
   },
 };

@@ -1,10 +1,16 @@
 import React from 'react';
 
+import styled from '@emotion/styled';
 import { UID } from 'react-uid';
 
-import Input from '../bolts/inputs/input';
-import Label from '../bolts/inputs/label';
+import InputLarge from '../bolts/inputs/input-large';
+import InputSmall from '../bolts/inputs/input-small';
+import LabelBase from '../bolts/inputs/label';
 import Textarea from '../bolts/inputs/textarea';
+
+const Label = styled(LabelBase)`
+  margin-bottom: .5rem;
+`;
 
 type InputType = 'date' | 'datetime-local' | 'email' | 'file' |
 'hidden' | 'month' | 'number' | 'password' | 'search' | 'tel' |
@@ -13,6 +19,7 @@ type InputType = 'date' | 'datetime-local' | 'email' | 'file' |
 interface Props {
   className?: string;
   label: string;
+  isLarge?: boolean;
   name: string;
   onChange: (event: any) => void;
   onEnterKeyPress?: (event: any) => void;
@@ -26,6 +33,7 @@ interface Props {
 const InputWithLabel = ({
   className,
   label,
+  isLarge,
   name,
   onChange,
   onEnterKeyPress,
@@ -34,48 +42,51 @@ const InputWithLabel = ({
   style,
   type,
   value,
-}: Props) => (
-  <UID>
-    {(id) => (
-      <div className={className} style={style}>
-        <Label htmlFor={`a-text-input-${id}`}>{label}</Label>
-        {type === 'textarea' ?
-          <Textarea
-            id={`a-input-${id}`}
-            name={name}
-            onChange={onChange}
-            onKeyPress={(event: any) => {
-              const handleEnterKeyPress = onEnterKeyPress || (() => undefined);
-              const handleKeyPress = onKeyPress || (() => undefined);
-              if (event.key === 'Enter') {
-                handleEnterKeyPress(event);
-              }
-              handleKeyPress(event);
-            }}
-            placeholder={placeholder}
-            rows={10}
-            value={value}
-          /> :
-          <Input
-            id={`a-input-${id}`}
-            name={name}
-            onChange={onChange}
-            onKeyPress={(event: any) => {
-              const handleEnterKeyPress = onEnterKeyPress || (() => undefined);
-              const handleKeyPress = onKeyPress || (() => undefined);
-              if (event.key === 'Enter') {
-                handleEnterKeyPress(event);
-              }
-              handleKeyPress(event);
-            }}
-            placeholder={placeholder}
-            type={type}
-            value={value}
-          />}
-      </div>
-    )}
-  </UID>
-);
+}: Props) => {
+  const Input = isLarge ? InputLarge : InputSmall;
+  return (
+    <UID>
+      {(id) => (
+        <div className={className} style={style}>
+          <Label htmlFor={`a-text-input-${id}`}>{label}</Label>
+          {type === 'textarea' ?
+            <Textarea
+              id={`a-input-${id}`}
+              name={name}
+              onChange={onChange}
+              onKeyPress={(event: any) => {
+                const handleEnterKeyPress = onEnterKeyPress || (() => undefined);
+                const handleKeyPress = onKeyPress || (() => undefined);
+                if (event.key === 'Enter') {
+                  handleEnterKeyPress(event);
+                }
+                handleKeyPress(event);
+              }}
+              placeholder={placeholder}
+              rows={10}
+              value={value}
+            /> :
+            <Input
+              id={`a-input-${id}`}
+              name={name}
+              onChange={onChange}
+              onKeyPress={(event: any) => {
+                const handleEnterKeyPress = onEnterKeyPress || (() => undefined);
+                const handleKeyPress = onKeyPress || (() => undefined);
+                if (event.key === 'Enter') {
+                  handleEnterKeyPress(event);
+                }
+                handleKeyPress(event);
+              }}
+              placeholder={placeholder}
+              type={type}
+              value={value}
+            />}
+        </div>
+      )}
+    </UID>
+  );
+};
 
 InputWithLabel.defaultProps = {
   type: 'text',
