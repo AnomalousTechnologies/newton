@@ -7,7 +7,7 @@ import CheckBadgeIcon from '../../src/bolts/icons/check-badge';
 import CrossBadgeIcon from '../../src/bolts/icons/cross-badge';
 import InspectionCard, { InspectionStatus, InspectionVerification } from '../../src/parts/inspection-card';
 
-describe('Part: Flash Message', () => {
+describe('Part: Inspection Card', () => {
   it('Can accept className', () => {
     const wrapper = mount(withTheme(
       <InspectionCard

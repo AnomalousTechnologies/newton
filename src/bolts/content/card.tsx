@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 
-export default styled.div`
+const Card = styled.div`
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   background-color: ${({ theme }) => theme.card.background.color};
@@ -13,3 +14,19 @@ export default styled.div`
     cursor: pointer;
   }
 `;
+
+export const ModalCard = styled(Card)`
+  max-width: 380px;
+  min-height: 200px;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.card.background.color};
+    cursor: default;
+  }
+`;
+
+export default Card;

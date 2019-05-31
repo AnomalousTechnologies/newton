@@ -31,9 +31,16 @@ const Button = ({
   className,
   children,
   icon,
+  onClick,
   style,
 }: ButtonProps) => (
-  <button className={className} style={style}>{children}{icon}</button>
+  <button
+    className={className}
+    onClick={onClick}
+    style={style}
+  >
+    {children}{icon}
+  </button>
 );
 
 Button.defaultProps = {
