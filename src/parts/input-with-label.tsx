@@ -21,9 +21,9 @@ interface Props {
   label: string;
   isLarge?: boolean;
   name: string;
-  onChange: (event: any) => void;
-  onEnterKeyPress?: (event: any) => void;
-  onKeyPress?: (event: any) => void;
+  onChange: (event: React.ChangeEvent) => void;
+  onEnterKeyPress?: (event: React.KeyboardEvent) => void;
+  onKeyPress?: (event: React.KeyboardEvent) => void;
   placeholder?: string;
   style?: object;
   type?: InputType | 'textarea';
