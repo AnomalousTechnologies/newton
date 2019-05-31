@@ -31,8 +31,8 @@ describe('Part: Modal Option', () => {
     const wrapper = mount(withTheme(
       <Modal
         buttons={[
-          <Button onClick={() => undefined} />,
-          <Button onClick={() => undefined} />,
+          <Button key="0" onClick={() => undefined} />,
+          <Button key="1" onClick={() => undefined} />,
         ]}
       >
         This is a modal

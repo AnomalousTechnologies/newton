@@ -9,7 +9,7 @@ interface Props {
   buttons: React.ReactNode;
 }
 
-const ModalConfirm = ({
+const ModalOption = ({
   className,
   children,
   buttons,
@@ -22,4 +22,4 @@ const ModalConfirm = ({
   </ModalCard>
 );
 
-export default ModalConfirm;
+export default ModalOption;

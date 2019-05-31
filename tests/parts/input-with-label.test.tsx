@@ -4,7 +4,7 @@ import { mount } from 'enzyme';
 import withTheme from '../withTheme';
 
 import Input from '../../src/bolts/inputs/input-small';
-import Label from '../../src/bolts/inputs/label';
+import InputLarge from '../../src/bolts/inputs/input-large';
 import Textarea from '../../src/bolts/inputs/textarea';
 import InputWithLabel from '../../src/parts/input-with-label';
 
@@ -29,8 +29,8 @@ describe('Part: Input With Label', () => {
         onChange={() => undefined}
       />,
     ));
-    expect(wrapper.find(Label).text()).toContain('My Label');
-    expect(wrapper.find(Label).prop('htmlFor')).toContain('a-text-input-');
+    expect(wrapper.find('label').text()).toContain('My Label');
+    expect(wrapper.find('label').prop('htmlFor')).toContain('a-text-input-');
   });
 
   it('Can render input', () => {
@@ -48,6 +48,24 @@ describe('Part: Input With Label', () => {
     expect(wrapper.find(Input).prop('placeholder')).toEqual('Bar');
     expect(wrapper.find(Input).prop('type')).toEqual('text');
     expect(wrapper.find(Input).prop('value')).toEqual('example');
+  });
+
+  it('Can render large input', () => {
+    const wrapper = mount(withTheme(
+      <InputWithLabel
+        label="My Label"
+        isLarge
+        name="Foo"
+        onChange={() => undefined}
+        placeholder="Bar"
+        type="text"
+        value="example"
+      />,
+    ));
+    expect(wrapper.find(InputLarge).prop('name')).toEqual('Foo');
+    expect(wrapper.find(InputLarge).prop('placeholder')).toEqual('Bar');
+    expect(wrapper.find(InputLarge).prop('type')).toEqual('text');
+    expect(wrapper.find(InputLarge).prop('value')).toEqual('example');
   });
 
   it('Can handle input change', () => {

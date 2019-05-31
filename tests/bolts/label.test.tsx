@@ -3,7 +3,7 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import withTheme from '../withTheme';
 
-import Label from '../../src/bolts/content/label';
+import Label, { LabelSize, LabelType } from '../../src/bolts/content/label';
 
 describe('Bolt: Label', () => {
   it('Can render', () => {
@@ -17,6 +17,16 @@ describe('Bolt: Label', () => {
 
   it('Can mount with theme', () => {
     const wrapper = mount(withTheme(<Label>My Label</Label>));
+    expect(wrapper.find(Label).text()).toEqual('My Label');
+  });
+
+  it('Can mount with theme small', () => {
+    const wrapper = mount(withTheme(<Label size={LabelSize.SMALL} type={LabelType.SUCCESS}>My Label</Label>));
+    expect(wrapper.find(Label).text()).toEqual('My Label');
+  });
+
+  it('Can mount with theme large', () => {
+    const wrapper = mount(withTheme(<Label size={LabelSize.LARGE} type={LabelType.SUCCESS}>My Label</Label>));
     expect(wrapper.find(Label).text()).toEqual('My Label');
   });
 });

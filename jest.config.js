@@ -4,6 +4,7 @@ module.exports = {
   setupFilesAfterEnv: ['<rootDir>tests/setupTests.ts'],
   collectCoverageFrom: [
     'src/**/*.{ts,tsx}',
+    '!src/index.ts',
     '!**/node_modules/**',
   ],
   transform: {

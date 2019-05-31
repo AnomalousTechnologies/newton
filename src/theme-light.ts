@@ -153,11 +153,11 @@ export default {
       color: sky,
     },
     hover: {
-      color: greyscale[2],
+      color: sky,
       decoration: 'none',
     },
     standard: {
-      color: greyscale[2],
+      color: sky,
       decoration: 'underline',
     },
   },

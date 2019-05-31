@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { shallow } from 'enzyme';
+import { mount, shallow } from 'enzyme';
+import withTheme from '../withTheme';
 
-import Badge from '../../src/bolts/content/badge';
+import Badge, { BadgeType } from '../../src/bolts/content/badge';
 
 describe('Bolt: Badge', () => {
   it('Can render', () => {
@@ -11,6 +12,11 @@ describe('Bolt: Badge', () => {
         <Badge />
       </div>,
     );
+    expect(wrapper.find(Badge)).toBeTruthy();
+  });
+
+  it('Can mount with theme', () => {
+    const wrapper = mount(withTheme(<Badge type={BadgeType.SUCCESS} />));
     expect(wrapper.find(Badge)).toBeTruthy();
   });
 });

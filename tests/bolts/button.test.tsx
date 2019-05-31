@@ -3,7 +3,8 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import withTheme from '../withTheme';
 
-import Button from '../../src/bolts/inputs/button';
+import Button, { ButtonSize, ButtonType } from '../../src/bolts/inputs/button';
+import Icon from '../../src/bolts/icons/user';
 
 describe('Bolt: Button', () => {
   it('Can render', () => {
@@ -15,8 +16,26 @@ describe('Bolt: Button', () => {
     expect(wrapper.find(Button).text()).toEqual('My Button');
   });
 
+  it('Can render with Icon', () => {
+    const wrapper = shallow(
+      <div>
+        <Button icon={<Icon />}>My Button</Button>
+      </div>,
+    );
+    expect(wrapper.find(Button).text()).toEqual('My Button');
+  });
+
+  it('Can render when loading', () => {
+    const wrapper = shallow(
+      <div>
+        <Button isLoading>My Button</Button>
+      </div>,
+    );
+    expect(wrapper.find(Button).text()).toEqual('My Button');
+  });
+
   it('Can mount with theme', () => {
-    const wrapper = mount(withTheme(<Button>My Button</Button>));
+    const wrapper = mount(withTheme(<Button size={ButtonSize.SMALL} type={ButtonType.SUCCESS}>My Button</Button>));
     expect(wrapper.find(Button).text()).toEqual('My Button');
   });
 
