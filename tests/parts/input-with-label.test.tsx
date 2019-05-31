@@ -3,8 +3,8 @@ import React from 'react';
 import { mount } from 'enzyme';
 import withTheme from '../withTheme';
 
-import Input from '../../src/bolts/inputs/input-small';
 import InputLarge from '../../src/bolts/inputs/input-large';
+import Input from '../../src/bolts/inputs/input-small';
 import Textarea from '../../src/bolts/inputs/textarea';
 import InputWithLabel from '../../src/parts/input-with-label';
 

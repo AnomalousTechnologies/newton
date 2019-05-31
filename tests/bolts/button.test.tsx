@@ -3,8 +3,8 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import withTheme from '../withTheme';
 
-import Button, { ButtonSize, ButtonType } from '../../src/bolts/inputs/button';
 import Icon from '../../src/bolts/icons/user';
+import Button, { ButtonSize, ButtonType } from '../../src/bolts/inputs/button';
 
 describe('Bolt: Button', () => {
   it('Can render', () => {
