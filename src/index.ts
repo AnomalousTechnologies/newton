@@ -118,6 +118,27 @@ export {
   InspectionCard,
 };
 
+import { AvatarSize } from './bolts/content/avatar';
+import { BadgeType } from './bolts/content/badge';
+import { CornerCapVerification } from './bolts/content/corner-cap';
+import { DrawerPosition } from './bolts/content/drawer';
+import { LabelSize, LabelType } from './bolts/content/label';
+import { ButtonSize, ButtonType } from './bolts/inputs/button';
+import { InspectionStatus, InspectionVerification } from './parts/inspection-card';
+
+export {
+  AvatarSize,
+  BadgeType,
+  ButtonSize,
+  ButtonType,
+  CornerCapVerification,
+  DrawerPosition,
+  InspectionStatus,
+  InspectionVerification,
+  LabelSize,
+  LabelType,
+};
+
 import theme from './theme';
 import themeDark from './theme-dark';
 import themeLight from './theme-light';
