@@ -12,12 +12,16 @@ import Code from '../../src/bolts/typography/code';
 import H1 from '../../src/bolts/typography/h1';
 import H2 from '../../src/bolts/typography/h2';
 import ModalAction from '../../src/parts/modal-action';
-import ModalConfirm, { ActionButton } from '../../src/parts/modal-confirm';
+import ModalConfirm from '../../src/parts/modal-confirm';
 import ModalOption from '../../src/parts/modal-option';
 import { Wrapper } from '../utilities';
 
 const Title = styled(H1)`
   margin-top: 0;
+`;
+
+const ActionButton = styled(Button)`
+  margin: 0 .5rem;
 `;
 
 const stories = storiesOf('Parts|Modals', module)

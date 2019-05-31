@@ -4,7 +4,7 @@ import { mount } from 'enzyme';
 import withTheme from '../withTheme';
 
 import P from '../../src/bolts/typography/p';
-import Modal, { ActionButton } from '../../src/parts/modal-confirm';
+import Modal from '../../src/parts/modal-confirm';
 
 describe('Part: Modal Confirm', () => {
   it('Can accept className', () => {
@@ -45,8 +45,8 @@ describe('Part: Modal Confirm', () => {
         This is a modal
       </Modal>,
       ));
-    expect(wrapper.find(ActionButton).at(0).text()).toEqual('foo');
-    expect(wrapper.find(ActionButton).at(1).text()).toEqual('bar');
+    expect(wrapper.find('button').at(0).text()).toEqual('foo');
+    expect(wrapper.find('button').at(1).text()).toEqual('bar');
   });
 
   it('Can handle confirm button click', () => {
@@ -62,7 +62,7 @@ describe('Part: Modal Confirm', () => {
         This is a modal
       </Modal>,
       ));
-    wrapper.find(ActionButton).at(0).simulate('click');
+    wrapper.find('button').at(0).simulate('click');
     expect(confirmMock).toHaveBeenCalledTimes(1);
     expect(rejectMock).not.toHaveBeenCalled();
   });
@@ -80,7 +80,7 @@ describe('Part: Modal Confirm', () => {
         This is a modal
       </Modal>,
       ));
-    wrapper.find(ActionButton).at(1).simulate('click');
+    wrapper.find('button').at(1).simulate('click');
     expect(confirmMock).not.toHaveBeenCalled();
     expect(rejectMock).toHaveBeenCalledTimes(1);
   });

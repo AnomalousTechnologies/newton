@@ -6,7 +6,7 @@ import { ModalCard } from '../bolts/content/card';
 import Button, { ButtonSize, ButtonType } from '../bolts/inputs/button';
 import P from '../bolts/typography/p';
 
-export const ActionButton = styled(Button)`
+const ActionButton = styled(Button)`
   margin: 0 .5rem;
 `;
 
