@@ -1,8 +1,8 @@
 import React from 'react';
 
-import styled from '@emotion/styled';
 import { select, text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
+import styled from 'styled-components';
 
 import Drawer, { DrawerPosition } from '../../src/bolts/content/drawer';
 import Code from '../../src/bolts/typography/code';

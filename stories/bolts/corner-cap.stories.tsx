@@ -1,8 +1,8 @@
 import React from 'react';
 
-import styled from '@emotion/styled';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
+import styled from 'styled-components';
 
 import CornerCap, { CornerCapVerification } from '../../src/bolts/content/corner-cap';
 import Code from '../../src/bolts/typography/code';

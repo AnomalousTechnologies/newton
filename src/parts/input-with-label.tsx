@@ -1,7 +1,7 @@
 import React from 'react';
 
-import styled from '@emotion/styled';
 import { UID } from 'react-uid';
+import styled from 'styled-components';
 
 import InputLarge from '../bolts/inputs/input-large';
 import InputSmall from '../bolts/inputs/input-small';
@@ -16,12 +16,16 @@ type InputType = 'date' | 'datetime-local' | 'email' | 'file' |
 'hidden' | 'month' | 'number' | 'password' | 'search' | 'tel' |
 'text' | 'time' | 'url' | 'week';
 
+interface Target {
+  value: string;
+}
+
 interface Props {
   className?: string;
   label: string;
   isLarge?: boolean;
   name: string;
-  onChange: (event: React.ChangeEvent) => void;
+  onChange: (event: React.ChangeEvent<Target>) => void;
   onEnterKeyPress?: (event: React.KeyboardEvent) => void;
   onKeyPress?: (event: React.KeyboardEvent) => void;
   placeholder?: string;

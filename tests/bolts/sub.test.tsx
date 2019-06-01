@@ -13,8 +13,6 @@ describe('Bolt: Sub', () => {
       </div>,
     );
     expect(wrapper.find(Sub).text()).toEqual('My Sub');
-    // @ts-ignore
-    expect(wrapper.find(Sub).type().__emotion_base).toEqual('sub');
   });
 
   it('Can mount with theme', () => {

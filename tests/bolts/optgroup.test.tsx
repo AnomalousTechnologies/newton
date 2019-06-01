@@ -11,7 +11,6 @@ describe('Bolt: Optgroup', () => {
         <Optgroup />
       </div>,
     );
-    // @ts-ignore
-    expect(wrapper.find(Optgroup).type().__emotion_base).toEqual('optgroup');
+    expect(wrapper.find(Optgroup).length).toEqual(1);
   });
 });

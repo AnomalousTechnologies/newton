@@ -13,8 +13,6 @@ describe('Bolt: Sup', () => {
       </div>,
     );
     expect(wrapper.find(Sup).text()).toEqual('My Sup');
-    // @ts-ignore
-    expect(wrapper.find(Sup).type().__emotion_base).toEqual('sup');
   });
 
   it('Can mount with theme', () => {

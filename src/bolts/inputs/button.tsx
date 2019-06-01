@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { css, keyframes } from '@emotion/core';
-import styled from '@emotion/styled';
+import styled, { css, keyframes } from 'styled-components';
 
 export enum ButtonSize {
   SMALL = 'small',
@@ -54,13 +53,13 @@ const slideBackground = keyframes`
   to { background-position: 0 -1000px; }
 `;
 
-const loadingAnimation = ({ theme }: any) => css`
+const loadingAnimation = css`
   background-image: repeating-linear-gradient(
     -45deg,
     transparent,
     transparent 6px,
-    ${theme.color.select.transparent.white[0]} 6px,
-    ${theme.color.select.transparent.white[0]} 12px
+    ${({ theme }) => theme.color.select.transparent.white[0]} 6px,
+    ${({ theme }) => theme.color.select.transparent.white[0]} 12px
   );
   background-attachment: fixed;
   animation: ${slideBackground} 50s linear infinite;

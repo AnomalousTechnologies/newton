@@ -13,8 +13,6 @@ describe('Bolt: Strong', () => {
       </div>,
     );
     expect(wrapper.find(Strong).text()).toEqual('My Strong');
-    // @ts-ignore
-    expect(wrapper.find(Strong).type().__emotion_base).toEqual('strong');
   });
 
   it('Can mount with theme', () => {

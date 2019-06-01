@@ -13,8 +13,6 @@ describe('Bolt: Select', () => {
       </div>,
     );
     expect(wrapper.find(Select).text()).toEqual('My Select');
-    // @ts-ignore
-    expect(wrapper.find(Select).type().__emotion_base).toEqual('select');
   });
 
   it('Can mount with theme', () => {

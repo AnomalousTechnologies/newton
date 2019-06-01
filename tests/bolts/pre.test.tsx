@@ -13,8 +13,6 @@ describe('Bolt: Pre', () => {
       </div>,
     );
     expect(wrapper.find(Pre).text()).toEqual('My Pre');
-    // @ts-ignore
-    expect(wrapper.find(Pre).type().__emotion_base).toEqual('pre');
   });
 
   it('Can mount with theme', () => {

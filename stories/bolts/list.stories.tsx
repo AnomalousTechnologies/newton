@@ -1,7 +1,7 @@
 import React from 'react';
 
-import styled from '@emotion/styled';
 import { storiesOf } from '@storybook/react';
+import styled from 'styled-components';
 
 import ListItem from '../../src/bolts/content/list-item';
 import ListOrdered from '../../src/bolts/content/list-ordered';

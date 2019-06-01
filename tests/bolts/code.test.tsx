@@ -13,8 +13,6 @@ describe('Bolt: Code', () => {
       </div>,
     );
     expect(wrapper.find(Code).text()).toEqual('My Code');
-    // @ts-ignore
-    expect(wrapper.find(Code).type().__emotion_base).toEqual('code');
   });
 
   it('Can mount with theme', () => {

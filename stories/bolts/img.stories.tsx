@@ -1,8 +1,8 @@
 import React from 'react';
 
-import styled from '@emotion/styled';
 import { text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
+import styled from 'styled-components';
 
 import Img from '../../src/bolts/content/img';
 import Code from '../../src/bolts/typography/code';

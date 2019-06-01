@@ -1,9 +1,9 @@
 import React from 'react';
 
-import styled from '@emotion/styled';
 import { action } from '@storybook/addon-actions';
 import { text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
+import styled from 'styled-components';
 
 import CheckCircleIcon from '../../src/bolts/icons/check-circle';
 import CrossCircleIcon from '../../src/bolts/icons/cross-circle';

@@ -1,3 +1,5 @@
+import { DefaultTheme as Theme } from 'styled-components';
+
 const black = '#000';
 const white = '#fff';
 const navy = '#26374E';
@@ -47,8 +49,8 @@ const transparent = {
   ],
 };
 
-export default {
-  name: 'newton',
+const theme: Theme = {
+  name: 'newton-dark',
 
   breakpoint: {
     mobile: '530px',
@@ -124,12 +126,6 @@ export default {
       warning: lemon,
     },
   },
-  flashMessage: {
-    background: {
-      color: navy,
-    },
-    color: white,
-  },
   font: {
     family: {
       mono: '"Menlo", monospace',
@@ -170,3 +166,5 @@ export default {
     color: greyscale[4],
   },
 };
+
+export default theme;

@@ -12,7 +12,5 @@ describe('Bolt: Option', () => {
       </div>,
     );
     expect(wrapper.find(Option).text()).toContain('My Option');
-    // @ts-ignore
-    expect(wrapper.find(Option).type().__emotion_base).toEqual('option');
   });
 });

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import styled from '@emotion/styled';
 import { text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
+import styled from 'styled-components';
 
 import Label, { LabelSize, LabelType } from '../../src/bolts/content/label';
 import Code from '../../src/bolts/typography/code';

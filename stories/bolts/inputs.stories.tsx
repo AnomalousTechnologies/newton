@@ -1,9 +1,9 @@
 import React from 'react';
 
-import styled from '@emotion/styled';
 import { action } from '@storybook/addon-actions';
 import { select, text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
+import styled from 'styled-components';
 
 import InputLarge from '../../src/bolts/inputs/input-large';
 import InputSmall from '../../src/bolts/inputs/input-small';

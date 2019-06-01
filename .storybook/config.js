@@ -1,12 +1,20 @@
+import React from 'react';
+
 import { addDecorator, addParameters, configure } from '@storybook/react';
-import { withThemesProvider } from 'storybook-addon-emotion-theme';
+import { ThemeProvider } from 'styled-components';
 
 import storybookTheme from './storybookTheme';
 import newtonTheme from '../src/theme';
 
 addParameters({ options: { theme: storybookTheme } });
 
-addDecorator(withThemesProvider([newtonTheme]));
+const themeDecorator = (storyFn) => (
+  <ThemeProvider theme={newtonTheme}>
+    {storyFn()}
+  </ThemeProvider>
+);
+
+addDecorator(themeDecorator);
 
 const req = require.context('../stories', true, /.stories.tsx$/);
 function loadStories() {

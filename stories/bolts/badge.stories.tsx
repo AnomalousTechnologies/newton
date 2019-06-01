@@ -1,7 +1,7 @@
 import React from 'react';
 
-import styled from '@emotion/styled';
 import { storiesOf } from '@storybook/react';
+import styled from 'styled-components';
 
 import Badge, { BadgeType } from '../../src/bolts/content/badge';
 import CheckBadge from '../../src/bolts/icons/check-badge';

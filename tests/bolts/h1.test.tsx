@@ -13,8 +13,6 @@ describe('Bolt: H1', () => {
       </div>,
     );
     expect(wrapper.find(H1).text()).toContain('My H1');
-    // @ts-ignore
-    expect(wrapper.find(H1).type().__emotion_base).toEqual('h1');
   });
 
   it('Can mount with theme', () => {

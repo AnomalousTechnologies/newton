@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export default styled.h2`
   margin: 2rem 0 1.5rem;

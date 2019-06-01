@@ -13,8 +13,6 @@ describe('Bolt: P', () => {
       </div>,
     );
     expect(wrapper.find(P).text()).toContain('My Paragraph');
-    // @ts-ignore
-    expect(wrapper.find(P).type().__emotion_base).toEqual('p');
   });
 
   it('Can mount with theme', () => {

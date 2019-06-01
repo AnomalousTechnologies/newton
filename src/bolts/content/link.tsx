@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export default styled.a`
   color: ${(props) => props.theme.link.standard.color};

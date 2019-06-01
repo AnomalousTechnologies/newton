@@ -1,7 +1,7 @@
 import React from 'react';
 
-import styled from '@emotion/styled';
 import { format } from 'date-fns';
+import styled from 'styled-components';
 
 import Avatar, { AvatarSize } from '../bolts/content/avatar';
 import Badge, { BadgeType } from '../bolts/content/badge';

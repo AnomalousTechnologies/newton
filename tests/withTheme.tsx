@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { ThemeProvider } from 'emotion-theming';
+import { ThemeProvider } from 'styled-components';
 
 import theme from '../src/theme';
 

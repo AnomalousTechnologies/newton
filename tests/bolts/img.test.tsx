@@ -11,7 +11,6 @@ describe('Bolt: Img', () => {
         <Img />
       </div>,
     );
-    // @ts-ignore
-    expect(wrapper.find(Img).type().__emotion_base).toEqual('img');
+    expect(wrapper.find(Img).length).toEqual(1);
   });
 });

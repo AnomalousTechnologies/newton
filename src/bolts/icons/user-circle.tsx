@@ -13,7 +13,7 @@ const Icon = ({ className, title, style }: Props) => (
     focusable="false"
     role="img"
     style={style}
-    viewBox="0 0 14 16"
+    viewBox="0 0 16 16"
     xmlns="http://www.w3.org/2000/svg"
   >
     <title>{title}</title>

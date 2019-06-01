@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export default styled.small`
   font-family: ${(props) => props.theme.font.family.sans};

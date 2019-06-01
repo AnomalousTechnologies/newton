@@ -1,7 +1,7 @@
 import React from 'react';
 
-import styled from '@emotion/styled';
 import { storiesOf } from '@storybook/react';
+import styled from 'styled-components';
 
 import ArrowCircleDown from '../../src/bolts/icons/arrow-circle-down';
 import ArrowCircleLeft from '../../src/bolts/icons/arrow-circle-left';

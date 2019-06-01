@@ -13,8 +13,6 @@ describe('Bolt: ListItem', () => {
       </div>,
     );
     expect(wrapper.find(ListItem).text()).toContain('My List Item');
-    // @ts-ignore
-    expect(wrapper.find(ListItem).type().__emotion_base).toEqual('li');
   });
 
   it('Can mount with theme', () => {

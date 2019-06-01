@@ -13,8 +13,6 @@ describe('Bolt: Link', () => {
       </div>,
     );
     expect(wrapper.find(Link).text()).toContain('My Link');
-    // @ts-ignore
-    expect(wrapper.find(Link).type().__emotion_base).toEqual('a');
   });
 
   it('Can mount with theme', () => {

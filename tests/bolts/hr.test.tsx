@@ -11,7 +11,6 @@ describe('Bolt: HardRule', () => {
         <HardRule />
       </div>,
     );
-    // @ts-ignore
-    expect(wrapper.find(HardRule).type().__emotion_base).toEqual('hr');
+    expect(wrapper.find(HardRule).length).toEqual(1);
   });
 });

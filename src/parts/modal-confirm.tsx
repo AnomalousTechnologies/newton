@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 import { ModalCard } from '../bolts/content/card';
 import Button, { ButtonSize, ButtonType } from '../bolts/inputs/button';

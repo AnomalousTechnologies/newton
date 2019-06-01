@@ -10,7 +10,7 @@ Design system and component library from Anomalous
 
 Newton is a design system and component library created by Anomalous. This library provides the UI backbone of our Inspect™ and Mission Control™ applications. Newton has been written for [React](https://reactjs.org/) and provides a range of components to speed up frontend development.
 
-We use [Emotion](https://emotion.sh) to style our components and allow you to extend those styles for your own use.
+We use [Styled Components](https://www.styled-components.com) to style our components and allow you to extend those styles for your own use.
 
 We follow a component structure that is similar in principle to the concepts laid out by Brad Frost in [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) although we use our own language and the concept has been slightly simplified.
 
@@ -25,16 +25,14 @@ If you're building applications to live within the Anomalous ecosystem feel free
 With Yarn: _(our preference at Anomalous)_
 
 ```
-$ yarn add @anomalous/newton
+$ yarn add @anomalous/newton styled-components
 ```
 
 With NPM:
 
 ```
-$ npm install @anomalous/newton
+$ npm install @anomalous/newton styled-components
 ```
-
-**NB:** installing Newton will also install Emotion and Emotion Theming.
 
 # Usage
 
@@ -52,12 +50,12 @@ Include Gill Sans Nova in your application by using Typekit (optional).
 
 ```
 
-At the root of your application, include Normalize (optional) and setup the Emotion theme (required).
+At the root of your application, include Normalize (optional) and setup the Styled Components theme (required).
 
 ```
 import React from 'react';
 import { theme } from '@anomalous/newton';
-import { ThemeProvider } from 'emotion-theming';
+import { ThemeProvider } from 'styled-components';
 
 import '@anomalous/newton/dist/normalize.css';
 

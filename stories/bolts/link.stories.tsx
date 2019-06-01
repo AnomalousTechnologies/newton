@@ -1,9 +1,9 @@
 import React from 'react';
 
-import styled from '@emotion/styled';
 import { text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import { StaticRouter } from 'react-router-dom';
+import styled from 'styled-components';
 
 import Link from '../../src/bolts/content/link';
 import LinkRoute from '../../src/bolts/content/link-route';

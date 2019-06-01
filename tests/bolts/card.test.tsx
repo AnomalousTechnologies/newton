@@ -13,8 +13,6 @@ describe('Bolt: Card', () => {
       </div>,
     );
     expect(wrapper.find(Card).text()).toEqual('My Card');
-    // @ts-ignore
-    expect(wrapper.find(Card).type().__emotion_base).toEqual('div');
   });
 
   it('Can mount with theme', () => {
