@@ -10,7 +10,6 @@ import H1 from '../src/bolts/typography/h1';
 import H2 from '../src/bolts/typography/h2';
 import P from '../src/bolts/typography/p';
 import Strong from '../src/bolts/typography/strong';
-import Sup from '../src/bolts/typography/sup';
 import { Wrapper } from './utilities';
 
 const Title = styled(H1)`
