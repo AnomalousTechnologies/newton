@@ -8,6 +8,7 @@ import styled from 'styled-components';
 import InputLarge from '../../src/bolts/inputs/input-large';
 import InputSmall from '../../src/bolts/inputs/input-small';
 import Label from '../../src/bolts/inputs/label';
+import Search from '../../src/bolts/inputs/search';
 import Textarea from '../../src/bolts/inputs/textarea';
 
 import Code from '../../src/bolts/typography/code';
@@ -105,6 +106,23 @@ storiesOf('Bolts|Inputs', module)
         import &#123; Label &#125; from '@anomalous/newton';<br/>
         <br/>
         &lt;Label&gt;...&lt;/Label&gt;
+      </Code>
+    </Wrapper>
+  ))
+  .add('Search', () => (
+    <Wrapper>
+      <Title>Search</Title>
+      <Search
+        onChange={action('change')}
+        onFocus={action('focus')}
+        onBlur={action('blur')}
+        placeholder={text('Placeholder', 'Search')}
+      />
+      <H2>Source Code</H2>
+      <Code>
+        import &#123; Search &#125; from '@anomalous/newton';<br/>
+        <br/>
+        &lt;Search /&gt;
       </Code>
     </Wrapper>
   ));

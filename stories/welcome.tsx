@@ -20,8 +20,8 @@ const Welcome = () => (
   <Wrapper style={{ maxWidth: '700px' }}>
     <Title>Newton by Anomalous</Title>
     <P>Newton is a design system and component library created by Anomalous.
-      This library provides the UI backbone of our <Strong>Inspect</Strong> and
-      <Strong>Mission Control</Strong> applications.
+      This library provides the UI backbone
+      of our <Strong>Inspect</Strong> and <Strong>Mission Control</Strong> applications.
       Newton has been written for <Link href="https://reactjs.org/">React</Link> and provides a range of components
       to speed up frontend development.</P>
     <P>We use <Link href="https://www.styled-components.com">Styled Components</Link> to manage our CSS-in-JS and

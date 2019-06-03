@@ -42,6 +42,7 @@ import InputSmall from './bolts/inputs/input-small';
 import InputLabel from './bolts/inputs/label';
 import Optgroup from './bolts/inputs/optgroup';
 import Option from './bolts/inputs/option';
+import Search from './bolts/inputs/search';
 import Select from './bolts/inputs/select';
 import Textarea from './bolts/inputs/textarea';
 
@@ -107,6 +108,7 @@ export {
   Label,
   Optgroup,
   Option,
+  Search,
   Select,
   Textarea,
   Code,
