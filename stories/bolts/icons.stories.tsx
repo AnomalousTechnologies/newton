@@ -10,6 +10,7 @@ import ArrowCircleUp from '../../src/bolts/icons/arrow-circle-up';
 import CheckBadge from '../../src/bolts/icons/check-badge';
 import CheckCircle from '../../src/bolts/icons/check-circle';
 import CheckShield from '../../src/bolts/icons/check-shield';
+import CloudUpload from '../../src/bolts/icons/cloud-upload';
 import CrossBadge from '../../src/bolts/icons/cross-badge';
 import CrossCircle from '../../src/bolts/icons/cross-circle';
 import Cubes from '../../src/bolts/icons/cubes';
@@ -48,6 +49,7 @@ const iconStories = storiesOf('Bolts|Icons', module)
   { component: 'CheckBadgeIcon', Element: CheckBadge, title: 'Check Badge Icon' },
   { component: 'CheckCircleIcon', Element: CheckCircle, title: 'Check Circle Icon' },
   { component: 'CheckShieldIcon', Element: CheckShield, title: 'Check Shield Icon' },
+  { component: 'CloudUploadIcon', Element: CloudUpload, title: 'Cloud Upload Icon' },
   { component: 'CrossBadgeIcon', Element: CrossBadge, title: 'Cross Badge Icon' },
   { component: 'CrossCircleIcon', Element: CrossCircle, title: 'Cross Circle Icon' },
   { component: 'CubesIcon', Element: Cubes, title: 'Cubes Icon' },

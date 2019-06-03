@@ -19,6 +19,7 @@ import ArrowCircleUpIcon from './bolts/icons/arrow-circle-up';
 import CheckBadgeIcon from './bolts/icons/check-badge';
 import CheckCircleIcon from './bolts/icons/check-circle';
 import CheckShieldIcon from './bolts/icons/check-shield';
+import CloudUploadIcon from './bolts/icons/cloud-upload';
 import CrossBadgeIcon from './bolts/icons/cross-badge';
 import CrossCircleIcon from './bolts/icons/cross-circle';
 import CubesIcon from './bolts/icons/cubes';
@@ -83,6 +84,7 @@ export {
   CheckBadgeIcon,
   CheckCircleIcon,
   CheckShieldIcon,
+  CloudUploadIcon,
   CrossBadgeIcon,
   CrossCircleIcon,
   CubesIcon,

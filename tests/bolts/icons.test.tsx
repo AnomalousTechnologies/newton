@@ -10,6 +10,7 @@ import ArrowCircleUp from '../../src/bolts/icons/arrow-circle-up';
 import CheckBadge from '../../src/bolts/icons/check-badge';
 import CheckCircle from '../../src/bolts/icons/check-circle';
 import CheckShield from '../../src/bolts/icons/check-shield';
+import CloudUpload from '../../src/bolts/icons/cloud-upload';
 import CrossBadge from '../../src/bolts/icons/cross-badge';
 import CrossCircle from '../../src/bolts/icons/cross-circle';
 import Cubes from '../../src/bolts/icons/cubes';
@@ -34,6 +35,7 @@ import UserCircle from '../../src/bolts/icons/user-circle';
   ['CheckBadge', CheckBadge ],
   ['CheckCircle', CheckCircle ],
   ['CheckShield', CheckShield ],
+  ['CloudUpload', CloudUpload ],
   ['CrossBadge', CrossBadge ],
   ['CrossCircle', CrossCircle ],
   ['Cubes', Cubes ],
