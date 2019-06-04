@@ -34,7 +34,7 @@ const Icon = ({ className, title, style }: Props) => (
         L6.775,3.28012218 C7.01,3.04600564 7.39,3.04600564 7.6225,3.28012218
         L9.94,5.58890977 C10.175,5.82302632 10.175,6.20159774 9.9425,6.43322368 Z"
       fill="currentColor"
-      fill-rule="nonzero"
+      fillRule="nonzero"
     />
   </svg>
 );
