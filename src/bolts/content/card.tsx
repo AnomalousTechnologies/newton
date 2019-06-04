@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-const Card = styled.div`
+const Card = styled.div<{ isActive?: boolean }>`
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  background-color: ${({ theme }) => theme.card.background.color};
+  background-color: ${({ isActive, theme }) => isActive ? theme.card.hover.color : theme.card.background.color};
   box-shadow: 0 0 4px 0 ${({ theme }) => theme.card.shadow.color};
   border-radius: 4px;
   transition: background-color 200ms;

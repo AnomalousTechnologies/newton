@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { format } from 'date-fns';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 import Avatar, { AvatarSize } from '../bolts/content/avatar';
 import Badge, { BadgeType } from '../bolts/content/badge';
@@ -55,9 +55,22 @@ const StatusWaiting = styled(Status)`
   background-color: ${({ theme }) => theme.color.select.greyscale[4]};
 `;
 
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+const SpiningIcon = styled(SpinnerIcon)`
+  animation: ${rotate} 5s linear infinite;
+`;
+
 const FailLabel = () => (<StatusFail><CrossCircleIcon title="Failed" /></StatusFail>);
 const PassLabel = () => (<StatusPass><CheckCircleIcon title="Passed" /></StatusPass>);
-const WaitingLabel = () => (<StatusWaiting><SpinnerIcon title="In Progress" /></StatusWaiting>);
+const WaitingLabel = () => (<StatusWaiting><SpiningIcon title="In Progress" /></StatusWaiting>);
 
 export enum InspectionVerification {
   REJECTED = -1,
@@ -88,6 +101,7 @@ interface Props {
   date: Date;
   inspectorAvatarSrc?: string;
   inspectorName: string;
+  isActive?: boolean;
   onClick?: () => void;
   partName: string;
   partNumber: string;
@@ -112,6 +126,7 @@ const InspectionCard = ({
   date,
   inspectorAvatarSrc,
   inspectorName,
+  isActive,
   onClick,
   partName,
   partNumber,
@@ -120,9 +135,9 @@ const InspectionCard = ({
   verification,
 }: Props) =>
 (
-  <Card className={className} onClick={onClick} role="button" style={style}>
+  <Card className={className} isActive={isActive} onClick={onClick} role="button" style={style}>
     <Details>
-      <Title>#{partNumber} - {partName}</Title>
+      <Title>{partName} - {partNumber}</Title>
       <ExtraSmall>{format(date, 'D MMM YYYY [at] h[:]mm a')} | <Strong>{inspectorName}</Strong></ExtraSmall>
     </Details>
     {verificationBadge(verification)}

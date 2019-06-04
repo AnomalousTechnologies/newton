@@ -1,6 +1,6 @@
 {
   "name": "@anomalous/newton",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "Design system and component library from Anomalous",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -37,7 +37,7 @@ describe('Part: Inspection Card', () => {
         status={InspectionStatus.WAITING}
       />,
     ));
-    expect(wrapper.find('h4').text()).toEqual('#95678230 - Rotor Blade');
+    expect(wrapper.find('h4').text()).toEqual('Rotor Blade - 95678230');
     expect(wrapper.find('small').text()).toEqual('20 Feb 2019 at 12:00 am | Stephanie Lawrence');
     expect(wrapper.find('Avatar').length).toEqual(1);
   });
