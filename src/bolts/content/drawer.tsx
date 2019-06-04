@@ -8,6 +8,7 @@ export enum DrawerPosition {
 }
 
 interface Props {
+  children?: React.ReactNode;
   className?: string;
   isOpen: boolean;
   position: DrawerPosition;
@@ -16,8 +17,10 @@ interface Props {
   style?: object;
 }
 
-const Panel = ({ className }: Props) => (
-  <div className={className} />
+const Panel = ({ children, className }: Props) => (
+  <div className={className}>
+    {children}
+  </div>
 );
 
 const DRAWER_SPEED = '400ms';
@@ -57,6 +60,7 @@ const PanelStyled = styled(Panel)`
 `;
 
 const Drawer = ({
+  children,
   className,
   isOpen,
   position,
@@ -69,7 +73,9 @@ const Drawer = ({
     position={position}
     size={size}
     style={style}
-  />
+  >
+    {children}
+  </PanelStyled>
 );
 
 export default Drawer;
