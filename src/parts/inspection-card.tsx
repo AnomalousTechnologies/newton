@@ -104,7 +104,7 @@ interface Props {
   isActive?: boolean;
   onClick?: () => void;
   partName: string;
-  partNumber: string;
+  partNumber?: string;
   status?: InspectionStatus;
   style?: object;
   verification?: InspectionVerification;
@@ -137,7 +137,7 @@ const InspectionCard = ({
 (
   <Card className={className} isActive={isActive} onClick={onClick} role="button" style={style}>
     <Details>
-      <Title>{partName} - {partNumber}</Title>
+      <Title>{partName}{partNumber ? ` - ${partNumber}` : partNumber}</Title>
       <ExtraSmall>{format(date, 'D MMM YYYY [at] h[:]mm a')} | <Strong>{inspectorName}</Strong></ExtraSmall>
     </Details>
     {verificationBadge(verification)}

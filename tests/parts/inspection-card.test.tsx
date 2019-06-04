@@ -42,6 +42,21 @@ describe('Part: Inspection Card', () => {
     expect(wrapper.find('Avatar').length).toEqual(1);
   });
 
+  it('Can render part name without number', () => {
+    const wrapper = mount(withTheme(
+      <InspectionCard
+        className="bar"
+        date={new Date(2019, 1, 20, 0, 0, 0)}
+        inspectorAvatarSrc="https://randomuser.me/api/portraits/women/64.jpg"
+        inspectorName="Stephanie Lawrence"
+        onClick={() => undefined}
+        partName="Rotor Blade Only"
+        status={InspectionStatus.WAITING}
+      />,
+    ));
+    expect(wrapper.find('h4').text()).toEqual('Rotor Blade Only');
+  });
+
   it('Can render fail label', () => {
     const wrapper = mount(withTheme(
       <InspectionCard
