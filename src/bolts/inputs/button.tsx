@@ -89,7 +89,7 @@ const ButtonStyled = styled(Button)`
           border-radius: 1.75rem;
           text-transform: capitalize;
 
-          svg {
+          & > svg {
             margin-left: 2rem;
           }
         `;
@@ -101,7 +101,7 @@ const ButtonStyled = styled(Button)`
           border-radius: 2rem;
           text-transform: uppercase;
 
-          svg {
+          & > svg {
             margin-left: 3rem;
           }
         `;
@@ -117,7 +117,7 @@ const ButtonStyled = styled(Button)`
     background-color: ${({ theme, type }) => theme.button[type || ButtonType.PRIMARY].hover.color};
   }
 
-  svg {
+  & > svg {
     position: relative;
     top: 1px;
     width: auto;
