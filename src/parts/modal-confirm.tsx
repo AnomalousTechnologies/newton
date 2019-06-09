@@ -15,8 +15,8 @@ interface Props {
   children?: string;
   labelConfirm: string;
   labelReject: string;
-  onConfirm: () => void;
-  onReject: () => void;
+  onConfirm: (event?: React.MouseEvent) => void;
+  onReject: (event?: React.MouseEvent) => void;
 }
 
 const ModalConfirm = ({

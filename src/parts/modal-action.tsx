@@ -8,7 +8,7 @@ interface Props {
   className?: string;
   children?: string;
   label: string;
-  onAction: () => void;
+  onAction: (event?: React.MouseEvent) => void;
 }
 
 const ModalAction = ({ className, children, label, onAction }: Props) => (
