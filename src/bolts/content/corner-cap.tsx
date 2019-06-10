@@ -241,7 +241,7 @@ const CornerCap = ({
     height="130"
     role="button"
     style={style}
-    viewBox="0 0 138 138"
+    viewBox="0 0 130 130"
     width="130"
     xmlns="http://www.w3.org/2000/svg"
   >
