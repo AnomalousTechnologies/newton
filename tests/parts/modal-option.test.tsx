@@ -3,7 +3,7 @@ import React from 'react';
 import { mount } from 'enzyme';
 import withTheme from '../withTheme';
 
-import Button from '../../src/bolts/inputs/button';
+import Button, { CancelIconButton } from '../../src/bolts/inputs/button';
 import P from '../../src/bolts/typography/p';
 import Modal from '../../src/parts/modal-option';
 
@@ -37,7 +37,24 @@ describe('Part: Modal Option', () => {
       >
         This is a modal
       </Modal>,
-      ));
+    ));
     expect(wrapper.find(Button).length).toEqual(2);
+  });
+
+  it('Can handle cancel button click', () => {
+    const cancelMock = jest.fn();
+    const wrapper = mount(withTheme(
+      <Modal
+        buttons={[
+          <Button key="0" onClick={() => undefined} />,
+          <Button key="1" onClick={() => undefined} />,
+        ]}
+        onCancel={cancelMock}
+      >
+        This is a modal
+      </Modal>,
+    ));
+    wrapper.find(CancelIconButton).simulate('click');
+    expect(cancelMock).toHaveBeenCalledTimes(1);
   });
 });

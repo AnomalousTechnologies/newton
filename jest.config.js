@@ -5,6 +5,7 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.{ts,tsx}',
     '!src/index.ts',
+    '!src/theme*',
     '!**/node_modules/**',
   ],
   transform: {

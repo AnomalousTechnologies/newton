@@ -96,6 +96,20 @@ describe('Part: Input With Label', () => {
     expect(keyPressStub).toHaveBeenCalled();
   });
 
+  it('Can handle input keypress without callback', () => {
+    const changeStub = jest.fn();
+    const keyPressStub = jest.fn();
+    const wrapper = mount(withTheme(
+      <InputWithLabel
+        label="My Label"
+        name="Foo"
+        onChange={changeStub}
+      />,
+    ));
+    wrapper.find(Input).simulate('keypress');
+    expect(keyPressStub).not.toHaveBeenCalled();
+  });
+
   it('Can handle input enter keypress', () => {
     const changeStub = jest.fn();
     const keyPressStub = jest.fn();
@@ -156,6 +170,21 @@ describe('Part: Input With Label', () => {
     ));
     wrapper.find(Textarea).simulate('keypress');
     expect(keyPressStub).toHaveBeenCalled();
+  });
+
+  it('Can handle textarea keypress without callback', () => {
+    const changeStub = jest.fn();
+    const keyPressStub = jest.fn();
+    const wrapper = mount(withTheme(
+      <InputWithLabel
+        label="My Label"
+        name="Foo"
+        onChange={changeStub}
+        type="textarea"
+      />,
+    ));
+    wrapper.find(Textarea).simulate('keypress');
+    expect(keyPressStub).not.toHaveBeenCalled();
   });
 
   it('Can handle textarea enter keypress', () => {
