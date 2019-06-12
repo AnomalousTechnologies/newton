@@ -108,6 +108,10 @@ We structure our frontend applications as follows:
 - pages
 ```
 
+# Deploying New Releases
+
+New releases are periodically created as new features are delivered. Creating a new release (and tag) in GitHub automatically triggers a deployment to NPM as long as the version number has been updated in `package.json`. Watch the GitHub repo to be notified of new releases.
+
 # Issues and Feedback
 
 If you spot a problem with Newton please [raise an issue](https://github.com/AnomalousTechnologies/newton/issues/new).
