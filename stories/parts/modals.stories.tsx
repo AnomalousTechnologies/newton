@@ -34,6 +34,7 @@ stories.add('Action', () => (
     <ModalAction
       label={text('Label', 'OK')}
       onAction={action('clicked')}
+      onCancel={action('cancel')}
     >
       {text('Body', 'Do something cool?')}
     </ModalAction>
@@ -57,6 +58,7 @@ stories.add('Confirm', () => (
     <ModalConfirm
       labelConfirm={text('Label', 'Yes')}
       labelReject={text('Label', 'No')}
+      onCancel={action('cancel')}
       onConfirm={action('clicked yes')}
       onReject={action('clicked no')}
     >
@@ -100,6 +102,7 @@ stories.add('Option', () => (
           Option B
         </ActionButton>,
       ]}
+      onCancel={action('cancel')}
     >
       {text('Body', 'This is an example of some very long text that the user should read please')}
     </ModalOption>

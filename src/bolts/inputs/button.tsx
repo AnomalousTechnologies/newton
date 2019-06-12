@@ -2,6 +2,8 @@ import React from 'react';
 
 import styled, { css, keyframes } from 'styled-components';
 
+import CrossCircle from '../icons/cross-circle';
+
 export enum ButtonSize {
   SMALL = 'small',
   LARGE = 'large',
@@ -125,5 +127,29 @@ const ButtonStyled = styled(Button)`
     float: right;
   }
 `;
+
+const IconOnlyButton = styled(ButtonStyled)`
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  padding: .4rem;
+  color: ${({ theme }) => theme.color.select.greyscale[1]};
+  background-color: transparent;
+
+  &:hover {
+    color: ${({ theme }) => theme.color.select.greyscale[4]};
+    background-color: transparent;
+  }
+
+  & > svg {
+    margin: 0;
+  }
+`;
+
+export const CancelIconButton = ({ ...props }) => (
+  <IconOnlyButton {...props}>
+    <CrossCircle />
+  </IconOnlyButton>
+);
 
 export default ButtonStyled;

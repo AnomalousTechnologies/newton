@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { ModalCard } from '../bolts/content/card';
-import Button, { ButtonSize, ButtonType } from '../bolts/inputs/button';
+import Button, { ButtonSize, ButtonType, CancelIconButton } from '../bolts/inputs/button';
 import P from '../bolts/typography/p';
 
 const ActionButton = styled(Button)`
@@ -15,6 +15,7 @@ interface Props {
   children?: string;
   labelConfirm: string;
   labelReject: string;
+  onCancel?: () => void;
   onConfirm: (event?: React.MouseEvent) => void;
   onReject: (event?: React.MouseEvent) => void;
 }
@@ -24,10 +25,12 @@ const ModalConfirm = ({
   children,
   labelConfirm,
   labelReject,
+  onCancel,
   onConfirm,
   onReject,
 }: Props) => (
   <ModalCard className={className}>
+    {!onCancel || <CancelIconButton onClick={onCancel} />}
     <P>{children}</P>
     <div>
       <ActionButton onClick={onConfirm} size={ButtonSize.SMALL} type={ButtonType.SUCCESS}>

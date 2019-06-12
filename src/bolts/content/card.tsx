@@ -16,6 +16,7 @@ const Card = styled.div<{ isActive?: boolean }>`
 `;
 
 export const ModalCard = styled(Card)`
+  position: relative;
   max-width: 380px;
   min-height: 200px;
   padding: 2rem;
