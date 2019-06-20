@@ -10,10 +10,8 @@ export default styled.input`
   line-height: 1rem;
   color: ${(props) => props.theme.text.color};
   background-color: ${(props) => props.theme.input.background.color};
-  border-color: ${(props) => props.theme.input.border.color};
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 6px;
+  border: 0;
+  box-shadow: ${(props) => props.theme.input.shadow.color} 0 0 2px 1px inset;
   overflow: visible;
 
   &:focus {

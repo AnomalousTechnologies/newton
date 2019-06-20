@@ -137,11 +137,11 @@ const theme: Theme = {
     background: {
       color: white,
     },
-    border: {
-      color: greyscale[0],
-    },
     outline: {
       color: sky,
+    },
+    shadow: {
+      color: greyscale[1],
     },
   },
   link: {

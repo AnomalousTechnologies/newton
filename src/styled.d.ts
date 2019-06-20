@@ -91,10 +91,10 @@ declare module 'styled-components' {
       background: {
         color: string,
       },
-      border: {
+      outline: {
         color: string,
       },
-      outline: {
+      shadow: {
         color: string,
       },
     };

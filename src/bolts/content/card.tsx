@@ -11,6 +11,7 @@ const Card = styled.div<{ isActive?: boolean }>`
 
   &:hover {
     background-color: ${({ theme }) => theme.card.hover.color};
+    box-shadow: 0 0 4px 1px ${({ theme }) => theme.card.shadow.color};
     cursor: pointer;
   }
 `;
