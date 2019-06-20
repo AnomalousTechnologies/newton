@@ -12,6 +12,7 @@ export default styled.input`
   background-color: ${(props) => props.theme.input.background.color};
   border: 0;
   box-shadow: ${(props) => props.theme.input.shadow.color} 0 0 2px 1px inset;
+  border-radius: 6px;
   overflow: visible;
 
   &:focus {
