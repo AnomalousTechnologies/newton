@@ -24,6 +24,12 @@ const Title = styled(H4)`
   margin: 0 0 .3rem;
 `;
 
+const PartName = styled.span``;
+
+const PartNumber = styled.span``;
+
+const PartSerial = styled.span``;
+
 const AvatarWrapper = styled.div`
   margin: 0 1rem;
 `;
@@ -103,14 +109,15 @@ interface Props {
   inspectorName: string;
   isActive?: boolean;
   onClick?: () => void;
-  partName: string;
+  partName?: string;
   partNumber?: string;
+  partSerial?: string;
   status?: InspectionStatus;
   style?: object;
   verification?: InspectionVerification;
 }
 
-function verificationBadge(verification?: InspectionVerification) {
+function getVerificationBadge(verification?: InspectionVerification) {
   if (!verification) { return; }
   switch (verification) {
     case InspectionVerification.VERIFIED:
@@ -119,6 +126,27 @@ function verificationBadge(verification?: InspectionVerification) {
       return <Badge icon={<CrossBadgeIcon title="Rejected" />} type={BadgeType.DANGER} />;
 
   }
+}
+
+function getTitle(partName?: string, partNumber?: string, partSerial?: string) {
+  let name = partName;
+  if (!(partName || partSerial || partNumber)) {
+    name = 'No Part Attached';
+  }
+  if (!partName && partSerial) {
+    name = `Serial. ${partSerial}`;
+    partSerial = undefined;
+  }
+  if (partName && partSerial) {
+    partNumber = undefined;
+  }
+  return (
+    <>
+      <PartName>{name || 'Generic Part'}</PartName>
+      {!partSerial || <PartSerial> | Serial. {partSerial}</PartSerial>}
+      {!partNumber || <PartNumber> | Part. {partNumber}</PartNumber>}
+    </>
+  );
 }
 
 const InspectionCard = ({
@@ -130,6 +158,7 @@ const InspectionCard = ({
   onClick,
   partName,
   partNumber,
+  partSerial,
   status,
   style,
   verification,
@@ -137,10 +166,12 @@ const InspectionCard = ({
 (
   <Card className={className} isActive={isActive} onClick={onClick} role="button" style={style}>
     <Details>
-      <Title>{partName}{partNumber ? ` - ${partNumber}` : partNumber}</Title>
+      <Title>
+        {getTitle(partName, partNumber, partSerial)}
+      </Title>
       <ExtraSmall>{format(date, 'D MMM YYYY [at] h[:]mm a')} | <Strong>{inspectorName}</Strong></ExtraSmall>
     </Details>
-    {verificationBadge(verification)}
+    {getVerificationBadge(verification)}
     <AvatarWrapper>
       <Avatar
         name={inspectorName}

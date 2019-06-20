@@ -33,11 +33,11 @@ describe('Part: Inspection Card', () => {
         inspectorName="Stephanie Lawrence"
         onClick={() => undefined}
         partName="Rotor Blade"
-        partNumber="95678230"
+        partNumber="Part-Number"
         status={InspectionStatus.WAITING}
       />,
     ));
-    expect(wrapper.find('h4').text()).toEqual('Rotor Blade - 95678230');
+    expect(wrapper.find('h4').text()).toEqual('Rotor Blade | Part. Part-Number');
     expect(wrapper.find('small').text()).toEqual('20 Feb 2019 at 12:00 am | Stephanie Lawrence');
     expect(wrapper.find('Avatar').length).toEqual(1);
   });
@@ -55,6 +55,68 @@ describe('Part: Inspection Card', () => {
       />,
     ));
     expect(wrapper.find('h4').text()).toEqual('Rotor Blade Only');
+  });
+
+  it('Can render part name with serial', () => {
+    const wrapper = mount(withTheme(
+      <InspectionCard
+        className="bar"
+        date={new Date(2019, 1, 20, 0, 0, 0)}
+        inspectorAvatarSrc="https://randomuser.me/api/portraits/women/64.jpg"
+        inspectorName="Stephanie Lawrence"
+        onClick={() => undefined}
+        partName="Part Name"
+        partSerial="Serial-Number"
+        status={InspectionStatus.WAITING}
+      />,
+    ));
+    expect(wrapper.find('h4').text()).toEqual('Part Name | Serial. Serial-Number');
+  });
+
+  it('Will render serial over number', () => {
+    const wrapper = mount(withTheme(
+      <InspectionCard
+        className="bar"
+        date={new Date(2019, 1, 20, 0, 0, 0)}
+        inspectorAvatarSrc="https://randomuser.me/api/portraits/women/64.jpg"
+        inspectorName="Stephanie Lawrence"
+        onClick={() => undefined}
+        partName="Part Name"
+        partNumber="Part-Number"
+        partSerial="Serial-Number"
+        status={InspectionStatus.WAITING}
+      />,
+    ));
+    expect(wrapper.find('h4').text()).toEqual('Part Name | Serial. Serial-Number');
+  });
+
+  it('Will render generic if no name of serial provided with number', () => {
+    const wrapper = mount(withTheme(
+      <InspectionCard
+        className="bar"
+        date={new Date(2019, 1, 20, 0, 0, 0)}
+        inspectorAvatarSrc="https://randomuser.me/api/portraits/women/64.jpg"
+        inspectorName="Stephanie Lawrence"
+        onClick={() => undefined}
+        partNumber="Part-Number"
+        status={InspectionStatus.WAITING}
+      />,
+    ));
+    expect(wrapper.find('h4').text()).toEqual('Generic Part | Part. Part-Number');
+  });
+
+  it('Can render no part attached', () => {
+    const wrapper = mount(withTheme(
+      <InspectionCard
+        className="bar"
+        date={new Date(2019, 1, 20, 0, 0, 0)}
+        inspectorAvatarSrc="https://randomuser.me/api/portraits/women/64.jpg"
+        inspectorName="Stephanie Lawrence"
+        onClick={() => undefined}
+        status={InspectionStatus.WAITING}
+      />,
+    ));
+    expect(wrapper.find('h4').text()).toEqual('No Part Attached');
   });
 
   it('Can render fail label', () => {

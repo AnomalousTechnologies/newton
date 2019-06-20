@@ -31,8 +31,8 @@ stories.add('Waiting', () => (
       inspectorAvatarSrc="https://randomuser.me/api/portraits/women/64.jpg"
       inspectorName="Stephanie Lawrence"
       onClick={action('clicked')}
-      partName="Rotor Blade"
       partNumber="95678230"
+      partSerial="1234567890"
       status={select(
         'Status',
         [InspectionStatus.FAIL, InspectionStatus.PASS, InspectionStatus.WAITING],
@@ -96,7 +96,6 @@ stories.add('Waiting', () => (
       inspectorName="Stephanie Lawrence"
       onClick={action('clicked')}
       partName="Rotor Blade"
-      partNumber="95678230"
       status={select(
         'Status',
         [InspectionStatus.FAIL, InspectionStatus.PASS, InspectionStatus.WAITING],
@@ -127,7 +126,6 @@ stories.add('Waiting', () => (
       inspectorAvatarSrc="https://randomuser.me/api/portraits/women/64.jpg"
       inspectorName="Stephanie Lawrence"
       onClick={action('clicked')}
-      partName="Rotor Blade"
       partNumber="95678230"
       status={select(
         'Status',
@@ -163,6 +161,7 @@ stories.add('Waiting', () => (
       onClick={action('clicked')}
       partName="Rotor Blade"
       partNumber="95678230"
+      partSerial="1234567890"
       status={select(
         'Status',
         [InspectionStatus.FAIL, InspectionStatus.PASS, InspectionStatus.WAITING],
