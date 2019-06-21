@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { InputHTMLAttributes } from 'react';
 
 import styled from 'styled-components';
 
@@ -24,7 +24,7 @@ const Icon = styled(SearchIcon)`
   height: 16px;
 `;
 
-const Search = ({ className, ...props }: any) => (
+const Search = ({ className, ...props }: InputHTMLAttributes<HTMLInputElement>) => (
   <Wrapper className={className}>
     <Input {...props} />
     <Icon />
