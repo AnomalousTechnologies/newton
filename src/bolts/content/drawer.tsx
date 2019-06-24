@@ -35,7 +35,7 @@ function getPositionStyling({ isOpen, position, size, theme }: Props) {
         transition: transform ${DRAWER_SPEED} ease-in-out;
         width: 100%;
         height: ${size};
-        box-shadow: 0 -1px 4px 0 ${theme.color.select.greyscale[1]};
+        box-shadow: 0 -1px 3px 1px ${theme.color.select.greyscale[1]};
         border-radius: 20px 20px 0 0;
       `;
     case DrawerPosition.RIGHT:
@@ -47,7 +47,7 @@ function getPositionStyling({ isOpen, position, size, theme }: Props) {
         transition: transform ${DRAWER_SPEED} ease-in-out;
         width: ${size};
         height: 100%;
-        box-shadow: -1px 0 4px 0 ${theme.color.select.greyscale[1]};
+        box-shadow: -1px 0 3px 1px ${theme.color.select.greyscale[1]};
         border-radius: 20px 0 0 20px;
       `;
   }
