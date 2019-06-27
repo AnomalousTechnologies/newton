@@ -102,21 +102,6 @@ function renderStatus(status?: InspectionStatus) {
   }
 }
 
-interface Props {
-  className?: string;
-  date: Date;
-  inspectorAvatarSrc?: string;
-  inspectorName: string;
-  isActive?: boolean;
-  onClick?: () => void;
-  partName?: string;
-  partNumber?: string;
-  partSerial?: string;
-  status?: InspectionStatus;
-  style?: object;
-  verification?: InspectionVerification;
-}
-
 function getVerificationBadge(verification?: InspectionVerification) {
   if (!verification) { return; }
   switch (verification) {
@@ -147,6 +132,21 @@ function getTitle(partName?: string, partNumber?: string, partSerial?: string) {
       {!partNumber || <PartNumber> | Part. {partNumber}</PartNumber>}
     </>
   );
+}
+
+interface Props {
+  className?: string;
+  date: Date;
+  inspectorAvatarSrc?: string;
+  inspectorName: string;
+  isActive?: boolean;
+  onClick?: () => void;
+  partName?: string;
+  partNumber?: string;
+  partSerial?: string;
+  status?: InspectionStatus;
+  style?: object;
+  verification?: InspectionVerification;
 }
 
 const InspectionCard = ({
