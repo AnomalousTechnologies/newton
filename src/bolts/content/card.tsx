@@ -24,6 +24,7 @@ export const ModalCard = styled(Card)`
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  box-shadow: 0 0 3px 2px ${({ theme }) => theme.card.shadow.color};
 
   &:hover {
     background-color: ${({ theme }) => theme.card.background.color};
