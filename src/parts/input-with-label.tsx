@@ -29,6 +29,7 @@ interface Props {
   onEnterKeyPress?: (event: React.KeyboardEvent) => void;
   onKeyPress?: (event: React.KeyboardEvent) => void;
   placeholder?: string;
+  rows?: number;
   style?: object;
   type?: InputType | 'textarea';
   value?: string;
@@ -43,9 +44,11 @@ const InputWithLabel = ({
   onEnterKeyPress,
   onKeyPress,
   placeholder,
+  rows,
   style,
   type,
   value,
+  ...props
 }: Props) => {
   const Input = isLarge ? InputLarge : InputSmall;
   return (
@@ -67,8 +70,9 @@ const InputWithLabel = ({
                 handleKeyPress(event);
               }}
               placeholder={placeholder}
-              rows={10}
+              rows={rows ? rows : 10}
               value={value}
+              {...props}
             /> :
             <Input
               id={`a-input-${id}`}
@@ -85,6 +89,7 @@ const InputWithLabel = ({
               placeholder={placeholder}
               type={type}
               value={value}
+              {...props}
             />}
         </div>
       )}
