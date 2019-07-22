@@ -229,4 +229,28 @@ describe('Part: Input With Label', () => {
     ));
     expect(wrapper.find('small').text()).toContain('My Caption');
   });
+
+  it('Can render valid icon', () => {
+    const wrapper = mount(withTheme(
+      <InputWithLabel
+        isValid
+        label="My Label"
+        name="Foo"
+        onChange={() => undefined}
+      />,
+    ));
+    expect(wrapper.find('svg').length).toBe(1);
+  });
+
+  it('Can render invalid icon', () => {
+    const wrapper = mount(withTheme(
+      <InputWithLabel
+        isValid={false}
+        label="My Label"
+        name="Foo"
+        onChange={() => undefined}
+      />,
+    ));
+    expect(wrapper.find('svg').length).toBe(1);
+  });
 });

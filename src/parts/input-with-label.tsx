@@ -3,11 +3,31 @@ import React from 'react';
 import { UID } from 'react-uid';
 import styled from 'styled-components';
 
+import CheckCircleIcon from '../bolts/icons/check-circle';
+import CrossCircleIcon from '../bolts/icons/cross-circle';
 import InputLarge from '../bolts/inputs/input-large';
 import InputSmall from '../bolts/inputs/input-small';
 import LabelBase from '../bolts/inputs/label';
 import Textarea from '../bolts/inputs/textarea';
 import Small from '../bolts/typography/small';
+
+const ValidIcon = styled(CheckCircleIcon)`
+  position: relative;
+  top: 3px;
+  width: 1rem;
+  height: 1rem;
+  float: right;
+  color: ${({ theme }) => theme.color.select.grass};
+`;
+
+const InvalidIcon = styled(CrossCircleIcon)`
+  position: relative;
+  top: 3px;
+  width: 1rem;
+  height: 1rem;
+  float: right;
+  color: ${({ theme }) => theme.color.select.brick};
+`;
 
 const Label = styled(LabelBase)`
   margin-bottom: .5rem;
@@ -15,7 +35,6 @@ const Label = styled(LabelBase)`
 
 const Caption = styled(Small)`
   display: inline-block;
-  margin-top: .2rem;
 `;
 
 type InputType = 'date' | 'datetime-local' | 'email' | 'file' |
@@ -31,6 +50,7 @@ interface Props {
   className?: string;
   label: string;
   isLarge?: boolean;
+  isValid?: boolean;
   name: string;
   onChange: (event: React.ChangeEvent<Target>) => void;
   onEnterKeyPress?: (event: React.KeyboardEvent) => void;
@@ -47,6 +67,7 @@ const InputWithLabel = ({
   className,
   label,
   isLarge,
+  isValid,
   name,
   onChange,
   onEnterKeyPress,
@@ -63,7 +84,17 @@ const InputWithLabel = ({
     <UID>
       {(id) => (
         <div className={className} style={style}>
-          <Label htmlFor={`a-text-input-${id}`}>{label}</Label>
+          <Label htmlFor={`a-text-input-${id}`}>
+            {label}
+            {(() => {
+              if (typeof isValid === 'undefined') {
+                return null;
+              }
+              return isValid ?
+                <ValidIcon /> :
+                <InvalidIcon />;
+            })()}
+          </Label>
           {type === 'textarea' ?
             <Textarea
               id={`a-input-${id}`}
