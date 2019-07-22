@@ -100,3 +100,31 @@ stories.add('Textarea', () => (
     </Code>
   </Wrapper>
 ));
+
+stories.add('Input And Caption', () => (
+  <Wrapper>
+    <Title>Input with Label</Title>
+    <InputWithLabel
+      caption={text('Caption', 'This field is optional')}
+      label={text('Label', 'My Input')}
+      name="foo"
+      onChange={action('changed')}
+      onEnterKeyPress={action('enterKeyPress')}
+      onKeyPress={action('keyPress')}
+      placeholder={text('Placeholder', 'Enter a value')}
+      value={text('Value', 'Hello, friend')}
+    />
+    <H2>Source Code</H2>
+    <Code>
+      import &#123; InputWithLabel &#125; from '@anomalous/newton';<br/>
+      <br/>
+      &lt;InputWithLabel<br/>
+        &nbsp;&nbsp;caption=&#123;...&#125;<br/>
+        &nbsp;&nbsp;label=&#123;...&#125;<br/>
+        &nbsp;&nbsp;name=&#123;...&#125;<br/>
+        &nbsp;&nbsp;onChange=&#123;...&#125;<br/>
+        &nbsp;&nbsp;value=&#123;...&#125;<br/>
+      /&gt;
+    </Code>
+  </Wrapper>
+));

@@ -7,9 +7,15 @@ import InputLarge from '../bolts/inputs/input-large';
 import InputSmall from '../bolts/inputs/input-small';
 import LabelBase from '../bolts/inputs/label';
 import Textarea from '../bolts/inputs/textarea';
+import Small from '../bolts/typography/small';
 
 const Label = styled(LabelBase)`
   margin-bottom: .5rem;
+`;
+
+const Caption = styled(Small)`
+  display: inline-block;
+  margin-top: .2rem;
 `;
 
 type InputType = 'date' | 'datetime-local' | 'email' | 'file' |
@@ -21,6 +27,7 @@ interface Target {
 }
 
 interface Props {
+  caption?: string;
   className?: string;
   label: string;
   isLarge?: boolean;
@@ -36,6 +43,7 @@ interface Props {
 }
 
 const InputWithLabel = ({
+  caption,
   className,
   label,
   isLarge,
@@ -91,6 +99,7 @@ const InputWithLabel = ({
               value={value}
               {...props}
             />}
+            {!caption || (<Caption>{caption}</Caption>)}
         </div>
       )}
     </UID>

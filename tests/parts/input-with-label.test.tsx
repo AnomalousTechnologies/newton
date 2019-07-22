@@ -142,6 +142,21 @@ describe('Part: Input With Label', () => {
     expect(wrapper.find(Textarea).prop('value')).toEqual('example');
   });
 
+  it('Can set textarea rows', () => {
+    const wrapper = mount(withTheme(
+      <InputWithLabel
+        label="My Label"
+        name="Foo"
+        onChange={() => undefined}
+        placeholder="Bar"
+        rows={55}
+        type="textarea"
+        value="example"
+      />,
+    ));
+    expect(wrapper.find(Textarea).prop('rows')).toEqual(55);
+  });
+
   it('Can handle textarea change', () => {
     const changeStub = jest.fn();
     const wrapper = mount(withTheme(
@@ -201,5 +216,17 @@ describe('Part: Input With Label', () => {
     ));
     wrapper.find(Textarea).simulate('keypress', { key: 'Enter' });
     expect(keyPressStub).toHaveBeenCalled();
+  });
+
+  it('Can render caption', () => {
+    const wrapper = mount(withTheme(
+      <InputWithLabel
+        caption="My Caption"
+        label="My Label"
+        name="Foo"
+        onChange={() => undefined}
+      />,
+    ));
+    expect(wrapper.find('small').text()).toContain('My Caption');
   });
 });
