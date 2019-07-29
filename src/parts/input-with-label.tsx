@@ -56,6 +56,7 @@ interface Props {
   onEnterKeyPress?: (event: React.KeyboardEvent) => void;
   onKeyPress?: (event: React.KeyboardEvent) => void;
   placeholder?: string;
+  ref?: React.RefObject<HTMLInputElement>;
   rows?: number;
   style?: object;
   type?: InputType | 'textarea';
@@ -73,6 +74,7 @@ const InputWithLabel = ({
   onEnterKeyPress,
   onKeyPress,
   placeholder,
+  ref,
   rows,
   style,
   type,
@@ -109,6 +111,7 @@ const InputWithLabel = ({
                 handleKeyPress(event);
               }}
               placeholder={placeholder}
+              ref={ref}
               rows={rows ? rows : 10}
               value={value}
               {...props}
@@ -126,6 +129,7 @@ const InputWithLabel = ({
                 handleKeyPress(event);
               }}
               placeholder={placeholder}
+              ref={ref}
               type={type}
               value={value}
               {...props}
