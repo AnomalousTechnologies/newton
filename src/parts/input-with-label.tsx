@@ -49,6 +49,7 @@ interface Props {
   caption?: string;
   className?: string;
   label: string;
+  internalRef?: React.RefObject<HTMLInputElement>;
   isLarge?: boolean;
   isValid?: boolean;
   name: string;
@@ -56,7 +57,6 @@ interface Props {
   onEnterKeyPress?: (event: React.KeyboardEvent) => void;
   onKeyPress?: (event: React.KeyboardEvent) => void;
   placeholder?: string;
-  ref?: React.RefObject<HTMLInputElement>;
   rows?: number;
   style?: object;
   type?: InputType | 'textarea';
@@ -67,6 +67,7 @@ const InputWithLabel = ({
   caption,
   className,
   label,
+  internalRef,
   isLarge,
   isValid,
   name,
@@ -74,7 +75,6 @@ const InputWithLabel = ({
   onEnterKeyPress,
   onKeyPress,
   placeholder,
-  ref,
   rows,
   style,
   type,
@@ -111,7 +111,7 @@ const InputWithLabel = ({
                 handleKeyPress(event);
               }}
               placeholder={placeholder}
-              ref={ref}
+              ref={internalRef}
               rows={rows ? rows : 10}
               value={value}
               {...props}
@@ -129,7 +129,7 @@ const InputWithLabel = ({
                 handleKeyPress(event);
               }}
               placeholder={placeholder}
-              ref={ref}
+              ref={internalRef}
               type={type}
               value={value}
               {...props}
