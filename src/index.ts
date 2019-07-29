@@ -1,6 +1,6 @@
 import Avatar from './bolts/content/avatar';
 import Badge from './bolts/content/badge';
-import Card from './bolts/content/card';
+import Card, { ModalCard } from './bolts/content/card';
 import CornerCap from './bolts/content/corner-cap';
 import Drawer from './bolts/content/drawer';
 import Hr from './bolts/content/hr';
@@ -69,6 +69,7 @@ export {
   Avatar,
   Badge,
   Card,
+  ModalCard,
   CornerCap,
   Drawer,
   Hr,
