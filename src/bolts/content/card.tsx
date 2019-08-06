@@ -28,6 +28,7 @@ export const ModalCard = styled(Card)`
 
   &:hover {
     background-color: ${({ theme }) => theme.card.background.color};
+    box-shadow: 0 0 4px 0 ${({ theme }) => theme.card.shadow.color};
     cursor: default;
   }
 `;
