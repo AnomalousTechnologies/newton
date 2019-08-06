@@ -7,6 +7,7 @@ import UserIcon from '../icons/user';
 export enum AvatarSize {
   SMALL = '32px',
   LARGE = '64px',
+  XLARGE = '128px',
 }
 
 interface AvatarProps {
