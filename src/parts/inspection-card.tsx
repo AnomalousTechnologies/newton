@@ -38,6 +38,12 @@ const AvatarWrapper = styled.div`
   }
 `;
 
+const VerificationBadge = styled(Badge)`
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    display: none;
+  }
+`;
+
 const Status = styled.div`
   display: flex;
   justify-content: center;
@@ -110,9 +116,9 @@ function getVerificationBadge(verification?: InspectionVerification) {
   if (!verification) { return; }
   switch (verification) {
     case InspectionVerification.VERIFIED:
-      return <Badge icon={<CheckBadgeIcon title="Verified" />} type={BadgeType.SUCCESS} />;
+      return <VerificationBadge icon={<CheckBadgeIcon title="Verified" />} type={BadgeType.SUCCESS} />;
     case InspectionVerification.REJECTED:
-      return <Badge icon={<CrossBadgeIcon title="Rejected" />} type={BadgeType.DANGER} />;
+      return <VerificationBadge icon={<CrossBadgeIcon title="Rejected" />} type={BadgeType.DANGER} />;
 
   }
 }
