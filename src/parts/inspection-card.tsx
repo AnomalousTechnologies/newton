@@ -32,9 +32,7 @@ const PartSerial = styled.span``;
 
 const AvatarWrapper = styled.div`
   margin: 0 1rem;
-`;
 
-const HideOnSmallScreens = styled.span`
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     display: none;
   }
@@ -176,8 +174,7 @@ const InspectionCard = ({
         {getTitle(partName, partNumber, partSerial)}
       </Title>
       <ExtraSmall>
-        {format(date, 'D MMM YYYY [at] h[:]mm a')}
-        <HideOnSmallScreens> | <Strong>{inspectorName}</Strong></HideOnSmallScreens>
+        {format(date, 'D MMM YYYY [at] h[:]mm a')} | <Strong>{inspectorName}</Strong>
       </ExtraSmall>
     </Details>
     {getVerificationBadge(verification)}
