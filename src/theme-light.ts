@@ -53,8 +53,8 @@ const theme: Theme = {
   name: 'newton-light',
 
   breakpoint: {
-    mobile: '530px',
-    tablet: '700px',
+    mobile: '400px',
+    tablet: '800px',
     widescreen: '1200px',
   },
   button: {
