@@ -53,7 +53,7 @@ const theme: Theme = {
   name: 'newton-dark',
 
   breakpoint: {
-    mobile: '400px',
+    mobile: '500px',
     tablet: '800px',
     widescreen: '1200px',
   },
