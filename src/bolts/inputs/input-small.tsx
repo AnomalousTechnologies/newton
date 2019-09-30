@@ -14,6 +14,7 @@ export default styled.input`
   box-shadow: ${(props) => props.theme.input.shadow.color} 0 0 2px 1px inset;
   border-radius: 6px;
   overflow: visible;
+  -webkit-appearance: none;
 
   &:focus {
     outline: ${(props) => props.theme.input.outline.color} auto 4px;
