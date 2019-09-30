@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { select, text, withKnobs } from '@storybook/addon-knobs';
+import { text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 
@@ -28,7 +28,7 @@ storiesOf('Bolts|Drawer', module)
     <WrapperFullHeight>
       <Title>Drawer Right</Title>
       <Drawer
-        isOpen={select('Open', { open: true, close: false }, true)}
+        isOpen
         position={DrawerPosition.RIGHT}
         size={text('Size', '50%')}
       />
@@ -44,7 +44,7 @@ storiesOf('Bolts|Drawer', module)
     <WrapperFullHeight>
       <Title>Drawer Bottom</Title>
       <Drawer
-        isOpen={select('Open', { open: true, close: false }, true)}
+        isOpen
         position={DrawerPosition.BOTTOM}
         size={text('Size', '80%')}
       />
@@ -60,7 +60,7 @@ storiesOf('Bolts|Drawer', module)
     <WrapperFullHeight>
       <Title>Drawer Bottom</Title>
       <Drawer
-        isOpen={select('Open', { open: true, close: false }, true)}
+        isOpen
         position={DrawerPosition.RIGHT}
         size={text('Size', '80%')}
       >
