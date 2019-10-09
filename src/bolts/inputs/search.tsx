@@ -17,7 +17,7 @@ const Input = styled(InputSmall)`
   border-radius: 19px;
 `;
 
-export const Icon = styled(SearchIcon)`
+const Icon = styled(SearchIcon)`
   position: absolute;
   top: 11px;
   right: 1rem;
@@ -34,7 +34,7 @@ const spinAnimation = keyframes`
   }
 `;
 
-export const Spinner = styled(SpinnerIcon)`
+const Spinner = styled(SpinnerIcon)`
   position: absolute;
   top: 11px;
   right: 1rem;
