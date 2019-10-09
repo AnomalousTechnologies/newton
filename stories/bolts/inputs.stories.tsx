@@ -116,13 +116,21 @@ storiesOf('Bolts|Inputs', module)
         onChange={action('change')}
         onFocus={action('focus')}
         onBlur={action('blur')}
-        placeholder={text('Placeholder', 'Search')}
+        placeholder={text('Placeholder (Top)', 'Search')}
+      />
+      <br /><br />
+      <Search
+        isSearching
+        onChange={action('change')}
+        onFocus={action('focus')}
+        onBlur={action('blur')}
+        placeholder={text('Placeholder (Bottom)', 'Searching...')}
       />
       <H2>Source Code</H2>
       <Code>
         import &#123; Search &#125; from '@anomalous/newton';<br/>
         <br/>
-        &lt;Search /&gt;
+        &lt;Search isSearching /&gt;
       </Code>
     </Wrapper>
   ));

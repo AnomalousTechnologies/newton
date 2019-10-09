@@ -1,8 +1,9 @@
 import React, { InputHTMLAttributes } from 'react';
 
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 import SearchIcon from '../icons/search';
+import SpinnerIcon from '../icons/spinner';
 import InputSmall from './input-small';
 
 const Wrapper = styled.div`
@@ -16,7 +17,7 @@ const Input = styled(InputSmall)`
   border-radius: 19px;
 `;
 
-const Icon = styled(SearchIcon)`
+export const Icon = styled(SearchIcon)`
   position: absolute;
   top: 11px;
   right: 1rem;
@@ -24,10 +25,32 @@ const Icon = styled(SearchIcon)`
   height: 16px;
 `;
 
-const Search = ({ className, ...props }: InputHTMLAttributes<HTMLInputElement>) => (
+const spinAnimation = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+`;
+
+export const Spinner = styled(SpinnerIcon)`
+  position: absolute;
+  top: 11px;
+  right: 1rem;
+  width: 16px;
+  height: 16px;
+  animation: 1s ${spinAnimation} infinite linear;
+`;
+
+interface Props extends InputHTMLAttributes<HTMLInputElement> {
+  isSearching?: boolean;
+}
+
+const Search = ({ className, isSearching, ...props }: Props) => (
   <Wrapper className={className}>
     <Input {...props} />
-    <Icon />
+    {isSearching ? <Spinner /> : <Icon />}
   </Wrapper>
 );
 
