@@ -54,7 +54,7 @@ function getPositionStyling({ isOpen, position, size, theme }: Props) {
 }
 
 const PanelStyled = styled(Panel)`
-  position: absolute;
+  position: fixed;
   background-color: ${({ theme }) => theme.color.select.tonal[1]};;
   ${getPositionStyling}
 `;
