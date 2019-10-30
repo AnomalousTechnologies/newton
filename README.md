@@ -6,7 +6,7 @@
 # newton
 Design system and component library from Anomalous
 
-# Introduction
+## Introduction
 
 Newton is a design system and component library created by Anomalous. This library provides the UI backbone of our **Inspect** and **Mission Control** applications. Newton has been written for [React](https://reactjs.org/) and provides a range of components to speed up frontend development.
 
@@ -20,7 +20,7 @@ We also use a stripped down version of [Normalize](https://necolas.github.io/nor
 
 If you're building applications to live within the Anomalous ecosystem feel free to use Newton.
 
-# Install
+## Install
 
 With Yarn: _(our preference at Anomalous)_
 
@@ -34,7 +34,7 @@ With NPM:
 $ npm install @anomalous/newton styled-components
 ```
 
-# Usage
+## Usage
 
 Include Gill Sans Nova in your application by using Typekit (optional).
 
@@ -83,7 +83,7 @@ const MyComponent = () => (
 export default MyComponent;
 ```
 
-# Structure
+## Structure
 
 Newton provides the following types of component:
 
@@ -108,10 +108,10 @@ We structure our frontend applications as follows:
 - pages
 ```
 
-# Deploying New Releases
+## Deploying New Releases
 
 New releases are periodically created as new features are delivered. Creating a new release (and tag) in GitHub automatically triggers a deployment to NPM as long as the version number has been updated in `package.json`. Watch the GitHub repo to be notified of new releases.
 
-# Issues and Feedback
+## Issues and Feedback
 
 If you spot a problem with Newton please [raise an issue](https://github.com/AnomalousTechnologies/newton/issues/new).
