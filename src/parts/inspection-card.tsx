@@ -10,6 +10,7 @@ import CheckBadgeIcon from '../bolts/icons/check-badge';
 import CheckCircleIcon from '../bolts/icons/check-circle';
 import CrossBadgeIcon from '../bolts/icons/cross-badge';
 import CrossCircleIcon from '../bolts/icons/cross-circle';
+import QuestionCircleIcon from '../bolts/icons/question-circle';
 import SpinnerIcon from '../bolts/icons/spinner';
 import H4 from '../bolts/typography/h4';
 import Strong from '../bolts/typography/strong';
@@ -71,6 +72,10 @@ const StatusWaiting = styled(Status)`
   background-color: ${({ theme }) => theme.color.select.greyscale[4]};
 `;
 
+const StatusUnsure = styled(Status)`
+  background-color: ${({ theme }) => theme.color.select.tangerine};
+`;
+
 const rotate = keyframes`
   from {
     transform: rotate(0deg);
@@ -87,6 +92,7 @@ const SpiningIcon = styled(SpinnerIcon)`
 const FailLabel = () => (<StatusFail><CrossCircleIcon title="Failed" /></StatusFail>);
 const PassLabel = () => (<StatusPass><CheckCircleIcon title="Passed" /></StatusPass>);
 const WaitingLabel = () => (<StatusWaiting><SpiningIcon title="In Progress" /></StatusWaiting>);
+const UnsureLabel = () => (<StatusUnsure><QuestionCircleIcon title="Unsure" /></StatusUnsure>);
 
 export enum InspectionVerification {
   REJECTED = -1,
@@ -98,6 +104,7 @@ export enum InspectionStatus {
   FAIL = 'fail',
   PASS = 'pass',
   WAITING = 'waiting',
+  UNSURE = 'unsure',
 }
 
 function renderStatus(status?: InspectionStatus) {
@@ -106,6 +113,8 @@ function renderStatus(status?: InspectionStatus) {
       return <FailLabel />;
     case InspectionStatus.PASS:
       return <PassLabel />;
+    case InspectionStatus.UNSURE:
+      return <UnsureLabel />;
     default:
     case InspectionStatus.WAITING:
       return <WaitingLabel />;

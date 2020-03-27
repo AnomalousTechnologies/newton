@@ -35,7 +35,7 @@ stories.add('Waiting', () => (
       partSerial="1234567890"
       status={select(
         'Status',
-        [InspectionStatus.FAIL, InspectionStatus.PASS, InspectionStatus.WAITING],
+        [InspectionStatus.FAIL, InspectionStatus.PASS, InspectionStatus.WAITING, InspectionStatus.UNSURE],
         InspectionStatus.WAITING,
       )}
     />
@@ -67,8 +67,39 @@ stories.add('Waiting', () => (
       partNumber="95678230"
       status={select(
         'Status',
-        [InspectionStatus.FAIL, InspectionStatus.PASS, InspectionStatus.WAITING],
+        [InspectionStatus.FAIL, InspectionStatus.PASS, InspectionStatus.WAITING, InspectionStatus.UNSURE],
         InspectionStatus.FAIL,
+      )}
+    />
+    <H2>Source Code</H2>
+    <Code>
+      import &#123; InspectionCard, InspectionStatus &#125; from '@anomalous/newton';<br/>
+      <br/>
+      &lt;InspectionCard<br/>
+      &nbsp;&nbsp;date=&#123;...&#125;<br/>
+      &nbsp;&nbsp;inspectorAvatarSrc=&#123;...&#125;<br/>
+      &nbsp;&nbsp;inspectorName=&#123;...&#125;<br/>
+      &nbsp;&nbsp;onClick=&#123;...&#125;<br/>
+      &nbsp;&nbsp;partName=&#123;...&#125;<br/>
+      &nbsp;&nbsp;partNumber=&#123;...&#125;<br/>
+      &nbsp;&nbsp;status=&#123;...&#125;<br/>
+      /&gt;
+    </Code>
+  </Wrapper>
+))
+.add('Unsure', () => (
+  <Wrapper>
+    <Title>Inspection Card</Title>
+    <DemoCard
+      date={new Date()}
+      inspectorAvatarSrc="https://randomuser.me/api/portraits/women/64.jpg"
+      inspectorName="Stephanie Lawrence"
+      onClick={action('clicked')}
+      partName="Rotor Blade"
+      status={select(
+        'Status',
+        [InspectionStatus.FAIL, InspectionStatus.PASS, InspectionStatus.WAITING, InspectionStatus.UNSURE],
+        InspectionStatus.UNSURE,
       )}
     />
     <H2>Source Code</H2>
@@ -98,7 +129,7 @@ stories.add('Waiting', () => (
       partName="Rotor Blade"
       status={select(
         'Status',
-        [InspectionStatus.FAIL, InspectionStatus.PASS, InspectionStatus.WAITING],
+        [InspectionStatus.FAIL, InspectionStatus.PASS, InspectionStatus.WAITING, InspectionStatus.UNSURE],
         InspectionStatus.PASS,
       )}
     />
@@ -129,7 +160,7 @@ stories.add('Waiting', () => (
       partNumber="95678230"
       status={select(
         'Status',
-        [InspectionStatus.FAIL, InspectionStatus.PASS, InspectionStatus.WAITING],
+        [InspectionStatus.FAIL, InspectionStatus.PASS, InspectionStatus.WAITING, InspectionStatus.UNSURE],
         InspectionStatus.PASS,
       )}
       verification={InspectionVerification.VERIFIED}
@@ -164,7 +195,7 @@ stories.add('Waiting', () => (
       partSerial="1234567890"
       status={select(
         'Status',
-        [InspectionStatus.FAIL, InspectionStatus.PASS, InspectionStatus.WAITING],
+        [InspectionStatus.FAIL, InspectionStatus.PASS, InspectionStatus.WAITING, InspectionStatus.UNSURE],
         InspectionStatus.PASS,
       )}
       verification={InspectionVerification.REJECTED}
@@ -199,7 +230,7 @@ stories.add('Waiting', () => (
       partNumber="95678230"
       status={select(
         'Status',
-        [InspectionStatus.FAIL, InspectionStatus.PASS, InspectionStatus.WAITING],
+        [InspectionStatus.FAIL, InspectionStatus.PASS, InspectionStatus.WAITING, InspectionStatus.UNSURE],
         InspectionStatus.PASS,
       )}
     />
