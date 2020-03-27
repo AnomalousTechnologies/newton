@@ -20,6 +20,7 @@ import MoonStars from '../../src/bolts/icons/moon-stars';
 import PasswordReset from '../../src/bolts/icons/password-reset';
 import PlusCircle from '../../src/bolts/icons/plus-circle';
 import QuestionBadge from '../../src/bolts/icons/question-badge';
+import QuestionCircle from '../../src/bolts/icons/question-circle';
 import Search from '../../src/bolts/icons/search';
 import SignOut from '../../src/bolts/icons/sign-out';
 import Spinner from '../../src/bolts/icons/spinner';
@@ -59,6 +60,7 @@ const iconStories = storiesOf('Bolts|Icons', module)
   { component: 'PasswordResetIcon', Element: PasswordReset, title: 'Password Reset Icon' },
   { component: 'PlusCircleIcon', Element: PlusCircle, title: 'Plus Circle Icon' },
   { component: 'QuestionBadgeIcon', Element: QuestionBadge, title: 'Question Badge Icon' },
+  { component: 'QuestionCircleIcon', Element: QuestionCircle, title: 'Question Circle Icon' },
   { component: 'SearchIcon', Element: Search, title: 'Search Icon' },
   { component: 'SignOutIcon', Element: SignOut, title: 'Sign Out Icon' },
   { component: 'SpinnerIcon', Element: Spinner, title: 'Spinner Icon' },
