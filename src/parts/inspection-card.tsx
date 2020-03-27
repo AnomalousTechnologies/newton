@@ -74,6 +74,7 @@ const StatusWaiting = styled(Status)`
 
 const StatusUnsure = styled(Status)`
   background-color: ${({ theme }) => theme.color.select.lemon};
+  color: ${({ theme }) => theme.color.select.greyscale[4]};
 `;
 
 const rotate = keyframes`
