@@ -151,6 +151,22 @@ describe('Part: Inspection Card', () => {
     expect(wrapper.find('PassLabel').length).toEqual(1);
   });
 
+  it('Can render unsure label', () => {
+    const wrapper = mount(withTheme(
+      <InspectionCard
+        className="bar"
+        date={new Date(2019, 1, 20, 0, 0, 0)}
+        inspectorAvatarSrc="https://randomuser.me/api/portraits/women/64.jpg"
+        inspectorName="Stephanie Lawrence"
+        onClick={() => undefined}
+        partName="Rotor Blade"
+        partNumber="95678230"
+        status={InspectionStatus.UNSURE}
+      />,
+    ));
+    expect(wrapper.find('UnsureLabel').length).toEqual(1);
+  });
+
   it('Can render waiting label', () => {
     const wrapper = mount(withTheme(
       <InspectionCard
