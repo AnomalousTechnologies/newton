@@ -29,6 +29,7 @@ import MoonStarsIcon from './bolts/icons/moon-stars';
 import PasswordResetIcon from './bolts/icons/password-reset';
 import PlusCircleIcon from './bolts/icons/plus-circle';
 import QuestionBadgeIcon from './bolts/icons/question-badge';
+import QuestionCircleIcon from './bolts/icons/question-circle';
 import SearchIcon from './bolts/icons/search';
 import SignOutIcon from './bolts/icons/sign-out';
 import SpinnerIcon from './bolts/icons/spinner';
@@ -96,6 +97,7 @@ export {
   PasswordResetIcon,
   PlusCircleIcon,
   QuestionBadgeIcon,
+  QuestionCircleIcon,
   SearchIcon,
   SignOutIcon,
   SpinnerIcon,
