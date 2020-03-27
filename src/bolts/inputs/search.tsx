@@ -49,7 +49,7 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {
 
 const Search = ({ className, isSearching, ...props }: Props) => (
   <Wrapper className={className}>
-    <Input {...props} />
+    <Input {...props} type="search" />
     {isSearching ? <Spinner /> : <Icon />}
   </Wrapper>
 );
