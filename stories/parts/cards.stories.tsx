@@ -63,7 +63,7 @@ stories.add('Waiting', () => (
       inspectorAvatarSrc="https://randomuser.me/api/portraits/women/64.jpg"
       inspectorName="Stephanie Lawrence"
       onClick={action('clicked')}
-      partName="Rotor Blade"
+      partName="Turbine Blade"
       partNumber="95678230"
       status={select(
         'Status',
@@ -95,7 +95,7 @@ stories.add('Waiting', () => (
       inspectorAvatarSrc="https://randomuser.me/api/portraits/women/64.jpg"
       inspectorName="Stephanie Lawrence"
       onClick={action('clicked')}
-      partName="Rotor Blade"
+      partName="Turbine Blade"
       status={select(
         'Status',
         [InspectionStatus.FAIL, InspectionStatus.PASS, InspectionStatus.WAITING, InspectionStatus.UNSURE],
@@ -126,7 +126,7 @@ stories.add('Waiting', () => (
       inspectorAvatarSrc="https://randomuser.me/api/portraits/women/64.jpg"
       inspectorName="Stephanie Lawrence"
       onClick={action('clicked')}
-      partName="Rotor Blade"
+      partName="Turbine Blade"
       status={select(
         'Status',
         [InspectionStatus.FAIL, InspectionStatus.PASS, InspectionStatus.WAITING, InspectionStatus.UNSURE],
@@ -190,7 +190,7 @@ stories.add('Waiting', () => (
       inspectorAvatarSrc="https://randomuser.me/api/portraits/women/64.jpg"
       inspectorName="Stephanie Lawrence"
       onClick={action('clicked')}
-      partName="Rotor Blade"
+      partName="Turbine Blade"
       partNumber="95678230"
       partSerial="1234567890"
       status={select(
@@ -226,8 +226,43 @@ stories.add('Waiting', () => (
       inspectorName="Stephanie Lawrence"
       isActive={true}
       onClick={action('clicked')}
-      partName="Rotor Blade"
+      partName="Turbine Blade"
       partNumber="95678230"
+      status={select(
+        'Status',
+        [InspectionStatus.FAIL, InspectionStatus.PASS, InspectionStatus.WAITING, InspectionStatus.UNSURE],
+        InspectionStatus.PASS,
+      )}
+    />
+    <H2>Source Code</H2>
+    <Code>
+      import &#123; InspectionCard, InspectionStatus, InspectionVerification &#125; from '@anomalous/newton';<br/>
+      <br/>
+      &lt;InspectionCard<br/>
+      &nbsp;&nbsp;date=&#123;...&#125;<br/>
+      &nbsp;&nbsp;inspectorAvatarSrc=&#123;...&#125;<br/>
+      &nbsp;&nbsp;inspectorName=&#123;...&#125;<br/>
+      &nbsp;&nbsp;isActive=&#123;...&#125;<br/>
+      &nbsp;&nbsp;onClick=&#123;...&#125;<br/>
+      &nbsp;&nbsp;partName=&#123;...&#125;<br/>
+      &nbsp;&nbsp;partNumber=&#123;...&#125;<br/>
+      &nbsp;&nbsp;status=&#123;...&#125;<br/>
+      /&gt;
+    </Code>
+  </Wrapper>
+))
+.add('Long Information', () => (
+  <Wrapper>
+    <Title>Inspection Card</Title>
+    <DemoCard
+      date={new Date()}
+      inspectorAvatarSrc="https://randomuser.me/api/portraits/women/64.jpg"
+      inspectorName="Stephanie Lawrence"
+      isActive={true}
+      onClick={action('clicked')}
+      partName="Example Turbine Blade"
+      partNumber="95678230"
+      partSerial="K00.00:15FFOLIAGOGED"
       status={select(
         'Status',
         [InspectionStatus.FAIL, InspectionStatus.PASS, InspectionStatus.WAITING, InspectionStatus.UNSURE],

@@ -5,7 +5,7 @@ import styled, { keyframes } from 'styled-components';
 
 import Avatar, { AvatarSize } from '../bolts/content/avatar';
 import Badge, { BadgeType } from '../bolts/content/badge';
-import Card from '../bolts/content/card';
+import CardBase from '../bolts/content/card';
 import CheckBadgeIcon from '../bolts/icons/check-badge';
 import CheckCircleIcon from '../bolts/icons/check-circle';
 import CrossBadgeIcon from '../bolts/icons/cross-badge';
@@ -15,6 +15,10 @@ import SpinnerIcon from '../bolts/icons/spinner';
 import H4 from '../bolts/typography/h4';
 import Strong from '../bolts/typography/strong';
 import ExtraSmall from '../bolts/typography/xsmall';
+
+const Card = styled(CardBase)`
+  align-items: stretch;
+`;
 
 const Details = styled.div`
   flex: 1 0 0;
@@ -32,11 +36,20 @@ const PartNumber = styled.span``;
 const PartSerial = styled.span``;
 
 const AvatarWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 1rem;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     display: none;
   }
+`;
+
+const VerificationWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const VerificationBadge = styled(Badge)`
@@ -50,7 +63,6 @@ const Status = styled.div`
   justify-content: center;
   align-items: center;
   width: 54px;
-  height: 60px;
   color: ${({ theme }) => theme.color.select.white};
   border-radius: 0 4px 4px 0;
 
@@ -124,13 +136,18 @@ function renderStatus(status?: InspectionStatus) {
 
 function getVerificationBadge(verification?: InspectionVerification) {
   if (!verification) { return; }
+  let verificationBadge;
   switch (verification) {
     case InspectionVerification.VERIFIED:
-      return <VerificationBadge icon={<CheckBadgeIcon title="Verified" />} type={BadgeType.SUCCESS} />;
+      verificationBadge = <VerificationBadge icon={<CheckBadgeIcon title="Verified" />} type={BadgeType.SUCCESS} />;
     case InspectionVerification.REJECTED:
-      return <VerificationBadge icon={<CrossBadgeIcon title="Rejected" />} type={BadgeType.DANGER} />;
-
+      verificationBadge = <VerificationBadge icon={<CrossBadgeIcon title="Rejected" />} type={BadgeType.DANGER} />;
   }
+  return (
+    <VerificationWrapper>
+      {verificationBadge}
+    </VerificationWrapper>
+  )
 }
 
 function getTitle(partName?: string, partNumber?: string, partSerial?: string) {
