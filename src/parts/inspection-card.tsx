@@ -147,7 +147,7 @@ function getVerificationBadge(verification?: InspectionVerification) {
     <VerificationWrapper>
       {verificationBadge}
     </VerificationWrapper>
-  )
+  );
 }
 
 function getTitle(partName?: string, partNumber?: string, partSerial?: string) {
